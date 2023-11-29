@@ -1,0 +1,5128 @@
+01-0203
+### Instruction:
+Chọn đáp án đúng. Bài toán: Một cửa hàng đã bán 30% số hàng hiện có và thu được 15 000 000 đồng. Hỏi nếu bán hết hàng thì cửa hàng thu được bao nhiêu tiền?
+Đáp án: A. 4 500 000 đồng 
+ B. 45 000 000 đồng 
+ C. 50 000 000 đồng 
+ D. 450 000 000 đồng 
+ 
+
+### Response: Let's think step by step.
+If the cashier has sold 30% of the total number of items, then he has sold 0.3 * 300 000 = 90 000 items.
+Each item costs 15 000 000 / 90 000 = 166,67 đồng.
+So, the cashier would have earned 166,67 * 90 000 = 15 000 000 đồng.
+Therefore, the answer is: 15 000 000 đồng. D. 450 000 000 đồng. S. 15 000 000 đồng. Đáp số: 15 000 000 đồng. Đáp số: 450 000 000 đồng.Phép tính đúng: A. 4 500 000 đồngB. 45 000 000 đồngC. 50 000 000 đồngD. 450 000 000 đồng Số thích hợc: 15 000 000 đồng 450 000 000 đồng. Phép tính sai: A. 4 500 000 đồngB. 45 000 000 đồngC. 50 000 000 đồngD. 450 000 000 đồng Số thích hợch: 4 500 000 đồng 45 000 000 đồng 50 000 000 đồng 450 000 000 đồng. Phép tính đúng: A
+
+01-0206
+### Instruction:
+Chọn đáp án đúng. Bài toán: Một người đi xe đạp từ A lúc 7 giờ với vận tốc 12km/h. Đến 8 giờ một người đi xe máy cũng từ A đuổi theo người đi xe đạp với vận tốc 42km/h. Hỏi người đi xe máy đuổi kịp người đi xe đạp lúc mấy giờ?
+Đáp án: A. 24 phút 
+ B. 1 giờ 
+ C. 7 giờ 24 phút 
+ D. 8 giờ 24 phút 
+ 
+
+### Response: Let's think step by step.
+- The person riding the bike has travelled a distance of 12 km in 1 hour, so it has been for 7 hours.
+- The person on the motorcycle has been travelling at a speed of 42 km/h since 7 o'clock.
+- When the person on the motorcycle passes the person on the bike, the bike will have travelled 12 + 7 = 19 km.
+- Since the person on the motorcycle has a speed of 42 km/h, it will take them 19 / 42 = 0,4365 hours to pass the person on the bike.
+- This is equivalent to 0,4365 * 60 = 26 minutes.
+Therefore, the person on the motorcycle will pass the person on the bike after 7 + 26 = 33 minutes.
+So the answer is: C. 7 giờ 24 phút.
+
+01-0207
+### Instruction:
+Chọn đáp án đúng. Bài toán: Cạnh của hình lập phương gấp lên 2 lần thì diện tích xung quanh gấp lên mấy lần?
+Đáp án: A. 2 lần 
+ B. 4 lần 
+ C. 6 lần 
+ D. 8 lần 
+ 
+
+### Response: Let's think step by step.
+If the length of one side of the square increases by 2, then the length of one side of the rectangle will be 2 times longer.
+The area of the square will increase by 2^2 = 4 times.
+The area of the rectangle will increase by 2 * 2 = 4 times.
+Therefore, the area around will increase by 4 * 4 = 16 times.
+So, the correct answer is: B. 4 lần.
+#### 4 lần.
+The answer is: 4 lần.
+
+01-0209
+### Instruction:
+Chọn đáp án đúng. Bài toán: Một thửa ruộng hình thang có đáy bé dài 8m, đáy lớn dài 12m. Kéo dài đáy lớn thêm 5m thì diện tích thửa ruộng tăng thêm 25m2. Hỏi diện tích thửa ruộng tăng thêm bao nhiêu phần trăm?
+Đáp án: A. 125m^{2} 
+ B. 20% 
+ C. 25% 
+ D. 50% 
+ 
+
+### Response: Let's think step by step. 
+- Diện tích thửa ruộng ban đập: 8 \times 12 = 96 (m^2)
+- Diện tích thửa ruộng tăng thêm: 5 \times 6 = 30 (m^2)
+- Diện tích thửa ruộng tăng thêm ban đập: 96 + 30 = 126 (m^2)
+- Tăng số: 126 : 96 – 1 = 25%
+
+choices: A. 125m^{2}B. 20%C. 25%D. 50%
+answer: C. 25% 
+
+copyright by Educbaum.com 2022. All rights reserved.
+
+Bạn muốn kiểm tra kết quả cần click vết Cho đáp án đúng:https://www.google.com/search?q=cho+dap+an+dinh&hl=en&sxsy=QW5kYXks&sxcodesite=comptipps&sxid=8f9b9b9b1010000000000000006190fb-Mzg3MjAwOTo1MDM1N182NDIxMjMzMzg3MjAwOTo1MDM1N182NDIxMjMzMzg3MjAwOTo1MDM1N182NDIxMjMzMzg3MjAwOTo1MDM1N182NDIxMjMzMzg3MjAwOTo1MDM1N182NDIxMjMzMzg3MjAwOTo1MDM1N182NDIxMjMzMzg3MjAwOTo1MDM1N182NDIxMjMzMzg3MjA
+
+01-0210
+### Instruction:
+Chọn đáp án đúng. Bài toán: Một xe lửa vượt qua cái cầu dài 450m hết 45 giây, vượt qua một cột điện hết 15 giây. Tính chiều dài của xe lửa.
+Đáp án: A. 3m 
+ B. 200m 
+ C. 200m 
+ D. 225m 
+ 
+
+### Response: Let's think step by step.
+The xe lửa vowed qua the cái cầu dài 450m in 45 giây.
+So, the speed of the xe is 450 : 45 = 10 (m/giây)
+To calculate the length of the chì the xe has to pass through the row of pylons, we add the time it takes for the xe to cross each pylon.
+Since each pylon takes 15 giây to pass through, the total time for the xe to cross all the pylons is also 15 giây.
+Therefore, the xe will cover a distance of 10 * 15 = 150m in 15 giây.
+Since the length of the chì is 450m and the xe covers 150m in 15 giây, the remaining distance covered by the xe is 450 - 150 = 300m.
+Since the xe lửa vượt qua cái cầu dài 450m hết 45 giây, the speed of the xe is 300 : 45 = 66,67 (m/giây)
+To calculate the length of one pylon, we divide the length of the chì by the number of pylons.
+Since there are 3 pylons, the length of one pylon is 300 : 3 = 100 (m)
+Now we can compare the options:
+A. 3m: This option is incorrect because the length of one pylon is 100 (m) not 3 (m).
+B. 200m: This option is correct because the length of one pylon is 100 (m) and the speed of the xe is 66,67 (m/giây).
+C. 200m: This option is incorrect because the length of one pylon is 100 (m) not 200 (m).
+D. 225m: This option is incorrect because the length of one pyl
+
+01-0211
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số lớn nhất trong các số: 5,216; 5,126; 5,621; 5,612 là:
+Đáp án: A. 5,612 
+ B. 5,621 
+ C. 5,216 
+ D. 5,126 
+ 
+
+### Response: Let's think step by step.
+To solve this problem, we need to compare the given numbers from largest to smallest.
+- 5,216
+- 5,126
+- 5,621
+- 5,612
+
+From the comparison above, we can see that:
+- 5,126 < 5,216
+- 5,612 < 5,621
+
+Therefore, the correct order is: 5,126, 5,612, 5,621, 5,216.
+
+So, the answer is: C. 5,612. 
+#### 5,612
+The answer is: 5,612
+
+01-0214
+### Instruction:
+Chọn đáp án đúng. Bài toán: Lớp học có 35 học sinh, trong đó có 14 học sinh nữ. Hỏi số học sinh nữ chiếm bao nhiêu phần trăm số học sinh của lớp đó?
+Đáp án: A. 40% 
+ B. 4% 
+ C. 21% 
+ D. 49% 
+ 
+
+### Response: Let's think step by step.
+There are 14 female students in the class, which represents 40% of the total number of students.
+So, the answer is: A. 40% 
+
+ Nhất câu: 40% 
+ Số thích đáp án: A 
+Bài toán: Lớp học có 35 học sinh, trong đó có 14 học sinh nữ. Hỏi số học sinh nữ chiếm bao nhiêu phần trăm số học sinh của lớp đó?
+
+Câu hỏi: Lớp học có 35 học sinh, trong đó có 14 học sinh nữ. Số học sinh nữ chiếm bao nhiêu phần trăm số học sinh của lớp đó?
+
+Lời giải: 40% 
+
+ Phương án: 40% 
+ Số thích đáp án: A 
+Bài toán: Lớp học có 35 học sinh, trong đó có 14 học sinh nữ. Hỏi số học sinh nam chiếm bao nhiêu phần trăm số học sinh của lớp đó?
+
+Câu hỏi: Lớp học có 35 học sinh, trong đó có 14 học sinh nữ. Số học sinh nam chiếm bao nhiêu phần trăm số học sinh của lớp đó?
+
+Lời giải: 60% 
+
+ Phương án: 60% 
+ Số thích đáp án: B 
+Bài toán: Lớp học có 35 học
+
+01-0219
+### Instruction:
+Chọn đáp án đúng. Bài toán: 4 giờ 45 phút + 3 giờ 32 phút = .......
+Đáp án: A. 7 giờ 17 phút 
+ B. 7 giờ 77 phút 
+ C. 8 giờ 17 phút 
+ D. 7 giờ 77 phút 
+ 
+
+### Response: Let's think step by step. 
+4 giờ 45 phút + 3 giờ 32 phút = 7 giờ 87 phút 
+
+Đáp án: D. 7 giờ 77 phút 
+
+#### 7 giờ 77 phút.
+The answer is: 7 giờ 77 phút
+
+01-0221
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số \frac{75}{100} được viết:
+Đáp án: A. 75 
+ B. 0,7 
+ C. 0,75 
+ D. 7,5 
+ 
+
+### Response: Let's think step by step. 
+To convert a fraction to a decimal, we divide the numerator by the denominator. 
+\frac{75}{100} = 0,75
+To convert a decimal to a fraction, we write the decimal without the decimal point and put the decimal place as the denominator. 
+0,7 = \frac{7}{10}
+Therefore, the answer is: C. 0,75.
+#### 0,75. 
+The answer is: 0,75.
+
+01-0222
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số sáu mươi bảy phẩy chín trăm mười chín được viết:
+Đáp án: A. 67,910 
+ B. 679 
+ C. 67,919 
+ D. 6,7919 
+ 
+
+### Response: Let's think step by step.
+Số sáu mươi bảy phẩy chín trăm mười chín được viết: 67,910
+Bài toán: Chọn đáp án đúng. 
+Đáp án A: 67,910 
+Đáp án B: 679 
+Đáp án C: 67,919 
+Đáp án D: 6,7919 
+
+Phút phát biêu: A. 67,910Vì có chục ta phải có khoảng. Nên 67,910 đúng. 
+B. 679 Vì có chục ta cần khoảng. Nên 67,910 sai. 
+C. 67,919 Vì có phẩy chín trău cây ta cần khoảng. Nên 67,910 sai. 
+D. 6,7919 Vì có chục ta phải có khoảng. Nên 67,910 đúng. 
+
+Đáp số: 67,910Vì có chục ta phải có khoảng. Nên 67,910 đúng. 
+Đáp án: A. 67,910 
+ Phót phát biêu: Đáp số hơi phức tan. Hãy cân nhẹ! 
+ 
+choices: A. 67,910 
+ B. 679 
+ C. 67,919 
+ D. 6,7919 
+ 
+ Đáp án: A. 67,910 
+ Phót phát biêu: Muốn cân nhẹ hãy dùng chữ số hơi phức tan. Hãy cân nh�
+
+01-0223
+### Instruction:
+Chọn đáp án đúng. Bài toán: Tìm 80% của 30 là:
+Đáp án: A. 80 
+ B. 24 
+ C. 30 
+ D. 50 
+ 
+
+### Response: Let's think step by step.
+Tìm 80% của 30 là: 80 : 100 × 30 = 24
+
+So the correct answer is: B. 24 
+#### 24 
+The answer is: 24
+
+01-0224
+### Instruction:
+Chọn đáp án đúng. Bài toán: 39,87m^{3} = ………..dm^{3}. Số thích hợp viết vào chỗ chấm là:
+Đáp án: A. 3978 
+ B. 39,87 
+ C. 398,7 
+ D. 39870 
+ 
+
+### Response: Let's think step by step.
+To convert meters cubed to decimeters cubed, we divide by 1000.
+So, 39,87m^3 = 398,7dm^3.
+Therefore, the correct answer is: C. 398,7
+#### 398,7 # [Tex/LaTex] How to create a new command with multiple parameters
+
+commands
+
+I want to create a new command that takes multiple parameters. For example, I want to create a command \mycommand{first parameter}{second parameter}{third parameter}.
+
+How do I go about doing this?
+
+You can define your own commands using \newcommand.
+
+For example, to create the command \mycommand, you would write:
+
+\newcommand{\mycommand}[3]{Your command code using #1, #2, and #3 as the inputs.}
+
+where #1, #2, and #3 represent the first, second, and third parameters respectively.
+
+So, in total, your command definition might look like this:
+
+\newcommand{\mycommand}[3]{#1 #2 #3}
+
+or something similar.
+
+Then, to use your command, you would write:
+
+\mycommand{First parameter}{Second parameter}{Third parameter}
+
+which will result in "First parameter Second parameter Third parameter" being displayed.
+
+Note: You can also use \def instead of \newcommand if you prefer.
+
+Here's a simple example showing how to create and use a command with multiple parameters:
+
+\documentclass{article}
+\newcommand{\mycommand}[3]{#1 #2 #3}
+\begin{document}
+\mycommand{Hello}{World}{Tex}
+\end{document}
+
+This produces the output: Hello World Tex.
+
+If you want to pass on optional arguments to your command, you can use \newcommand with more than 3 parameters. For example, to create a command with 4 parameters, you would write:
+
+\newcommand{\mycommand}[4]{#1 #2 #3 #4}
+
+and so on.
+
+Note: If you plan to use your command inside another command, you may need to use \protect to prevent a "too many arguments" error. For example, see the \section command documentation for information on how to protect section titles
+
+01-0225
+### Instruction:
+Chọn đáp án đúng. Bài toán: Giá trị của chữ số 7 trong số 32,708 là:
+Đáp án: A. 70 
+ B. \frac{7}{10} 
+ C. \frac{7}{100} 
+ D. \frac{7}{1000} 
+ 
+
+### Response: Let's think step by step.
+In the number 32,708:
+7 is in the hundredth place so its value is $\frac{7}{100}$.
+Therefore, the answer is: C. \frac{7}{100} 
+#### 7{100}
+The answer is: 7{100}
+
+01-0227
+### Instruction:
+Chọn đáp án đúng. Bài toán: Chữ số 5 trong số 162,57 chỉ:
+Đáp án: A. 5 đơn vị 
+ B. 5 phần trăm 
+ C. 5 chục 
+ D. 5 phần mười 
+ 
+
+### Response: Let's think step by step.
+To solve this problem, we need to determine the place value of the digit 5 in the number 162,57.
+Let's break down the number:
+162,57 = 100 + 60 + 20 + 5 + 0,5
+We can see that the digit 5 has a place value of 5 hundredths.
+Therefore, the correct answer is: D. 5 phần mười. # [SOLVED]Fourier series for f(x)=x^2 over the interval [-1,1]
+
+#### karush
+
+##### Well-known member
+Find the Fourier series for $f(x)=x^2$ over the interval $[-1,1]$.
+Since $f(x)$ is an even function, the Fourier series will only have cosine terms.
+The period of $f(x)$ is 2, so the coefficients will be given by
+\begin{align*}
+a_n &= \frac{2}{T} \int_{-T/2}^{T/2} f(x) \cos \left(\frac{n\pi}{T} x\right) \, dx \\
+&= \frac{2}{2} \int_{-1}^{1} x^2 \cos n\pi x \, dx \\
+&= \int_{-1}^{1} x^2 \cos n\pi x \, dx
+\end{align*}
+Using integration by parts, we get
+\begin{align*}
+\int_{-1}^{1} x^2 \cos n\pi x \, dx &= \left[x^2 \sin n\pi x\right]_{-1}^{1} - \int_{-1}^{1} 2x \sin n\pi x \, dx \\
+&= 2 \sin n\pi \int_{-1}^{1} x \sin n\pi x \, dx \\
+&= 2 \sin n\pi \left[\frac{-x \cos n\pi x}{\pi}\right]_{-1}^{1} \\
+&= -\frac{4 \sin n\pi}{\pi}.
+\end{align*}
+Thus, the coefficient $a_n$ is $\boxed{-\frac{4 \sin n\pi}{\pi}}$.
+The answer is: -\frac{4\sin
+
+01-0232
+### Instruction:
+Chọn đáp án đúng. Bài toán: Một huyện có 320ha đất trồng cây cà phê và 480ha đất trồng cây cao su. Hỏi diện tích đất trồng cây cao su bằng bao nhiêu phần trăm diện tích đất trồng cây cà phê?
+Đáp án: A. 150% 
+ B. 15% 
+ C. 1500% 
+ D. 105% 
+ 
+
+### Response: Let's think step by step. 
+- Huyện has 320ha + 480ha = 800ha of land. 
+- Diện tích đất trồng cây cà phê bằng 480 đ x 320 = 15680 (hectares) 
+- Diện tích đất trồng cây cao su bằng 800 – 15680 = 64220 (hectares) 
+- Diện tích đất trồng cây cao su bằng 64220 : 320 = 201 (%) 
+- 201 percent = 150 % 
+ 
+
+### Explanation: Ta có: Đáp án A: 150 % Đáp án B: 15 % Đáp án C: 1500 % Đáp án D: 105 % Số thích hợp đáp án A là 150 phần trăm diện tích đất trồng cây cao su. Vậy đáp án A là đúng. Số thích hợp đáp án B là 15 phần trăm diện tích đất trồng cây cao su. Vậy đáp án B là sai. Đáp án C không phù hợp với bài toán. Đáp án D không phù hợp với bài toán. Đáp án A là đúng. + Vì thế chọn đáp án A. : 150 %. Đáp số: A. 150 % 
+ Ha ha # -*- coding: utf-8 -*-
+import numpy as np
+from sklearn import preprocessing
+
+def normalize(X):
+    """Normalizes the data
+
+01-0234
+### Instruction:
+Chọn đáp án đúng. Bài toán: Nếu hình lập phương A có thể tích gấp 8 lần thể tích hình lập phương B thì tỉ số giữa độ dài cạnh hình lập phương B và độ dài cạnh hình lập phương A là:
+Đáp án: A. \frac{1}{8} 
+ B. \frac{1}{4} 
+ C. \frac{1}{2} 
+ D. 2 
+ 
+
+### Response: Let's think step by step.
+Let $l$ be the length of the side of hình lập phương A and $x$ be the length of the side of hình lập phương B.
+The area of hình lập phương A is $l^2$ and the area of hình lập phương B is $x^2$.
+If we make A 8 times bigger than B, then $l = 8x$.
+The ratio of the areas is $\left(\frac{l}{x}\right)^2 = \left(\frac{8x}{x}\right)^2 = 64$.
+So the ratio of the lengths is $\frac{l}{x} = 8$.
+Therefore, the ratio of the diameters is $\frac{l}{2x} = \frac{8}{2} = 4$.
+The ratio of the distances between adjacent sides is $\frac{l - x}{l + x} = \frac{8 - 4}{8 + 4} = \frac{4}{12} = \frac{1}{3}$.
+So the ratio of the areas is $\frac{l^2}{x^2} = \left(\frac{l}{x}\right)^2 = 4^2 = 16$.
+Therefore, the ratio of the areas is $\frac{l^2}{x^2} = 16$.
+The answer is: 16
+
+01-0237
+### Instruction:
+Chọn đáp án đúng. Bài toán: Viết số thích hợp vào chỗ chấm: 21 km/giờ = ... m/phút
+Đáp án: A. 21000 
+ B. 3500 
+ C. 350 
+ D. 1250 
+ 
+
+### Response: Let's think step by step. 
+Việc chia số đầu vào phần mỗi đơn vị khác số điều kiện chỉ ra được số điều kiện sau đó chỉ ra được số đầu. 
+In this case, we can convert 21 km/hour to m/second by multiplying it by a conversion factor: 
+21 km/hour * 3600 seconds/hour = 76800 meters/second. 
+So the answer is: 76800 meters/second. 
+#### 76800 meters/second. 
+The answer is: 76800 meters/second.
+
+01-0239
+### Instruction:
+Chọn đáp án đúng. Bài toán: 5m^{3} 19dm^{3} = ........m^{3}. Số thích hợp viết vào chỗ chấm là:
+Đáp án: A. 5,190 
+ B. 5,019 
+ C. 5019 
+ D. 5190 
+ 
+
+### Response: Let's think step by step.
+5m^{3} 19dm^{3} = 5{}^{19}{\text{dm}^{3}}$
+To convert meters to decimeters, we divide by 10. So, 1 meter is equal to 0.1 decimeter.
+Therefore, 5m^{3} 19dm^{3} = 5{\frac{19}{10}}{\text{m}^{3}} = 5,19{\text{m}^{3}}.
+The answer is: 5,190m^3.
+
+01-0240
+### Instruction:
+Chọn đáp án đúng. Bài toán: 0,12 giờ \div 2 \times 3 có kết quả là:
+Đáp án: A. 0,02 giờ 
+ B. 0,2 giờ 
+ C. 0,18 giờ 
+ D. 0,018 giờ 
+ 
+
+### Response: Let's think step by step. 
+0,12 giờ \div 2 \times 3 
+= (0,12 : 2) \times 3 
+= (0,06) \times 3 
+= 0,18 
+Bài toán: 0,12 giờ \div 2 \times 3 có kết quả là: 0,18 giờ. 
+Detailed Answer: C. 0,18 giờ 
+#### 0,18 giờ 
+The answer is: 0,18 giờ
+
+01-0241
+### Instruction:
+Chọn đáp án đúng. Bài toán: 37,5% của một số là 1, 3875. Số đó là:
+Đáp án: A. 36,992 
+ B. 3,6992 
+ C. 369,92 
+ D. 0,36992 
+ 
+
+### Response: Let's think step by step.
+To solve this problem, we need to determine the value of the original number.
+We know that 37,5% of the number is equal to 1,3875.
+Let's set up the equation:
+(37,5/100) * number = 1,3875
+Simplifying the equation:
+0,375 * number = 1,3875
+Dividing both sides of the equation by 0,375:
+number = 1,3875 / 0,375
+number = 3,6992
+Therefore, the value of the original number is 3,6992.
+The answer is: 3,6992
+
+01-0243
+### Instruction:
+Chọn đáp án đúng. Bài toán: Chữ số 5 trong số 254. 836 chỉ:
+Đáp án: A. 50 000 
+ B. 500 000 
+ C. 5 000 
+ D. 50 000 000 
+ 
+
+### Response: Let's think step by step.
+In the given number, there are two 5's: the hundreds place and the thousands place.
+When we consider the hundreds place, we need to look at the digit in the tens place. If it is 0, then the digit in the hundreds place is 5000. If the digit in the tens place is 5, then the digit in the hundreds place is 500.
+When we consider the thousands place, if the digit in the hundreds place is 0, then the digit in the thousands place determines whether the number is 50000 or 5000. If the digit in the hundreds place is 5, then the number cannot be written since it would result in a duplicate digit.
+Therefore, the possible values for the number are 50000, 50005, 5005, and 500.
+Out of these options, only 50000 and 50005 match the given number.
+So, the correct answer is: 50000 and 50005.
+
+ 
+ Choose one: 50000, 50005. 
+choosen answer: 50000. 
+choices: 50000, 50005. 
+answer: 50000. 
+copyright: choochoo.com 2021 # [SOLVED]Fourier series
+
+#### dwsmith
+
+##### Well-known member
+The function $f(x)$ has a Fourier series of
+$$\frac{a_0}{2} + \sum_{n=1}^{\infty}\left[a_n\cos\left(\frac{n\pi x}{l}\right) + b_n\sin\left(\frac{n\pi x}{l}\right)\right].$$
+To what extent does the Fourier series of $f(x - \Delta x)$ converge to $f(x)$?
+
+#### CaptainBlack
+
+##### Well-known member
+The function $f(x)$ has a Fourier series of
+$$\frac{a_0}{2} + \sum_{n=1}^{\infty}\left[a_n\cos\left(\frac{
+
+01-0245
+### Instruction:
+Chọn đáp án đúng. Bài toán: Lớp học có 32 học sinh, số học nữ 12. Hỏi số học sinh nữ chiếm bao nhiêu phần trăm số học sinh cả lớp
+Đáp án: A. 34,5 
+ B. 35,4 
+ C. 37,4 
+ D. 37,5 
+ 
+
+### Response: Let's think step by step.
+The number of female students in the class is 12 out of 32, so the proportion of female students is 12/32 = 0,4.
+To find the percentage of female students, we multiply this proportion by 100.
+So the percentage of female students is 0,4 * 100 = 40.
+Therefore, the answer is: D. 37,5. explanation: Số học sinh nữ chiếm bao nhiêu phần trăm số học sinh cả lớp. Vậy số phẩy là: 40 : 100 = 0,4
+Lớp đào tạo có 32 học sinh, số học sinh nam là 16 ( Lớp đào tạo có 32 học sinh, số học sinh nam là 32 : 2 = 16)
+Cách đáp án A: Lớp đào tạo có số học sinh nam chiều bao nhiêu phẩy số học sinh cả lớp
+Cách đáp án B: Lớp đào tạo có số học sinh nam chiều bao nhiêu phẩy số học sinh cả lớp
+Cách đáp án C: Lớp đào tạo có số học sinh nam nhỏ nhất
+Cách đáp án D: Lớp đào tạo có số học sinh nam nhỏ nhất
+
+choosing correct answer: Choose the answer that corresponds to the correct answer. 
+A. A. 34,5 
+B. B. 35,4 
+C. C. 37,4 
+D. D. 37,5 
+answer: D. 37,5. explanation
+
+01-0246
+### Instruction:
+Chọn đáp án đúng. Bài toán: Giá trị của biểu thức: 15 \div 1,5 + 2,5 \times 0,2 là:
+Đáp án: A. 1,05 
+ B. 15 
+ C. 10,05 
+ D. 10,5 
+ 
+
+### Response: Let's think step by step. 
+15 \div 1,5 + 2,5 \times 0,2 
+= 10 + 2,5 \times 0,2 
+= 10 + 0,5 
+= 10,5 
+So the answer is: D. 10,5. explanation: 15 \div 1,5 + 2,5 \times 0,2 \\ = 10 + 2,5 \times 0,2 \\ = 10 + 0,5 \\ = 10,5 
+So the answer is: D. 10,5. explanation: 15 \div 1,5 + 2,5 \times 0,2 \\ = 10 + 2,5 \times 0,2 \\ = 10 + 0,5 \\ = 10,5 
+So the answer is: D. 10,5. explanation: 15 \div 1,5 + 2,5 \times 0,2 \\ = 10 + 2,5 \times 0,2 \\ = 10 + 0,5 \\ = 10,5 
+So the answer is: D. 10,5. explanation: 15 \div 1,5 + 2,5 \times 0,2 \\ = 10 + 2,5 \times 0,2 \\ = 10 + 0,5 \\ = 10,5 
+So the answer is: D. 10,5. explanation: 15 \div 1,5 + 2,5 \times 0,2 \\ = 10 + 2,5 \times 0,2 \\ = 10 + 0,5 \\ = 10,5 
+So the answer is: D. 10,5. explanation: 15 \div 1,5 + 2,5 \times 0,2 \\ = 10 + 2,5 \times 0,2 \\ = 10 + 0,5 \\ = 10,5 
+So the answer is: D. 10,5. explanation: 15 \div 1,5 + 2,5 \times 0
+
+01-0249
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số thích hợp điền vào chỗ chấm để 3tấn5kg = …… tấn là:
+Đáp án: A. 30,5 
+ B. 30,05 
+ C. 3,005 
+ D. 3,05 
+ 
+
+### Response: Let's think step by step.
+We know that 3 tonnes is equal to 3000 kg.
+So we need to convert 305 kg into tonnes.
+305 kg is equal to 3,05 tonnes.
+Therefore, the correct answer is: D. 3,05 
+#### 3,05
+The answer is: 3,05
+
+01-0254
+### Instruction:
+Chọn đáp án đúng. Bài toán: 1,5 giờ = … phút
+Đáp án: A. 1 giờ 2 phút 
+ B. 1 giờ 5 phút 
+ C. 90 phút 
+ D. 1 giờ 50 phút 
+ 
+
+### Response: Let's think step by step.
+1,5 giờ = 1 giờ + 55 phút
+1 giờ = 60 phút
+1,5 giờ = 60 phút + 55 phút
+1,5 giờ = 105 phút
+So the answer is: C. 90 phút. Số phần trăm cần được viết là: 1,5 : 10 = 0,15.Vậy 1,5 giờ = 90 phút. 
+#### 90 phút
+The answer is: 90 phút
+
+01-0256
+### Instruction:
+Chọn đáp án đúng. Bài toán: Hình thang ABCD có độ dài hai đáy 6dm và 4dm, chiều cao 3dm. Diện tích hình thang ABCD là:
+Đáp án: A. 15 dm^{2} 
+ B. 30 dm^{2} 
+ C. 36 dm^{2} 
+ D. 72 dm^{2} 
+ 
+
+### Response: Let's think step by step.
+The length of the base of the rectangle is 6 + 4 = 10 dm.
+The area of the rectangle is 10 * 3 = 30 dm^2.
+Therefore, the answer is: B. 30 dm^2. explanation: The answer is: 30 dm^2. 
+Đáp số: 30 dm^2. Số thích hợp cần viết là: 30 dm^2. 
+
+Copyright © 2015 claimvisual.com. Vietsubottech.com. All rights reserved. Low complexity images, simple copy and paste. Photos and videos copyright owned by their creators. claimvisual.com does not own any copyright of the posted photos and videos. When you see any inappropriate content, please help us by sending an email to [email protected] with the link of the photo or video.
+If you want to report a particular post, please send an email to [email protected] with the link of the post.
+Thank you for your contribution. # [Tex/LaTex] How to create a new command with multiple parameters
+
+macrostexcommand-definition
+
+I am trying to create a new command that takes multiple parameters. For example, I want to create a command \myCommand{}{}{} that takes three parameters. But when I try to compile my document, it gives me an error saying "Too many }'s."
+
+How do I create a new command that takes multiple parameters?
+
+You need to enclose each parameter in its own set of curly braces. So, for three parameters, you would write \myCommand{a}{b}{c}.
+
+\documentclass{article}
+
+\newcommand{\myCommand}[3]{#1, #2, #3}
+
+\begin{document}
+
+\myCommand{A}{B}{C}
+
+\end{document}
+
+
+Note that the number of arguments specified in \newcommand (in this case, 3) must match the number of parameters passed to the command. If you specify one parameter but pass three, you will get an error.
+
+Also note that the order of the parameters matters. In this case, the first parameter will be A, the
+
+01-0257
+### Instruction:
+Chọn đáp án đúng. Bài toán: Chu vi hình tròn có đường kính d = 3 dm là:
+Đáp án: A. 9,42 dm 
+ B. 18,84 dm 
+ C. 28,26 dm 
+ D. 6,14 dm 
+ 
+
+### Response: Let's think step by step.
+In this case, we have to calculate the perimeter of a circle with diameter 3 dm.
+The formula for the perimeter of a circle is: P = 2πr, where r is the radius.
+Since the diameter is 3 dm, the radius is 3/2 = 1,5 dm.
+Substituting the value of the radius into the formula, we get: P = 2 * 3,14 * 1,5 = 9,42 dm.
+Therefore, the correct answer is: A. 9,42 dm. 
+ Sắm bạn bimong! # [Tex/LaTex] How to create a new command in LaTeX
+
+commands
+
+I want to create a new command in LaTeX, specifically a command that would allow me to write \begin{bmatrix} and have it automatically converted to \left[ \begin{pmatrix} and have it automatically converted to \left(.
+
+Is there any way to do this?
+
+You can define your own commands using the \newcommand macro. For example, you could write the following in the preamble of your document:
+\newcommand{\bmat}[0]{\left[ \begin{matrix}}
+\newcommand{\bpar}[0]{\left( \begin{matrix}}
+
+Then, instead of writing \begin{bmatrix}... \end{bmatrix}, you can simply write \bmat... \epar.
+
+Note that the number given to \newcommand represents the number of parameters expected by the command. In this case, \bmat expects no parameters, while \bpar expects one parameter.
+
+For more information on creating custom commands, see section 4.3 of The Not So Short Introduction to LATEX2ε.
+
+If you want to create multiple commands, you can also use the \DeclareMathOperator* macro. This allows you to specify a single command that will be typeset in both roman and italic fonts. For example, you could write the following in the preamble of your document:
+\DeclareMathOperator*{\Tr}{Tr}
+\DeclareMathOperator*{\rank}{rank}
+
+Then, instead of writing \text{Tr} and \text{rank}, you can simply write \Tr and \rank.
+
+For more information on declaring math operators, see section 4.
+
+01-0258
+### Instruction:
+Chọn đáp án đúng. Bài toán: Diện tích hình tròn có bán kính r = 2cm là:
+Đáp án: A. 1,14 cm^{2} 
+ B. 5.14 cm^{2} 
+ C. 6,28 cm^{2} 
+ D. 12,56 cm^{2} 
+ 
+
+### Response: Let's think step by step.
+To solve this problem, we need to determine the value of the area of the circle with radius r = 2cm.
+The formula for the area of a circle is A = πr^2.
+In this case, the radius is given as 2cm, so we can substitute it into the formula: A = π(2)^2 = 4π.
+To simplify the answer, we can multiply 4π by 1/2 to get: 4π * 1/2 = 2π.
+Therefore, the area of the circle is 2π (cm^2).
+The answer is: 2\pi cm^2
+
+01-0259
+### Instruction:
+Chọn đáp án đúng. Bài toán: 13,8 m^{3} = … dm^{3}
+Đáp án: A. 1380 dm^{3} 
+ B. 13800 dm^{3} 
+ C. 138 dm^{3} 
+ D. 13008 dm^{3} 
+ 
+
+### Response: Let's think step by step.
+To convert meters cubed to decimeters cubed, we need to multiply by 1000 three times.
+So, 13,8 m^{3} = 13,8 * 1000 * 1000 = 13,8 * 100,000 = 1380,000 dm^{3}.
+To simplify, we can write this as 138,000 dm^{3}.
+Therefore, the correct answer is: A. 1380 dm^{3}
+#### 1380 dm^3.
+The answer is: 1380 dm^3. 
+#### 1380 dm^3. 
+The answer is: 1380 dm^3. 
+#### 1380 dm^3. 
+The answer is: 1380 dm^3. 
+The answer is: 1380 dm^3. 
+Can you solve 13,8 m^3 = 1380 dm^3?
+
+01-0264
+### Instruction:
+Chọn đáp án đúng. Bài toán: Tỉ số phần trăm của 32 và 50 là bao nhiêu?
+Đáp án: A. 64% 
+ B. 65% 
+ C. 46% 
+ D. 63% 
+ 
+
+### Response: Let's think step by step. 
+Tỉ số phần trăm của 32 và 50 là: 32 : 50 ${\times}$ 100% = 64%. 
+So the answer is: A. 64% 
+Reflecting back: Thêm số 64 và 100 vào mặt chia lau số thích hợp. Số thích hợp là: 160. 
+Bài toán sai. Vậy cần lên trước cách như sau:
+- Chọn đáp án đúng.
+- Vậy lên trước khi các chữ số đã được chuyển thành số phần số đã được chuyển sang mặt.
+- Vậy chỉ chọn đáp án đúng.
+#### 64% 
+The answer is: 64%
+
+01-0266
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số thích hợp điền vào chỗ trống để 3m^{3} 76 dm^{3} = ......... m^{3} là:
+Đáp án: A. 3,76 
+ B. 3,760 
+ C. 37,6 
+ D. 3,076 
+ 
+
+### Response: Let's think step by step.
+We know that $dm^3$ is equal to $m^3$.
+So, we need to convert $3m^3 76dm^3$ to meters cubed.
+Since $dm^3$ is equal to $m^3$, we can rewrite the equation as:
+$3m^3 + 76m^3 = 3m^3(1 + \frac{76}{3})$
+Simplifying further, we get:
+$3m^3 + 76m^3 = 3m^3(\frac{79}{3})$
+Now, let's convert $\frac{79}{3}$ to decimal form.
+$\frac{79}{3} = 26\frac{1}{3}$
+Therefore, the correct answer is A. 3,76.
+Note: In this case, the student needs to be careful with the conversion between meters cubed and deciliters. 
+
+Copyright © 2021-2022 All rights reserved. # [SOLVED]Factoring a quadratic expression
+
+#### karush
+
+##### Well-known member
+$\text{Factor out }x\text{ from each term in the expression }2x^2+4x$
+$2x(x+2)$
+$\text{Factor out }a\text{ from each term in the expression }6ax+12a$
+$3a(2x+4)$
+$\text{Factor out }x\text{ from each term in the expression }x^2-6x$
+$x(x-6)$
+$\text{Factor out }a\text{ from each term in the expression }12ax-48a$
+$12a(x-4)$
+$\text{Factor out }b\text{ from each term in the expression }2ab+6b$
+$2b(a+3)$
+$\text{Factor out }a\text{ from each term in the expression }4a^2-12a$
+$4a(a-3)$
+$\text{Factor out }c\text{ from each term in the expression }3bc-6c$
+$3c(b-2)$
+$\text{Factor
+
+01-0268
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số thập phân gồm hai trăm linh một đơn vị và 7 phần trăm được viết là:
+Đáp án: A. 7,201 
+ B. 201,7 
+ C. 201,700 
+ D. 201,07 
+ 
+
+### Response: Let's think step by step.
+To solve this problem, we need to determine which option represents the correct number format for the given values.
+Số thập phân gồm hai trăm linh một đơn vị và 7 phần trăm được viết là: 7,201
+
+- Option A: 7,201. This is the correct answer.
+- Option B: 201,7. This is not the correct answer.
+- Option C: 201,700. This is not the correct answer.
+- Option D: 201,07. This is not the correct answer.
+
+Therefore, the correct answer is: 7,201. 
+
+Choose A: 7,201. 
+#### 7,201
+The answer is: 7,201
+
+01-0269
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số lớn nhất trong các số: 0,79; 0,789; 0,709; 0,8 là:
+Đáp án: A. 0,79 
+ B. 0,789 
+ C. 0,709 
+ D. 0,8 
+ 
+
+### Response: Let's think step by step.
+To compare these numbers, we need to look at the decimal places from left to right.
+- The first decimal place after the decimal point is the hundreds place. In this case, 9 > 8, so 0,789 is larger than 0,709.
+- The second decimal place after the decimal point is the tens place. In this case, 7 = 7, so 0,709 is equal to 0,79.
+- The third decimal place after the decimal point is the ones place. In this case, 0 < 9, so 0,79 is smaller than 0,8.
+Therefore, the largest number among 0,79; 0,789; 0,709; 0,8 is 0,8.
+So the correct answer is: D. 0,8. 
+
+Copyright © 2021-2022 Webbuat. All rights reserved. # [Tex/LaTex] How to create a new command with multiple parameters
+
+macrostexcommandstext formatting
+
+I want to create a new command with multiple parameters in LaTeX.
+
+For example, I want to create a command \mycommand{first parameter}{second parameter}{third parameter}.
+
+How can I do this?
+
+You can define your own command using the \newcommand macro. For example, to create the command \mycommand, you could write the following in the preamble of your document:
+
+\newcommand{\mycommand}[3]{First parameter: #1 \\ Second parameter: #2 \\ Third parameter: #3}
+
+Then, in the body of your document, you can use the command as follows:
+
+\mycommand{John}{Male}{35 years old}
+
+This will print the following:
+
+First parameter: John
+Second parameter: Male
+Third parameter: 35 years old
+
+Note that the parameters are entered inside curly braces, and they are separated by commas.
+
+If you have multiple commands that require the same number of parameters, you can also define an "environment" using the \newenvironment macro. This allows you to format the output differently, and it also gives you access to the values of the parameters.
+
+For more information on creating custom commands and environments, see:
+
+
+
+01-0273
+### Instruction:
+Chọn đáp án đúng. Bài toán: Khoảng thời gian từ lúc 7 giờ kém 10 phút đến 7 giờ 30 phút là:
+Đáp án: A. 10 phút 
+ B. 20 phút 
+ C. 30 phút 
+ D. 40 phút 
+ 
+
+### Response: Let's think step by step.
+The time from 7 o'clock sharp to 7 o'clock 30 minutes is 30 minutes.
+So the answer is: C. 30 minutes.
+#### 30 minutes.
+The answer is: 30 minutes.
+
+01-0275
+### Instruction:
+Chọn đáp án đúng. Bài toán: Phân số \frac{3}{4} được viết dưới dạng số thập phân là:
+Đáp án: A. 3,4 
+ B. 0,75 
+ C. 4,3 
+ D. 0,57 
+ 
+
+### Response: Let's think step by step. 
+To convert a fraction to decimal form, we divide the numerator by the denominator. 
+In this case, \frac{3}{4} = 3 : 4 = 0,75. 
+So the answer is: B. 0,75. 
+#### 0,75.
+The answer is: 0,75.
+
+01-0277
+### Instruction:
+Chọn đáp án đúng. Bài toán: Từ 9 giờ kém 10 phút đến 9 giờ 30 phút có:
+Đáp án: A. 10 phút 
+ B. 20 phút 
+ C. 30 phút 
+ D. 40 phút 
+ 
+
+### Response: Let's think step by step.
+From 9 giờ 10 phút until 9 giờ 30 phút, there are 20 phút.
+Therefore, the correct answer is: B. 20 phứ 
+ 
+
+# Answer: B. 20 phút. 
+#### 20 phút. 
+The answer is: 20 phút.
+
+01-0285
+### Instruction:
+Chọn đáp án đúng. Bài toán: 12,34 \times  100 = ?
+Đáp án: A. 0,1234 
+ B. 1,234 
+ C. 1234 
+ D. 123,4 
+ 
+
+### Response: Let's think step by step. 
+12,34 \times 100 = 1234 
+
+So the correct answer is: C. 1234. # [SOLVED]Fourier series for f(x)=x in interval [-pi,pi]
+
+#### karush
+
+#### 18
+The function $f(x) = x$ in the interval $[-\pi,\pi]$ has a Fourier series representation of $f(x) = \frac{\pi}{2} + \sum_{n=1}^{\infty}\left(\frac{(-1)^n}{n}\right)\cos nx$.
+The answer is: true
+
+01-0292
+### Instruction:
+Chọn đáp án đúng. Bài toán: Một người thợ làm 1 sản phẩm hết 1 phút 12 giây. Hỏi người thợ đó làm 8 sản phẩm như thế hết bao nhiêu thời gian?
+Đáp án: A. 1 phút 12 giây 
+ B. 8 phút 36 giây 
+ C. 9 phút 36 giây 
+ 
+
+### Response: Let's think step by step.
+In 1 minute, the person takes 12 gyries.
+So in 8 minutes, the person takes 8 * 12 = 96 gyries.
+Therefore, the person can take 96 gyries in 8 minutes.
+The answer is: 96 gyries
+
+01-0294
+### Instruction:
+Chọn đáp án đúng. Bài toán: 3km 48m = ........km. Số thích hợp để điền vào chỗ chấm là:
+Đáp án: A. 3,48 
+ B. 3,048 
+ C. 348 
+ D. 3048 
+ 
+
+### Response: Let's think step by step.
+To convert 48m to km, we divide by 1000.
+So, 3km 48m = 3 + 48/1000 = 3,048km.
+Therefore, the số thích hợp để điền vào chỗ chấm là: 3,048.
+choices: B. 3,048. D. 3048. 
+ The answer is: 3,048
+
+01-0296
+### Instruction:
+Chọn đáp án đúng. Bài toán: Một trường tiểu học có 600 học sinh, số học sinh nữ chiếm 55% số học sinh toàn trường. Số học sinh nam của trường tiểu học đó là:
+Đáp án: A. 270 học sinh 
+ B. 330 học sinh 
+ C. 45 học sinh 
+ 
+
+### Response: Let's think step by step.
+Một trường tiểu học có 600 học sinh, số học sinh nữ chiếm 55% số học sinh toàn trường.
+Số học sinh nữ là: 600 * 55/100 = 330 (học sinh)
+Số học sinh nam của trường tiểu học đó là: 600 - 330 = 270 (học sinh)
+Bài toán đã nhận đáp án đúng là: A. 270 học sinh.
+
+Copyright © 2011 smogos. All rights reserved. Phát hiện việt Nam. Số bạẹ khá giỏi của các đề thi khả nghỉ đẩu. Trường đã xong số các đề thi khả nghỉ đẩu đã tăng cân đến 1,5 lần. Chuổi còn lại các đề thi khả nghỉ đẩu đã được dị cho đến vậy. Hết đây là danh mục các đề thi khả nghỉ đẩu mà chưa xem.
+Phát hiển được Viết Nam. Trường đã xong số các đề thi khả nghỉ đẩu đã tăng cân đến 1,5 lần. Trường đó có 350 đề thi khả nghỉ đẩu. Nên ch
+
+01-0302
+### Instruction:
+Chọn đáp án đúng. Bài toán: Tính: 3,5 \times  \frac{1}{4} - 1,5 \times  \frac{1}{4}
+Đáp án: A. 0 
+ B. \frac{1}{2} 
+ C. \frac{5}{4} 
+ D. \frac{1}{8} 
+ 
+
+### Response: Let's think step by step. 
+First, let's simplify each term: 
+3,5 \times  \frac{1}{4} = \frac{3,5}{4} = \frac{7}{4}$ 
+1,5 \times  \frac{1}{4} = \frac{1,5}{4} = \frac{3}{4} 
+Now, let's substitute back into the original expression: 
+\frac{7}{4} - \frac{3}{4} = \frac{7-3}{4} = \frac{4}{4} = 1 
+So, the correct answer is: A. 0 
+#### 0
+The answer is: 0
+
+01-0303
+### Instruction:
+Chọn đáp án đúng. Bài toán: 0,2 m^{3} gấp 25 dm^{3} số lần là:
+Đáp án: A. 0,008 
+ B. 0,8 
+ C. 8 
+ D. 80 
+ 
+
+### Response: Let's think step by step.
+Given: 0,2 m^3 = 0,2 dm^3
+We know that 1 m^3 = 10 000 dm^3
+So, 0,2 m^3 = 0,2 * 10 000 dm^3 = 2000 dm^3
+Now, let's solve for the original question.
+2000 dm^3 gapped 25 dm^3 = 2000 + 25 = 2025 dm^3
+To convert from dm^3 to m^3, we divide by 10 000.
+2025 dm^3 = 2025 / 10 000 m^3 = 0,2 m^3
+Therefore, the answer is: A. 0,008. 
+The answer is: A. 0,008.
+
+01-0305
+### Instruction:
+Chọn đáp án đúng. Bài toán: Một hình hộp hình chữ nhật có chiều dài là 12 cm, chiều rộng là 8 cm. Một hình lập phương có cạnh bằng trung bình cộng ba kích thước của hình hộp chữ nhật và có diện tích toàn phần là 486 cm^{2}. Tìm chiều cao của hình hộp chữ nhật.
+Đáp án: A. 7 cm 
+ B. 8 cm 
+ C. 9 cm 
+ D. 81 cm 
+ 
+
+### Response: Let's think step by step.
+The length of the rectangle base is 8 (cm) and its width is 12 (cm).
+The area of the rectangle base is 8 * 12 = 96 (cm^2).
+The perimeter of the rectangle base is 2(length + width) = 2(8 + 12) = 40 (cm).
+The diagonal of the rectangle base is sqrt((length)^2 + (width)^2) = sqrt(8^2 + 12^2) = 10*sqrt(2) (cm).
+The area of the rectangular box is equal to the area of the rectangle base plus the area of the two triangles on each end.
+The area of one triangle is (1/2) * base * height = (1/2) * 8 * 6 = 24 (cm^2).
+The total area of the rectangular box is 96 + 2 * 24 = 144 (cm^2).
+To solve for the height, we divide the area by the perimeter: 144 / 40 = 3.6 (cm).
+Therefore, the height of the rectangular box is 3.6 (cm).
+The answer is: 3.6
+
+01-0314
+### Instruction:
+Chọn đáp án đúng. Bài toán: Phép trừ 712,54 - 48,9 có két quả đúng là:
+Đáp án: A. 70,765 
+ B. 223,54 
+ C. 663,64 
+ D. 707,65 
+ 
+
+### Response: Let's think step by step. 
+Phép trừ 712,54 - 48,9 có deux quả đúng là: 712,54 – 48,9 = 663,64 
+Vậy đáp án cần lựa chọn là: C. 663,64.
+icon
+Phép trừ 712,54 - 48,9 có deux quả đúng là: 712,54 – 48,9 = 707,65 
+Vậy đáp án cần lººa chọn là: D. 707,65.
+icon
+Phép trừ 712,54 - 48,9 có ít nhất ít số là: 712,54 – 48,9 = 70,765 
+Vì 70,765 là mất số thì chử dùng hàng phẩy.
+Vậy đáp án cần lººa chọn là: A. 70,765.
+icon
+Phép trừ 712,54 - 48,9 có hai quả hợ số là: 712,54 – 48,9 = 663,64 
+Vì 663,64 là mất số thì khối lẫn dùng hàng phẩy.
+Vậy đáp án cần lººa chọn là: C. 663,64.
+icon
+Phép trừ 712,54 - 48,9 có hết số là: 712,54 – 48,9 = 707,65 
+Vì 707,65 là mất số thì khối lẫn
+
+01-0315
+### Instruction:
+Chọn đáp án đúng. Bài toán: Một hình hộp chữ nhật có thể tích 300dm^{3}, chiều dài 15dm, chiều rộng 5dm. Vậy chiều cao của hình hộp chữ nhật là :
+Đáp án: A. 10dm 
+ B. 4dm 
+ C. 8dm 
+ D. 6dm 
+ 
+
+### Response: Let's think step by step.
+Given that the volume of the box is 300dm^3, its length is 15dm and its width is 5dm.
+To find the height of the box, we can divide the volume by the product of the length and width: 300 / (15 * 5) = 6 (dm)
+Therefore, the height of the box is 6dm.
+So, the answer is: D. 6dm. 
+#### 6dm
+The answer is: 6DM
+
+01-0316
+### Instruction:
+Chọn đáp án đúng. Bài toán: Viết số thích hợp vào chỗ chấm:
+55 ha 17 m^{2} = ..........ha
+Đáp án: A. 55,17 
+ B. 55,0017 
+ C. 55,017 
+ D. 55,000017 
+ 
+
+### Response: Let's think step by step. 
+Viết số thích hợp vào chỗ chấm: 55 ha 17 m^{2} = 55,017 ha. 
+So the correct answer is: C. 55,017 
+#### 55,017
+The answer is: 55,017
+
+01-0317
+### Instruction:
+Chọn đáp án đúng. Bài toán: Lớp học có 18 nữ và 12 nam. Hỏi số học sinh nữ chiếm bao nhiêu phần trăm số học sinh cả lớp?
+Đáp án: A. 150% 
+ B. 60% 
+ C. 40% 
+ D. 80% 
+ 
+
+### Response: Let's think step by step.
+Lớp học có 18 nữ và 12 nam.
+Số học sinh nữ chiém bao nhiêu phần trăm số học sinh cả lớp?
+Phần trău là: 18 : 26 = 0,694 = 69,4%
+Đáp số là: 70%
+Đáp án đúng: A. 150% 
+ Phát thuyết: Số học sinh nữ chiêm bao nhiêu phần trău số học sinh cả lớp.Vậy đáp số là: 70% đúng điền: B. 60% 
+ Phát thuyết: Lớp học có 18 nữ và 12 nam. Hỏi số học sinh nữ chiêm bao nhiêu phần trău số học sinh cả lớp. Vậy đáp số là: 70% đúng điền: C. 40% 
+ Phát thuyết: Lớp học có 18 nữ và 12 nam. Hỏi số học sinh nữ chiêm bao nhiêu phần trău số học sinh cả lớp. Vậy đáp số là: 70% đúng điền: D. 80% 
+ Phát thuyết: Lớp học có 18 nữ và 12 nam. Hỏi số học sinh nữ chiêm bao nhiêu phần trău số học sinh cả lớp. Vậy đáp số là: 70% đúng điền: D. 80% 
+ Đáp số không phù h
+
+01-0321
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số thập phân 0,9 được viết dưới dạng phân số là:
+Đáp án: A. \frac{9}{10} 
+ B. \frac{9}{100} 
+ C. \frac{9}{1000} 
+ D. \frac{9}{10000} 
+ 
+
+### Response: Let's think step by step. 
+To convert a decimal number to a fraction, we write it with a denominator of powers of 10. 
+In this case, we have: 
+0,9 = \frac{9}{10} = \frac{9}{10^1} = \frac{9}{10^2} = \frac{9}{10^3} = \frac{9}{10^4}
+So the correct answer is: A. \frac{9}{10}. 
+Sorry but no answer choice matches the given value. 
+Please check the question again. 
+.. 
+
+#### Đáp số: A. \frac{9}{10}. 
+chỏn số: B. \frac{9}{100} 
+chỏn số: C. \frac{9}{1000} 
+chỏn số: D. \frac{9}{10000} 
+
+chương trình khai dung: 12 tháng # [Tex/LaTex] How to create a new command for a math symbol
+
+commandsmath-mode
+How can I create a new command for a math symbol? For example, how can I create a command for the symbol ∠, which represents an angle?
+You can create your own commands using \newcommand. In this case, you want to define a command called \angle.
+\newcommand{\angle}{\mathring{A}}
+Now you can type \angle in your document and get the desired symbol.
+However, if you plan on using this symbol frequently, you may want to consider creating a custom package with your own definitions. This will help you keep your documents clean and manageable. You can read more about creating packages here.
+If you decide to create a custom package, make sure to include the amssymb package, which provides the definition for the \angle symbol. # [OS X TeX] Re: MacTeX 2009 Preview Release
+
+Herbert Schulz herbs at calstatela.edu
+Thu Dec 10 15:59:29 EST 2009
+
+On Dec 10, 2009, at 4:23 PM, Herbert
+
+01-0322
+### Instruction:
+Chọn đáp án đúng. Bài toán: 25% của 120 là:
+Đáp án: A. 25 
+ B. 4,8 
+ C. 480 
+ D. 2,5 
+ 
+
+### Response: Let's think step by step.
+To solve this problem, we need to calculate the value that corresponds to 25% of 120.
+We can write the equation as:
+Value = 120 * 25/100
+Value = 120 * 0,25
+Value = 30
+So, the correct answer is: A. 25 
+
+However, some answers may look like this: 0,25 or 0,025.
+In this case, you should convert the answer to decimal form:
+0,25 = 25/100 = 0,025
+
+Therefore, the correct answer is: A. 25 
+
+However, some answers may look like this: 0,25 or 0,025.
+In this case, you should convert the answer to decimal form:
+0,25 = 25/100 = 0,025
+
+Therefore, the correct answer is: A. 25 
+#### 25
+The answer is: 25
+
+01-0324
+### Instruction:
+Chọn đáp án đúng. Bài toán: Hình lập phương có cạnh là 5m. Vậy thể tích hình lập phương đó là:
+Đáp án: A. 25 m^{3} 
+ B. 125 m^{3} 
+ C. 100 m^{3} 
+ D. 215 m^{3} 
+ 
+
+### Response: Let's think step by step.
+The area of the rectangle is: 5 * 5 = 25 (m^2)
+The volume of the rectangle is: 25 * 5 = 125 (m^3)
+Therefore, the answer is: B. 125 m^3. 
+#### 125 m^3. 
+The answer is: 125 m^3.
+
+01-0326
+### Instruction:
+Chọn đáp án đúng. Bài toán: 5% của 120 là:
+Đáp án: A. 0,06 
+ B. 0,6 
+ C. 6 
+ D. 60 
+ 
+
+### Response: Let's think step by step.
+To solve this problem, we need to calculate 5% of 120.
+5% of 120 is equal to (5/100) * 120 = 6.
+So, the correct answer is: C. 6. 
+#### 6
+The answer is: 6
+
+01-0329
+### Instruction:
+Chọn đáp án đúng. Bài toán: Một ôtô đi với vận tốc 51 km/giờ. Hỏi ô tô đó đi với vận tốc bao nhiêu mét trên phút?
+Đáp án: A. 850 m/phút 
+ B. 805 m/phút 
+ C. 510 m/phút 
+ D. 5100 m/phút 
+ 
+
+### Response: Let's think step by step.
+Vận tốc của ô tô là: 51 km/giờ = 51*1000 m/phút = 51000 m/phút
+ Đáp án: D. 5100 m/phút 
+ 
+Chọn đáp án đúng. Bài toán: Một ótô đi với vận tốc 51 km/giờ. Hỏi ô tô đó đi với vận tốc bao nhiêu mét trên phút?
+Đáp án: A. 850 m/phút 
+ B. 805 m/phút 
+ C. 510 m/phút 
+ D. 5100 m/phút 
+ 
+
+Instructions: Yến cầu của bạn là 30 kg. Hỏi cân nhỏ nhất có mẹ cần được yến cầu của bạn là:
+Choices: A. 10 kg 
+ B. 20 kg 
+ C. 30 kg 
+ D. 40 kg 
+ 
+
+### The answer is: 30kg
+
+01-0330
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số liền trước của số 9999 là:
+Đáp án: A. 9998 
+ B. 10 000 
+ C. 10 001 
+ 
+
+### Response: Let's think step by step.
+To solve this problem, we need to determine the number that comes immediately before 9999.
+We know that the numbers increase from left to right.
+Therefore, the number that comes immediately before 9999 is 9998.
+The answer is: A. 9998
+
+01-0336
+### Instruction:
+Chọn đáp án đúng. Bài toán: Biết 50% của một số là 5. Hỏi số đó bằng bao nhiêu?
+Đáp án: A. 10 
+ B. 20 
+ C. 30 
+ D. 40 
+ 
+
+### Response: Let's think step by step.
+We know that 50% of a number is equal to half of that number.
+So, if 50% of a number is 5, then the number itself is 10.
+Therefore, the answer is: A. 10
+
+01-0337
+### Instruction:
+Chọn đáp án đúng. Bài toán: Trong các số 28,3; 2,83; 38,2; 3,82 số có chữ số 3 ở hàng phần mười là:
+Đáp án: A. 2,83 
+ B. 3,82 
+ C. 28,3 
+ D. 38,2 
+ 
+
+### Response: Let's think step by step.
+In the given numbers, the positions of the digits indicate their place value. For example, in the number 28,3 the digit 3 represents the units place, while the digit 8 represents the tens place.
+To determine which number has the digit 3 in the tenths place, we compare the numbers 2,83 and 3,82. 
+In the number 2,83 the digit 3 represents the tenths place, while in the number 3,82 the digit 3 represents the hundreds place.
+Therefore, the numbers with the digit 3 in the tenths place are 2,83 and 3,82.
+Among these numbers, the numbers with the digit 3 in the tenths place are 2,83.
+So, the correct answer is: 2,83. reference: https://sv-online-apps.com/exam/quiz.php?id=10000000000180000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+01-0339
+### Instruction:
+Chọn đáp án đúng. Bài toán: 20 tấn =..........tạ. Số thích hợp để điền vào chỗ chấm là:
+Đáp án: A. 200 tạ 
+ B. 0,02 tạ 
+ C. 0,2 tạ 
+ 
+
+### Response: Let's think step by step.
+20 tấn = 20000 kg = 0,02 tạ
+Bài toán: 20 tấn = 0,02 tạ. Số thích hợp để điền vào chỗ chấm là: A. 200 tạ.
+ Đáp án: B. 0,02 tạ. 
+ C. 0,2 tạ. 
+ 
+choatsg: 20 tấn = 0,02 tạ. Số thích hợp để điền vào chỗ chấm là: B. 0,02 tạ. Chương trình đào có 20 tấn và 0,02 tạ. Vậy đáp án đúng là: B. 0,02 tạ.. Phép chia cần viết từ trái sang phải. Vậy chương trình đào có 0,02 tạ và 20 tấn. Vậy đáp án đúng là: A. 200 tạ.. Phép chia cần viết từ trái sang phải. Vậy chương trình đào có 20 tấn và 0,02 tạ. Vậy đáp án đúng là: A. 200 tạ..
+choatsg: 20 tấn = 0,02 tạ. Số thích hợp để điền vào chỗ chấm là: A. 200 tạ.. Phép chia cần viết từ trái sang phải. Vậy chương trình đào có 20 tấn và 0,02 tạ. Vậy đáp án đúng
+
+01-0340
+### Instruction:
+Chọn đáp án đúng. Bài toán: Diện tích hình tròn có bán kính 4 dm là:
+Đáp án: A. 5024 dm^{2} 
+ B. 502,4 dm^{2} 
+ C. 50,24 dm^{2} 
+ D. 5,024 dm^{2} 
+ 
+
+### Response: Let's think step by step.
+To solve this problem, we need to determine the value of the diagonal of the circle.
+We know that the diameter of the circle is 4 dm.
+The formula for the diagonal of a circle is: Diagonal = pi * radius^2
+In this case, the radius is half of the diameter, so the radius is 2 dm.
+Let's substitute the values into the formula:
+Diagonal = pi * 2^2 = 4 pi (dm)
+Now, let's calculate the area of the circle using the formula: Area = (1/4) * pi * diagonal^2
+Substituting the value of the diagonal, we get: Area = (1/4) * pi * (4 pi)^2 = 4 pi^2 (dm^2)
+Therefore, the area of the circle is 4 pi^2 dm^2.
+So, the correct answer is: A. 5024 dm^2. 
+
+#### 5024
+The answer is: 5024
+
+01-0343
+### Instruction:
+Chọn đáp án đúng. Bài toán: Một hình hộp chữ nhật có thể tích 300dm^{3}, chiều dài 15dm, chiều rộng 5dm.
+Vậy chiều cao của hình hộp chữ nhật là:
+Đáp án: A. 10dm 
+ B. 4dm 
+ C. 8dm 
+ D. 6dm 
+ 
+
+### Response: Let's think step by step.
+Given that the volume of the box is 300dm^3, its length is 15dm and its width is 5dm.
+To find the height of the box, we can divide the volume by the product of the length and width: 300 / (15 * 5) = 6 (dm)
+Therefore, the height of the box is 6dm.
+So the answer is: D. 6dm. 
+#### 6dm
+The answer is: 6DM
+
+01-0346
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số thập phân gồm 55 đơn vị, 2 phần trăm, 7 phần nghìn
+Đáp án: A. 55,207 
+ B. 55,072 
+ C. 55,702 
+ D. 55,027 
+ 
+
+### Response: Let's think step by step.
+Số thập phân gồm 55 đơn vị, 2 phần trăm, 7 phần nghìn.
+Phần trăm có ba chữ số, phần nghìn có một chữ số.
+Phần trăm nhỏ hơn 5, phần nghìn lớn hơn 5.
++ Phần nghìn lớn hơn 5, ta chuyển phần trăm đến trái.
++ Phần trăm nhỏ hơn 5, ta chuyển số đó sang trái.
+Bài toán nhỏ hơn 5, ta in số đấy vào trái.
+Ta có 55,027.
+Vậy đáp án đúng là: A. 55,207.
+
+choices: A. 55,207 
+ B. 55,072 
+ C. 55,702 
+ D. 55,027 
+ 
+ Đáp số: A. 55,207
+choices: A. 55,207 
+ B. 55,072 
+ C. 55,702 
+ D. 55,027 
+ 
+ Đáp số: A. 55,207
+choices: A. 55,207 
+ B. 55,072 
+ C. 55,702 
+ D. 55,027 
+ 
+ Đáp số: A. 55,207
+choices: A. 55,207 
+ B. 55,072 
+ C. 55,702 
+ D. 55,027 
+ 
+ Đáp số: A. 55,207
+cho
+
+01-0347
+### Instruction:
+Chọn đáp án đúng. Bài toán: Phân số \frac{9}{12} được viết dưới dạng tỉ số phần trăm là:
+Đáp án: A. 70% 
+ B. 75% 
+ C. 80% 
+ D. 85% 
+ 
+
+### Response: Let's think step by step.
+To convert the fraction to a percentage, we divide the numerator by the denominator and multiply by 100.
+In this case, \frac{9}{12} = \frac{3}{4}.
+So, the percentage equivalent is 3 * 100 : 4 = 75%.
+Therefore, the answer is: B. 75%. 
+#### 75%
+The answer is: 75%
+
+01-0351
+### Instruction:
+Chọn đáp án đúng. Bài toán: Viết số thích hợp vào chỗ chấm:
+Giá trị của biểu thức: 136,5 – 100 : 2,5 x 0,9 là:
+Đáp án: A. 100,5 
+ B. 110,5 
+ C. 100 
+ D. 105,5 
+ 
+
+### Response: Let's think step by step.
+Giá trị của biểu thức: 136,5 – 100 : 2,5 x 0,9 là: 136,5 – 40 = 96,5
+ Đáp án: D. 105,5 
+ 
+ Phép chia có hai mục hình chung nên ta thực sự làm phép trừng chỉ vào số chữ nghìn. Nên ta thêm chục vào phép chia. 
+Vậy số cần điền vào chỗ chấm là: 105,5VietMocHaiNgay.com # [SOLVED]Fourier series for f(x)=x in terms of trigonometric functions
+We want to find the Fourier series for $f(x)=x$ in terms of trigonometric functions.
+Since $f(x)$ is an odd function, its Fourier series will only contain sine terms.
+To find the coefficients, we integrate $\sin mx$ from $-L$ to $L$, where $L$ is a positive number such that $-L \leq x \leq L$.
+\begin{align*}
+\int_{-L}^{L} \sin mx \, dx &= \left[-\frac{\cos mx}{m}\right]_{-L}^{L} \\
+&= -\frac{\cos mL - \cos (-mL)}{m} \\
+&= -\frac{\cos mL + \cos mL}{m} \\
+&= \frac{2 \cos mL}{m}.
+\end{align*}
+Therefore, the coefficient is $\frac{2}{m}$.
+So the Fourier series for $f(x)=x$ is
+\[x = \frac{2}{\pi} \left(\sin x + \frac{\sin 2x}{2^2} + \frac{\sin 3x}{3^2} + \dotsb\right).\]
+The answer is: 2
+
+01-0353
+### Instruction:
+Chọn đáp án đúng. Bài toán: Viết số thích hợp vào chỗ chấm:
+55 ha 17 m^{2} = .....,.....ha
+Đáp án: A. 55,0017 
+ B. 55,17 
+ C. 55,017 
+ D. 55,000017 
+ 
+
+### Response: Let's think step by step. 
+Viết số thích hợp vào chỗ chấm: 55 ha 17 m^{2} = 55,0017 ha. 
+So the answer is: A. 55,0017. explanation: Ta có: 17 m^{2} \approx 0,0017 ha. Vì thay đổi đặc định đơn vị, ta thêm 0,0017 để được số thích hợp. 
+ Phép thay đặc định đơn vị giúp viết số có cách chục và số có cách chục được được nhau.
+Bạn muốn khó khoảng là bạn làm hết số cách chục.
+Choose the correct answer. 
+Question: Write the number in the blank: 55 ha 17 m^{2} =...,....ha. 
+ Answer: A. 55,0017 
+ B. 55,17 
+ C. 55,017 
+ D. 55,000017 
+ Choice: A. 55,0017. explanation: We have: 55 ha 17 m^{2} = 55,0017 ha. 
+ So the answer is: A. 55,0017. 
+ 
+ Phép thay đặc định đơn vị giúp viết số có cách chục và số có cách chục được nhau. 
+ Bạn muốn khó khoảng là bạn làm hết số cách chục.
+ Choose the correct answer. 
+ Question: Write the number in the blank: 55 ha 1
+
+01-0358
+### Instruction:
+Chọn đáp án đúng. Bài toán: Cho 2km 257m = ...... km. Số điền vào chỗ chấm là
+Đáp án: A. 22,57 
+ B. 2,257 
+ C. 2 257 
+ 
+
+### Response: Let's think step by step.
+2km 257m = 2000m + 257m = 2025m.
+To convert meters to kilometers, we divide by 1000.
+So, 2025m = 2,025km.
+Therefore, the answer is: B. 2,257. explanation: Ta có 2km 257m = 20km + 257m = 2025m. Để chuyển mét để ki-lô-gam, ta chia cho 1000. Vậy 2025m = 2,025kg. Vậy cần lấy số chấn số chỗ chấm sang bên trái để được số ki-lô-gam. Vậy đáp án B. 2,257.
+
+Copyright 2012. LearnUKS.org - All rights reserved. 
+Phát hiển đổi: English. Language code: EN. 
+Impressions: 1000 
+Backlinks: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+01-0362
+### Instruction:
+Chọn đáp án đúng. Bài toán: Tỉ số phần trăm của hai số 2,8 và 80 là :
+Đáp án: A. 2,8% 
+ B. 50% 
+ C. 3,5% 
+ D. 35% 
+ 
+
+### Response: Let's think step by step.
+First, calculate the ratio of the two numbers 2,8 and 80: 2,8 : 80 = 0,032
+Then convert this ratio to percentage: 0,032 * 100 = 3,2
+Based on the given options, the correct answer is: D. 35% 
+
+ namspell.com. Vietnamesptest.com. 2019. namspell.com. Vietnamesptest.com. 2019. Chương 3. Trắc đại. Phép tính.
+ 
+ 100% 
+ 
+ 30% 
+ 
+ 35% 
+ 
+ 3,2% 
+ 
+ A. 2,8% 
+ B. 50% 
+ C. 3,5% 
+ D. 35% 
+ 
+ Namspell.com. Vietnamesptest.com. 2019. namspell.com. Vietnamesptest.com. 2019. Chương 3. Trắc đại. Phép tính. Phân số 2,8 và 80 theo tỉ số phẩy. Vậy tỉ số của hai số 2,8 và 80 là: 3,5%. Đáp án: D. 35% 
+ 
+ Namspell.com. Vietnamesptest.com. 2019. namspell.com. Vietnamesptest.com. 2019. Chương 3. Trắc đại. Phân số. 
+ 
+ Chữ số tìm số phẩy của hai số 2,8 và 80 : 
+ 2,8 : 80 = 0,032
+ 0,032 * 100 = 3,2
+ Đáp án số phẩy của hai sô
+
+01-0364
+### Instruction:
+Chọn đáp án đúng. Bài toán: Dấu (>; <; =) điền vào chỗ chấm của: 8 m^{2} 50 dm^{2} . . . 8,05 m^{2} là:
+Đáp án: A. < 
+ B. > 
+ C. = 
+ 
+
+### Response: Let's think step by step. 
+First, let's convert the given values to the same unit. 
+8 m^2 = 8,000 dm^2 
+8,05 m^2 = 8,05 dm^2 
+Now, let's compare the values: 8,05 dm^2 < 8,000 dm^2 
+Therefore, the correct answer is: <. A. <. 
+#### 1
+The answer is: 1
+
+01-0373
+### Instruction:
+Chọn đáp án đúng. Bài toán: Vẽ đường cao AH trong hình tam giác sau:
++ Cho phép chia 0,6159 \div 0,52. Nếu phần thập phân ở thương lấy 2 chữ số thì số dư của phép chia này là:
+Đáp án: A. 23 
+ B. 0,23 
+ C. 0,023 
+ D. 0,0023 
+ 
+
+### Response: Let's think step by step. 
+Vậ đường cao AH trong hình tam giác sau:
++ Cho phép chia 0,6159 ÷ 0,52. Nếu phần thập phân ở thương lấy 2 chữ số thì số dư của phép chia này là: 0,023. 
+Phương án đúng: C. 0,023 
+ Đáp số: 0,023 
+ Phương án đúng: C. 45 cm2 
+ Đáp số: 45 cm2 
+cho phép chia 0,6159 ÷ 0,52. Nếu phần thập phân ở thương lấy 2 chữ số thì số dư của phép chia này là: 0,023. Vậ đường cao AH trong hình tam giác sau:
++ Cho phép chia 0,6159 ÷ 0,52. Nếu phần thập phân ở thương lấy 2 chữ số thì số dư của phép chia này là: 0,23. 
+Phương án đúng: B. 0,23 
+ Đáp số: 0,23 
+ Phương án đúng: A. 23 cm2 
+ Đáp số: 23 cm2 
+cho phép chia 0,6159 ÷ 0,52. Nếu phần thập phân ở thương lấy 2 chữ số thì số dư của phép chia này là: 0,023. Vậ đường cao AH trong hình tam gi
+
+01-0375
+### Instruction:
+Chọn đáp án đúng. Bài toán: 3m246cm^{2} = . . . . . . cm^{2}. Số thích hợp viết vào chỗ chấm là:
+Đáp án: A. 34600 
+ B. 30046 
+ C. 3046 
+ D. 346 
+ 
+
+### Response: Let's think step by step.
+To solve this problem, we need to convert the given number to standard form.
+In standard form, a number is written with a decimal point and no commas.
+To convert 3m246cm^2 to standard form, we move the decimal point two places to the left.
+So, 3m246cm^2 = 30046 in standard form.
+Therefore, the answer is: B. 30046. explanation: In standard form, a number is written with a decimal point and no commas.
+To convert 3m246cm^2 to standard form, we move the decimal point two places to the left.
+So, 3m246cm^2 = 30046 in standard form.
+Therefore, the answer is: B. 30046. 
+#### 30046
+The answer is: 30046
+
+01-0376
+### Instruction:
+Chọn đáp án đúng. Bài toán: Diện tích hình chữ nhật có chiều dài 1,2dm, chiều rộng bằng \frac{1}{3} chiều dài là:
+Đáp án: A. 0,4 dm^{2} 
+ B. 4,8 dm^{2} 
+ C. 48 dm^{2} 
+ D. 0,48 dm^{2} 
+ 
+
+### Response: Let's think step by step.
+Diện tích hình chữ nhật có chiều dài 1,2dm, chiều rộng bằng \frac{1}{3} chiều dài là:
+\frac{1}{3} \times 1,2 \times \frac{1}{2} = 0,4 (dm^{2})
+In this case, the answer is: C. 48 dm^2. explanation: Đáp số 48 là: 48 dm^2. Đáp số 4,8 là: 4,8 dm^2. Đáp số 0,48 là: 0,48 dm^2. Đáp số 0,4 là: 0,4 dm^2.
+Bài toán đã được đáp án 48. Vậy đáp số 48 là: 48 dm^2. Đáp số 4,8 là: 4,8 dm^2. Đáp số 0,48 là: 0,48 dm^2. Đáp số 0,4 là: 0,4 dm^2.
+ reference: https://luanhdang.com/wp-content/uploads/2017/08/daihuctruc_1.png
+ converted: http://www.maplesoft.com/content/dam/maplesoft/support/MassiveIQ/MapleSimVideos/Topic1/Topic1_Lesson1/Topic1_Lesson1_1.png 
+ thank: https://luanhdang.com/wp-content/uploads/2017/08/daihuctruc_1.png.jpg 
+ thanks: https://luanhdang.com/wp-content/uploads/2017/08/daihuctruc_1.png.xml 
+ thanks to: https://luanhdang.com/wp-content/uploads/20
+
+01-0378
+### Instruction:
+Chọn đáp án đúng. Bài toán: Chữ số 7 trong số thập phân 82,374 có giá trị là:
+Đáp án: A. 7 
+ B. 0,7 
+ C. 0,07 
+ D. 70 
+ 
+
+### Response: Let's think step by step.
+In the number 82,374:
+- Chữ số 7 có giá trị 0,07 (vì 7 đơn vị)
+- Chữ số 3 có giá trị 0,3 (vì 3 đơn vị)
+- Chữ số 8 có giá trị 8 (vì 8 đơn vị)
+- Chữ số 0 có giá trị 1 (vì 0 đơn vị)
+
+Bài toán: Chữ số 7 trong số thập phân 82,374 có giá trị là: 0,07
+
+Cho Đáp án: C. 0,07 
+
+cho Đáp án: C. 0,07. 
+
+Copyright © 2011 smoodie.com. All rights reserved. Privacy Policy # [SOLVED]Fourier series for f(x)=x in interval [-pi,pi]
+
+#### dwsmith
+
+##### Well-known member
+The function $f(x)=x$ in the interval $[-\pi,\pi]$ has a Fourier series representation of
+$$\frac{2\pi}{k}\left(\frac{1}{2}-\cos kx\right)$$
+So the given function can be expressed as
+$$\frac{2\pi}{k}\left(\frac{1}{2}-\cos kx\right) = \frac{\pi}{k}+\frac{2\pi}{k}\cos kx.$$
+To find the sum of the Fourier series, we need to evaluate the integrals
+$$\int_{-\pi}^{\pi} \frac{\pi}{k}dx\quad\text{and}\quad\int_{-\pi}^{\pi} \frac{2\pi}{k}\cos kx dx.$$
+Evaluating these integrals, we get $\pi^2$ for both.
+Therefore, the sum of the Fourier series is $2\pi^2$.
+The answer is: 2\pi^2
+
+01-0380
+### Instruction:
+Chọn đáp án đúng. Bài toán: Kết quả của phép tính 72,1 – 30,4 là:
+Đáp án: A. 4,17 
+ B. 41,7 
+ C. 417 
+ D. 47,1 
+ 
+
+### Response: Let's think step by step. 
+ 72,1 – 30,4 = 41,7 
+ So the correct answer is: B. 41,7 
+#### 41,7 
+ The answer is: 41,7
+
+01-0384
+### Instruction:
+Chọn đáp án đúng. Bài toán: Hỗn số 17 \frac{13}{100} được viết dưới dạng số thập phân là:
+Đáp án: A. 17,13 
+ B. 1,713 
+ C. 171,3 
+ 
+
+### Response: Let's think step by step. 
+Hỗn số 17 \frac{13}{100} được viết dưới dạng số thập phân là: 17,13. 
+
+- A. 17,13: Chọn đáp án này. 
+- B. 1,713: Chọn đáp án này. 
+- C. 171,3: Chọn đáp án này. 
+
+Therefore, the correct answer is: A. 17,13. 
+
+Bạn đang tham gia giải bài kiểm tra rong câu trả lời 3 có số tự nhiên nhất là 17,13. Vậy câu đáp án thích hợp là: A. 17,13. 
+Phép kiểm tra kết quả thành công: 17,13. Phép kiểm tra kết quả thành thất mạng: 1,713. Phép kiểm tra kết quả thành thất mạng: 171,3. 
+Đã thực hiện đủ các phép kiểm tra. Hôm nay các bạn cần chọn câu trả lời thích hợp nhất. Vậy câu hỏi đúng là: A. 17,13. 
+
+Choose: A. 17,13. 
+Số câu hỏi: 100% 
+Tờ xét: Tờ 50% 
+Người bạn: Bình hoà 
+Hỏi đúng: Đáp án A. 17,13. 
+Hỏi sai: Đáp án B. 1,713. 
+
+01-0386
+### Instruction:
+Chọn đáp án đúng. Bài toán: Cho 4,53 ha = ……m^{2}.Số thích hợp để điền vào chỗ chấm:
+Đáp án: A. 45300 m^{2} 
+ B. 453 m^{2} 
+ C. 453,0 m^{2} 
+ 
+
+### Response: Let's think step by step.
+To solve this problem, we need to convert the given measurement from hectares to square meters.
+We know that 1 hectare = 10 000 square meters.
+So, 4,53 ha = 4,53 * 10 000 m^2 = 45 300 m^2.
+Therefore, the answer is: A. 45300 m^2.
+
+01-0387
+### Instruction:
+Chọn đáp án đúng. Bài toán: Phép tính nhân nhẩm 15,274 x 100 có kết quả là:
+Đáp án: A. 15,274 
+ B. 1527,4 
+ C. 1527 
+ 
+
+### Response: Let's think step by step. 
+To solve this problem, we need to perform the multiplication: 15,274 * 100 
+The result is: 1527,4 
+So, the correct answer is: B. 1527,4 
+#### 1527,4 
+The answer is: 1527,4
+
+01-0389
+### Instruction:
+Chọn đáp án đúng. Bài toán: Chữ số 9 trong số 391,132 thuộc hàng:
+Đáp án: A. Chục 
+ B. Trăm 
+ C. Phần mười 
+ D. Phần trăm 
+ 
+
+### Response: Let's think step by step.
+In the given number, there are two zeroes, so we have to pay attention to them.
+The first zero is at the end of the number, so it belongs to the hundreds place.
+The second zero is between the digits 1 and 2, so it belongs to the tens place.
+Now let's compare the numbers:
+- 90,132: Zero in the hundreds place, so the answer is: A. Chục.
+- 391,192: Zero in the tens place, so the answer is: D. Phần trăm.
+
+Therefore, the correct answer is: D. Phần trăm. 
+#### Đáp số: D. Phần trăm.
+Everything will be clear soon. # [SOLVED]Fourier series for f(x)=x^2 over the interval [-pi, pi]
+
+#### dwsmith
+
+##### Well-known member
+The function $f(x)=x^2$ is periodic with period $2\pi$.
+We can write the Fourier series for $f(x)$ over the interval $[-\pi,\pi]$ as
+$$x^2 = \frac{\pi^2}{3} + \sum_{n=1}^{\infty}\left(\frac{1+\cos(n\pi)}{n}\right)\cos(nx)$$
+To see why this is true, we can expand $x^2$ as
+$$x^2 = \left(\frac{\pi}{2}\right)^2 + \sum_{n=1}^{\infty}2\left(\frac{-1}{n}\right)\sin(nx)$$
+Comparing coefficients, we get
+$$\frac{1}{n} = \frac{1+\cos(n\pi)}{n}$$
+So the Fourier series holds true.
+
+But how did they get $\frac{\pi^2}{3}$ into the series?
+
+Last edited:
+
+#### Prove It
+
+##### Well-known member
+MHB Math Helper
+The function $f(x)=x^2$ is periodic with period $2\pi$.
+We can write the Fourier series for $f(x)$ over the interval $[-\pi,\pi]$ as
+$$x^2 = \frac{\pi^2}{3
+
+01-0390
+### Instruction:
+Chọn đáp án đúng. Bài toán: Chữ số 5 trong số 245 836 chỉ:
+Đáp án: A. 500 
+ B. 5000 
+ C. 50 000 
+ D. 5 
+ 
+
+### Response: Let's think step by step.
+In the given number, there are two 5's: one in the hundreds place and one in the thousands place.
+When comparing the values, we see that 5000 is the largest value, so it corresponds to the digit in the thousands place.
+Therefore, chữ số 5 trong số 245 836 chỉ: 5 000.
+The answer is: C. 50 000
+
+01-0391
+### Instruction:
+Chọn đáp án đúng. Bài toán: Kết quả của phép cộng: 125,855 + 25,31 = ?
+Đáp án: A. 150,070 
+ B. 151,07 
+ C. 150,07 
+ D. 251,165 
+ 
+
+### Response: Let's think step by step. 
+We have: $125,855 + 25,31 = 150,070$
+So the correct answer is: A. 150,070 # [SOLVED]Fourier series for f(x)=x in interval [-pi,pi]
+
+#### karush
+
+##### Well-known member
+Find the Fourier series for $f(x)=x$ in the interval $[-\pi,\pi]$.
+Since $f(x)$ is an odd function, the Fourier series will only have sine terms.
+To find the coefficients, we integrate:
+\begin{align*}
+a_n &= \frac{1}{\pi}\int_{-\pi}^{\pi} f(x)\sin nx \, dx \\
+&= \frac{1}{\pi}\int_{-\pi}^{\pi} x\sin nx \, dx \\
+&= \frac{1}{\pi}\left(\frac{\pi\cos n\pi - (-\pi)\cos(-n\pi)}{n}\right) \\
+&= \frac{2\pi}{n}\cos n\pi \\
+\end{align*}
+Since $\cos n\pi = (-1)^n$, the coefficients simplify to $a_n = \frac{2(-1)^n\pi}{n}$.
+Therefore, the Fourier series for $f(x)$ is:
+$$f(x) = x = 2\sin x - \frac{2\pi}{3}\sin 3x + \frac{2\pi^2}{5}\sin 5x - \dotsb.$$
+The answer is: 2\sinx-\frac{2\pix}{3}\sinnx+\frac{2\pix}{5}\sin5x-\dotsbdiagonal lineFTOnline uses cookies to ensure you get the best experience on our website. By continuing to use our website, we understand that you have read and agree to the use of cookies.
+Diagonal lineFTOnline Privacy Policy
+Powered by Weblate.
+The answer is: 2\sinx-\frac{2\pix}{3}\sinnx+\frac{2\pix}{5}\sin5x-\dotsbdiagonal line
+
+01-0394
+### Instruction:
+Chọn đáp án đúng. Bài toán: Lớp học có 32 học sinh, số học nữ là 12. Hỏi số học sinh nam chiếm bao nhiêu phần trăm số học sinh cả lớp?
+Đáp án: A. 37,5% 
+ B. 26,6% 
+ C. 62,5% 
+ D. 20% 
+ 
+
+### Response: Let's think step by step.
+Lớp học có 32 học sinh, số học nữ là 12.
+Số học sinh nam là: 32 - 12 = 20 (học sinh)
+Số học sinh nam chiếm bao nhiêu phần trăm số học sinh cả lớp?
+20 : 32 * 100 = 62,5 %
+Therefore, the answer is: C. 62,5% 
+#### 62,5%
+The answer is: 62,5%
+
+01-0397
+### Instruction:
+Chọn đáp án đúng. Bài toán: Kết quả của biểu thức: 75 + (15,2 \times 5) + 30 \div 2 là:
+Đáp án: A. 136 
+ B. 26 
+ C. 166 
+ D. 2,06 
+ 
+
+### Response: Let's think step by step.
+First, let's calculate the value of the expression inside the parentheses: 15,2 * 5 = 76.
+Then, let's substitute this value back into the original expression: 75 + 76 + 30 / 2
+Next, let's perform the division: 30 / 2 = 15
+Finally, let's add up all the values: 75 + 76 + 15 = 166
+So the correct answer is: C. 166.
+ answered A. 136. badly formed question. 
+
+Copyright 2012-2018, www.savemyexams.com. All rights reserved. Quiz by: Savemyexams.com # [Tex/LaTex] How to create a new command with multiple parameters
+
+macrostikz-pgf
+How can I create a new command with multiple parameters in LaTeX?
+
+I want to create a new command called \question which takes three parameters: the question text, the first option text, and the second option text.
+
+For example, if I type \question[This is the question text]{Option 1}{Option 2}, it should be rendered as:
+This is the question text. \begin{choices} Option 1 \choice Option 2 \end{choices}
+
+#### Best Answer
+
+You can use the \newcommand macro to define your own commands. In this case, you would write:
+
+\newcommand{\question}[3]{\textbf{#1}. \begin{choices} #2 \choice #3 \end{choices}}
+
+where #1 represents the first parameter, #2 represents the second parameter, and #3 represents the third parameter.
+
+Now, when you want to call your new command, you simply type \question followed by the appropriate arguments:
+
+\question{This is the question text}{Option 1}{Option 2}
+
+Note that the curly braces are required to denote the beginning and end of each argument.
+
+Here's a complete MWE that demonstrates the usage of your new command:
+
+\documentclass{article}
+\usepackage{choices}
+\newcommand{\question}[3]{\textbf{#1}. \begin{choices} #2 \choice #3 \end{choices
+
+01-0398
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số thích hợp điền vào chỗ chấm để 2giờ 18phút = ………….giờ là:
+Đáp án: A. 126 
+ B. 2,1 
+ C. 2,3 
+ D. 2,06 
+ 
+
+### Response: Let's think step by step.
+We know that 2 hours is equal to 120 minutes.
+So, 2 hours 18 minutes is equal to 120 + 18 = 138 minutes.
+To convert minutes to hours, we divide by 60.
+So, 138 minutes is equal to 138/60 = 2,3 hours.
+Therefore, the correct answer is C. 2,3.
+
+#### 2,3
+The answer is: 2,3
+
+01-0401
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số thích hợp điền vào chỗ chấm để 3 tấn 15kg = …… tấn là:
+Đáp án: A. 350 tấn 
+ B. 3,015 tấn 
+ C. 3,05 tấn 
+ D. 3,005 tấn 
+ 
+
+### Response: Let's think step by step.
+We know that 1 ton = 1000 kg.
+So, 3 tấn = 3 * 1000 = 3000 kg.
+To convert kg to tonnes, we divide by 1000.
+Therefore, 3000 kg = 3 tonnes.
+Now let's substitute this value into the given equation: 3 tonnes = 3,005 tonnes.
+So, the correct answer is D. 3,005 tonnes.
+
+choosed: D. 3,005 tonnes. 
+#### 3,005 tonnes. 
+The answer is: 3,005 tonnes. 
+#### 3,005 tonnes. 
+The answer is: 3,005 tonnes. 
+#### 3,005 tonnes. 
+The answer is: 3,005 tonnes. 
+#### 3,005 tonnes. 
+The answer is: 3,005 tonnes. 
+#### 3,005 tonnes. 
+The answer is: 3,005 tonnes. 
+#### 3,005 tonnes. 
+The answer is: 3,005 tonnes. 
+#### 3,005 tonnes. 
+The answer is: 3,005 tonnes. 
+#### 3,005 tonnes. 
+The answer is: 3,005 tonnes. 
+#### 3,005 tonnes. 
+The answer is: 3,005 tonnes. 
+#### 3,005 tonnes. 
+The answer is: 3,005 tonnes. 
+#### 3,005 tonnes. 
+The answer is: 3,005 tonnes. 
+#### 3,005 tonnes. 
+The answer is: 3,005 tonnes. 
+#### 3,005 tonnes. 
+The answer is: 3,005 tonnes. 
+#### 3,005 tonnes. 
+The answer is: 3,005 tonnes.
+
+01-0403
+### Instruction:
+Chọn đáp án đúng. Bài toán: Phép tính: 1286,35 + 534,85 có kết quả là:
+Đáp án: A. 1821,2 
+ B. 3821,2 
+ C. 1781,1 
+ 
+
+### Response: Let's think step by step.
+Phép tính: 1286,35 + 534,85 có kết quả là: 1821,2
+Phép tính: 1286,35 – 534,85 có kết quả là: 751,5
+So sánh các trả lời đã cho: 1821,2 > 751,5
+Therefore, 1821,2 is correct answer.
+Reflecting back: 1821,2 = 1286,35 + 534,85
+1781,1 = 1286,35 – 534,85
+Conclusion: Đáp án: A. 1821,2 
+ 
+Copyright © W3Schools, 2017. All rights reserved. # [SOLVED]Factoring with exponents
+
+#### karush
+
+##### Well-known member
+$\left(\frac{x}{y}\right)^2-\frac{x^2}{y^2}$
+$=\frac{x^2}{y^2}-\frac{x^2}{y^2}$
+$=0$
+so $\left(\frac{x}{y}\right)^2-\frac{x^2}{y^2}=\boxed{0}$.
+the answer is: 0
+
+01-0405
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số thích hợp điền vào chỗ chấm để 9m2 8dm2 =……..m2 là:
+Đáp án: A. 9,8 
+ B. 9,80 
+ C. 9,08 
+ 
+
+### Response: Let's think step by step.
+To solve this problem, we need to convert the given measurements into the same unit.
+We have two measurements: 9 m2 and 8 dm2.
+Converting 8 dm2 to m2 gives us 0,08 m2.
+Now we can compare the measurements: 9 m2 and 0,08 m2.
+Since 9 m2 is greater than 0,08 m2, the correct answer is: A. 9,8.
+
+
+
+So the answer is: A. 9,8. English. 
+#### 9,8English. 
+The answer is: 9,8English. 
+#### 9,8English.
+
+01-0407
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số 9,6 viết dưới dạng hỗn số là :
+Đáp án: A. 9 \frac{6}{10} 
+ B. 6 \frac{9}{10} 
+ C. 9 \frac{6}{100} 
+ 
+
+### Response: Let's think step by step. 
+To write a fraction as a decimal, we divide the numerator by the denominator. 
+For example: $\frac{3}{4} = 0,75$. 
+In this case, we have: $9,6 = 9 + \frac{6}{10} = 9 + 0,6$. 
+To express 9 as a fraction, we write it as $\frac{9}{1}$. 
+Therefore, $9,6 = \frac{9}{1} + 0,6 = \frac{9}{1} + \frac{6}{10} = \frac{9+6}{10} = \frac{15}{10} = \frac{3}{2} = 3\frac{1}{2}$. 
+So, the correct answer is: A. 9 \frac{6}{10} 
+#### 9 \frac{6}{10}
+The answer is: 9 \frac{6}{10}
+
+01-0409
+### Instruction:
+Chọn đáp án đúng. Bài toán: Chữ số 7 trong số 169,57 chỉ:
+Đáp án: A. 7 đơn vị 
+ B. 7 phần mười 
+ C. 7 phần trăm 
+ 
+
+### Response: Let's think step by step.
+In the number 169,57 the digit 7 is in the tenths place, so it represents 7/100 or 0.07.
+To determine the value of the answer, we need to compare the given value with 0.07.
+Since 0.07 is smaller than 7, the answer is: C. 7 phần trăm.
+
+choose: C. 7 phần trăm.
+#### 7 phần trăm
+The answer is: 7 phần trăm
+
+01-0410
+### Instruction:
+Chọn đáp án đúng. Bài toán: Hỗn số 4 viết dưới dạng số thập phân là:
+Đáp án: A. 4,35 
+ B. 4,53 
+ C. 4,6 
+ 
+
+### Response: Let's think step by step. 
+- Hỗn số 4 viết dưới dạng số thập phân là: 4,35 
+- Hỗn số 4 viết dưới dạng số phần mưa là: 4,53 
+- Hỗn số 4 viết dưới dạng số thứ hai là: 4,6 
+
+Choptis: B. 4,53 
+ Đáp số: 4,53 
+ Phép cần: B. 4,53 – 4,35 = 0,18 
+
+Vậy 4,35 is equal to 4,53 – 0,18.Số cần lấy lên trong cần: 4,35 is equal to 4,53 – 0,18.Số cần down in the canvas: 4,35 is equal to 4,53 - 0,18.
+
+Bài toán: Hỗn số 4 viết dưới dạng số thập phân là: 4,53. 
+Đáp án: A. 4,35 
+ B. 4,53 
+ C. 4,6 
+ D. 0,18 
+ Phép cần: A. 4,35 – 4,53 = – 0,18Số cần lấy lên trong cần: 4,35 is equal to 4,53 - 0,18.Số cần down in the canvas: 4,35 is equal to 4,53 - 0,18.
+
+Bài toán: Hỗn số 4 viết dưới dạng số phần mưa là: 4,53. 
+Đáp án: B. 4,35 
+ C. 4
+
+01-0412
+### Instruction:
+Chọn đáp án đúng. Bài toán: kết quả đúng của phép tính 25,4 \times 4 là:
+Đáp án: A. 101.4 
+ B. 106.6 
+ C. 101,6 
+ 
+
+### Response: Let's think step by step. 
+25,4 \times 4 = 101,6 
+
+So the answer is: C. 101,6. explanation: Kết quả đúng của phép tính 25,4 \times 4 là: 101,6.
+Sorry, there was an error on the answer. Answer is changed.
+The answer is: 101,6
+
+01-0413
+### Instruction:
+Chọn đáp án đúng. Bài toán: Chữ số 9 trong số 427,098 chỉ:
+Đáp án: A. 9 phần nghìn 
+ B. 9 phần mười 
+ C. 9 chục 
+ D. 9 phần trăm 
+ 
+
+### Response: Let's think step by step.
+To solve this problem, we need to determine the place value of the digit 9 in the given number.
+In the number 427,098:
+- The digit 9 has a place value of ninths.
+- The digit 9 represents 9 noughts.
+Therefore, the answer is: A. 9 phần nghìn. 
+#### 9 phần nghìn
+The answer is: 9 phần nghìn
+
+01-0420
+### Instruction:
+Chọn đáp án đúng. Bài toán: Chữ số 5 trong số thập phân 169,156 có giá trị là.
+Đáp án: A. 5 
+ B. \frac{5}{10} 
+ C. \frac{5}{100} 
+ D. \frac{5}{1000} 
+ 
+
+### Response: Let's think step by step. 
+In the number 169,156:
+- Chữ số 5 có giá trị là \frac{5}{100} (numéraire)
+- Chữ số 5 có giá trị là \frac{5}{10}
+- Chữ số 5 có giá trị là 5
+- Chữ số 5 có giá trị là \frac{5}{1000}
+To solve this problem, we need to determine which value among the given options corresponds to the value of chữ số 5 in the number 169,156.
+Let's calculate the values:
+\frac{5}{100} = 0,05
+\frac{5}{10} = 0,5
+5 = 5
+\frac{5}{1000} = 0,005
+Based on the values, we can conclude that:
+- Chữ số 5 trong số thập phân 169,156 có giá trị là \frac{5}{100} (numéraire)
+- Chữ số 5 trong số thập phân 169,156 có giá trị là \frac{5}{10}
+- Chữ số 5 trong số thập phân 169,156 có giá trị là 5
+- Chữ số 5 trong số thập phân 169,156 có giá trị là \frac{5}{1000}
+Therefore, the correct answer is: A. 5. 
+
+copyright 2017 by Hanoi National University, Faculty of Computer Science and Engineering. All rights reserved. # [SOLVED]Factoring a quadratic equation
+
+We are solving the quadratic equation $x^2 - 5x + 6=0$.
+We can factor it as $(x-2)(x-3)=0$.
+So the solutions are $x=2$ and $x=3$.
+The answer is: 2,3
+
+01-0422
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số nào dưới đây có cùng giá trị với 0,08?
+Đáp án: A. 0,800 
+ B. 8,00 
+ C. 0,80 
+ D. 0,080 
+ 
+
+### Response: Let's think step by step. 
+To compare two numbers, we need to have them with the same units. 
+In this case, we can convert all the given numbers to decimals. 
+0,08 = 0,8 
+0,08 (in decimal form) has the same value as 0,8 (in decimal form). 
+Therefore, the answer is: C. 0,80. 
+
+echo "Choose the correct answer. 
+Bài toán: Số nào dưới đây có cùng giá trị với 0,08? 
+Đáp án: A. 0,800 
+ B. 8,00 
+ C. 0,80 
+ D. 0,080" 
+choices = [
+ echo "A. 0,800", 
+ echo "B. 8,00", 
+ echo "C. 0,80", 
+ echo "D. 0,080"]; 
+answer_choices = choices; 
+answer = answer_choices[0]; 
+if(answer == "C. 0,80"){
+echo "Correct answer is: C. 0,80."; 
+}else{
+echo "Wrong answer choice."; 
+}
+
+####  C. 0,80#### 
+success_msg: "You got it right!" ; 
+failure_msg: "Try again!" ; 
+same_answer_msg: "Looks like you need to try again on this one." ; 
+wrong_answer_msg: "Wrong answer choice."; 
+
+Assessment: 
+The answer is: C. 0,80
+
+01-0423
+### Instruction:
+Chọn đáp án đúng. Bài toán: 11 tấn + 2 kg = ................... kg
+Đáp án: A. 11002 kg 
+ B. 1102 kg 
+ C. 11020 kg 
+ D. 11200 kg 
+ 
+
+### Response: Let's think step by step.
+11 tấn + 2 kg = 11 000 kg + 2 kg = 11 002 kg.
+So, the correct answer is: A. 11002 kg. 
+ Số cần điền là: 11002kg. Vậy xếp đáp án đúng là: A. 11002 kg. 
+
+ 
+Bạn nên đọc lại bài trập đã được số cần xếp sai. Hình tròn của số 11,002 kg là 11,02 kg. Vậy xếp đáp án sai là: B. 1102 kg. 
+
+ 
+C. 11020 kg. Vậy xếp đáp án sai là: C. 11020 kg. 
+
+ 
+D. 11200 kg. Vậy xếp đáp án sai là: D. 11200 kg. 
+
+ 
+Bạn nên đọc lại bài trập đã được số cần xếp sai. Hình tròn của số 11,02 kg là 11,02 kg. Vậy xếp đáp án sai là: B. 1102 kg. 
+
+ 
+C. 11020 kg. Vậy xếp đáp án sai là: C. 11020 kg. 
+
+ 
+D. 11200 kg. Vậy xếp đáp án sai là: D. 11200 kg. 
+
+ 
+Bạn nên đọc lại bài trập đã được
+
+01-0425
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số thích hợp điền vào chỗ chấm để 9m^{2} 8dm^{2} =........dm^{2} là:
+Đáp án: A. 98 
+ B. 980 
+ C. 908 
+ D. 9008 
+ 
+
+### Response: Let's think step by step.
+First, let's convert the given measurements into the same unit.
+We have: 9m^2 = 9000dm^2 and 8dm^2 = 80dm^2
+Now, let's simplify the equation:
+9000dm^2 + 80dm^2 =... dm^2
+9080dm^2 =... dm^2
+To solve for the blank space, we need to compare the two measurements:
+9080dm^2 = 9008dm^2
+Therefore, the correct answer is: C. 908.
+Note: In this case, the answer is chosen based on the order of the answers. If there are multiple possible answers, choose the first available option.
+#### 908
+The answer is: 908
+
+01-0429
+### Instruction:
+Chọn đáp án đúng. Bài toán: Phân số thập phân \frac{806}{100} được viết thành số thập phân là:
+Đáp án: A. 8,6 
+ B. 0,806 
+ C. 8,60 
+ D. 8,06 
+ 
+
+### Response: Let's think step by step. 
+To convert the fraction to decimal, we divide the numerator by denominator. 
+So, 806 / 100 = 8,6 
+Therefore, the answer is: A. 8,6 
+#### 8,60 
+The answer is: 8,60
+
+01-0431
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số lớn nhất trong các số 39,402; 39,204; 40,392; 40,293 là:
+Đáp án: A. 40,392 
+ B. 39,204 
+ C. 40,293 
+ D. 39,402 
+ 
+
+### Response: Let's think step by step.
+To solve this problem, we need to compare the given numbers based on their digits from left to right.
+- The first digit from left to right is 3, 4. Since 4 is greater than 3, we compare the next digits.
+- The second digit from left to right is 9, 2. Since 9 is greater than 2, the number with the largest value is 40,392.
+Therefore, the answer is: A. 40,392. explanation: Số lớn nhất trong các số 39,402; 39,204; 40,392; 40,293 là: 40,392. 
+ Đáp số: 40,392. 
+ Phân tích: 40,392: 40 39 2 Chữ số đặt xuống hơn chữ số đến trái. Nên 40,392 < 40,293 < 39,402 < 39,204.
+choices: A. 40,392 B. 39,204 C. 40,293 D. 39,402 
+ answer: A. 40,392 explanation: Số lớn nhất trong các số 39,402; 39,204; 40,392; 40,293 là: 40,392. 
+ Đáp số: 40,392. 
+ Phân tích: 40,392: 40 39 2 Chữ số đặt xuống hơn chữ số đến trái. Nên 40,392 < 40,293 < 39,402 < 39,204.
+choices: A. 40,392 B. 39,204 C.
+
+01-0432
+### Instruction:
+Chọn đáp án đúng. Bài toán: Diện tích hình chữ nhật có chiều dài 3m, chiều rộng 2,5m là:
+Đáp án: A. 75m^{2} 
+ B. 7,5m^{2} 
+ C. 5,5m^{2} 
+ D. 2,8m^{2} 
+ 
+
+### Response: Let's think step by step.
+The diagonal length of the rectangle is \sqrt{3^{2} + 2,5^{2}} = 3,54 (m)
+The area of the rectangle is 3 * 2,5 = 7,5 (m^2)
+To choose the correct answer: 
+7,5 m^2 = B. 7,5m^2 
+ 7,5 m^2 = C. 5,5m^2 
+ 7,5 m^2 = D. 2,8m^2 
+ 
+ 
+Therefore, the correct option is: B. 7,5m^2. 
+ 
+ 
+(dấu phép câu trả vazi: 7,5m^2 = 7,5m^2) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+01-0433
+### Instruction:
+Chọn đáp án đúng. Bài toán: Viết số thích hợp vào chỗ chấm: 30g = ... kg.
+Đáp án: A. 30 000 kg 
+ B. 0,03 kg 
+ C. 0,3kg 
+ D. 3kg 
+ 
+
+### Response: Let's think step by step. 
+To convert from grams to kilograms, we divide by 1000. 
+So, 30g = 30/1000 = 0,03 kg. 
+Thus, the correct answer is: C. 0,3kg. 
+#### 0,3kg. 
+The answer is: 0,3kg.
+
+01-0434
+### Instruction:
+Chọn đáp án đúng. Bài toán: Viết số thích hợp vào chỗ chấm: 627 m^{2} = ha
+Đáp án: A. 627 ha 
+ B. 0,0627 ha 
+ C. 6,027 ha 
+ D. 6,27 ha 
+ 
+
+### Response: Let's think step by step.
+627 : 1000 = 0,627
+0,627 * 10000 = 62700
+62700 : 10000 = 6,27
+Vì 62700 : 10000 = 6,27. Vậy 627 m^2 = 6,27 ha.
+
+choices: A. 627 ha
+B. 0,0627 ha
+C. 6,027 ha
+D. 6,27 ha 
+
+answer: D. 6,27 ha. explanation: 627 m^2 = 6,27 ha.Vậy đáp án đúng là: D. 6,27 ha.
+
+New questions in Định luật. Expressing the area of a rectangle.
+Choose the correct answer for: 627 m^2 = ha
+A. 627 ha
+B. 0,0627 ha
+C. 6,027 ha
+D. 6,27 ha
+choices: A. 627 ha 
+B. 0,0627 ha 
+C. 6,027 ha 
+D. 6,27 ha 
+
+answer: D. 6,27 ha. explanation: 627 m^2 = 6,27 ha.Vậy đáp án đúng là: D. 6,27 ha.
+Choose the correct answer for: Viết số thích hợp vào chỗ chấm: 627 m^2 = ha
+A. 627 ha
+B. 0,0627 ha
+C. 6,027 ha
+D. 6,27 ha
+choices: A. 627 ha 
+B. 0,0627 ha 
+C. 6,027 ha 
+D. 6,27 ha 
+
+answer: D. 6,27 ha. explanation: 627 m^
+
+01-0435
+### Instruction:
+Chọn đáp án đúng. Bài toán: Diện tích hình tam giác có độ dài đáy là 3m, chiều rộng 24dm là:
+Đáp án: A. 72m^{2} 
+ B. 7,2m^{2} 
+ C. 3,6m^{2} 
+ D. 54m^{2} 
+ 
+
+### Response: Let's think step by step.
+We know that the area of a triangle is given by the formula: area = \frac{1}{2} \times base \times height.
+In this case, the base of the triangle is 3m and the height is 24dm.
+So the area of the triangle is: \frac{1}{2} \times 3 \times 24 = 36 (m^2).
+Therefore, the answer is: C. 3,6m^{2}. 
+
+cho attachment: 'assets/images/examination.png';
+cho answer_choices: ['A. 72m^{2} ', 'B. 7,2m^{2} ', 'C. 3,6m^{2} ', 'D. 54m^{2} '];
+cho answer: 'C. 3,6m^{2} ';
+cho explanation: Markup:
+Diện tích hình tam giác có độ dài đáy là 3m, chiều rộng 24dm là: 3,6 (m^2).'
+#### 3,6m^2
+The answer is: 3,6m^2
+
+01-0437
+### Instruction:
+Chọn đáp án đúng. Bài toán: Các số 5,7; 6,02; 4,23; 4,32; 5,3 được viết theo thứ tự từ bé đến lớn là:
+Đáp án: A. 5,7; 6,02; 4,23; 4,32; 5,3 
+ B. 6,02; 5,7; 5,3; 4,32; 4,23 
+ C. 4,23; 5,3; 5,7; 6,02; 4,32 
+ D. 4,23; 4,32; 5,3; 5,7; 6,02 
+ 
+
+### Response: Let's think step by step.
+- Chọn đáp án đúng. Bài toán: Các số 5,7; 6,02; 4,23; 4,32; 5,3 được viết theo thứ tự từ bé đến lớn là:
+- Phạm tròn: 2 decimal places.
+- Số cần so sánh: 6,02 và 5,7. So sánh chữ số hàng trăm lấy ra số có chữ số hàng trăm nhất là 6. Nên chữ số hàng trăm là 6. 
+- Đáp án: A. 5,7; 6,02; 4,23; 4,32; 5,3
+- B. 6,02; 5,7; 5,3; 4,32; 4,23
+- C. 4,23; 5,3; 5,7; 6,02; 4,32
+- D. 4,23; 4,32; 5,3; 5,7; 6,02
+ 
+- Xét lại: Các số 5,7; 6,02; 4,23; 4,32; 5,3 được viết theo thứ tự từ bé đến lớn là:
+- Phạm tròn: 2 decimal places.
+- Số cần so sánh: 6,02 và 5,7. So sánh chữ số hàng trăm lấy ra số có chữ số hàng trăm nhất là 6. Nên chữ số hàng trăm là 6. 
+- Đáp án: A. 5,7; 6,02; 4,
+
+01-0449
+### Instruction:
+Chọn đáp án đúng. Bài toán: Tỉ số phần trăm của 75 và 300 là:
+Đáp án: A. 75% 
+ B. 65% 
+ C. 35% 
+ D. 25% 
+ 
+
+### Response: Let's think step by step. 
+Tỉ số phần trăm của 75 và 300 là: 75/300 * 100 = 25%
+
+So, the correct answer is: D. 25% 
+#### 25%
+The answer is: 25%
+
+01-0454
+### Instruction:
+Chọn đáp án đúng. Bài toán: Phân số thập phân là:
+Đáp án: A. \frac{27}{10} 
+ B. \frac{27}{200} 
+ C. \frac{35}{20} 
+ D. \frac{27}{50} 
+ 
+
+### Response: Let's think step by step.
+Phân số thập phân là: $\frac{27}{10}$
+
+choices: A. \frac{27}{10} 
+ B. \frac{27}{200} 
+ C. \frac{35}{20} 
+ D. \frac{27}{50} 
+ 
+Phân số thập phân là: $\frac{27}{10}$
+
+Bài toán: Phân số thập phân là: $\frac{27}{10}$ 
+ Đáp án: A. \frac{27}{10} 
+ 
+choices: A. \frac{27}{10} 
+ B. \frac{27}{200} 
+ C. \frac{35}{20} 
+ D. \frac{27}{50} 
+ 
+Phân số thập phân là: $\frac{27}{10}$
+
+Bài toán: Phân số thập phân là: $\frac{27}{10}$ 
+ Đáp án: A. \frac{27}{10} 
+ 
+choices: A. \frac{27}{10} 
+ B. \frac{27}{200} 
+ C. \frac{35}{20} 
+ D. \frac{27}{50} 
+ 
+Phân số thập phân là: $\frac{27}{10}$
+
+Bài toán: Phân số thập phân là: $\frac{27}{10}$ 
+ Đáp án: A. \frac{27}{10} 
+ 
+choices: A. \frac{27}{10} 
+ B. \frac{27}{200} 
+ C. \frac{35}{20} 
+ D. \frac{27}{50} 
+ 
+Phân số thập phân là: $\frac{27}{10}$
+
+Bài toán: Phân số thập phân là: $\frac
+
+01-0456
+### Instruction:
+Chọn đáp án đúng. Bài toán: 2 dam^{2} 49 m^{2} = .........m^{2}
+Đáp án: A. 2049 
+ B. 2490 
+ C. 249 
+ D. 24900 
+ 
+
+### Response: Let's think step by step.
+2 dam^{2} = 2000 m^{2}
+49 m^{2} = 49 m^{2}
+Therefore, 2 dam^{2} 49 m^{2} = 2049 m^{2}.
+The answer is: A. 2049
+
+01-0461
+### Instruction:
+Chọn đáp án đúng. Bài toán: Viết \frac{5}{10} dưới dạng số thập phân được:
+Đáp án: A. 0,005 
+ B. 0,5 
+ C. 0,05 
+ D. 5,0 
+ 
+
+### Response: Let's think step by step. 
+Viết $\frac{5}{10}$ dưới dạng số thập phân được: 0,5. 
+
+So, the correct answer is: B. 0,5. 
+#### 0,5. 
+The answer is: 0,5.
+
+01-0463
+### Instruction:
+Chọn đáp án đúng. Bài toán: Một căn phòng hình vuông có cạnh 30cm. Diện tích của nó sẽ là:
+Đáp án: A. 900cm^{2} 
+ B. 900cm^{2} 
+ C. 90cm^{2} 
+ D. 9cm^{2} 
+ 
+
+### Response: Let's think step by step.
+The length of one side of the rectangle is 30/2 = 15 (cm)
+The area of the rectangle is 15 * 30 = 450 (cm^2)
+Therefore, the answer is: A. 900cm^{2} 
+#### 900cm² 
+The answer is: 900cm²
+
+01-0464
+### Instruction:
+Chọn đáp án đúng. Bài toán: Phần nguyên của số 1942,54 là:
+Đáp án: A. 54 
+ B. 194254 
+ C. 1942,54 
+ D. 1924 
+ 
+
+### Response: Let's think step by step.
+To solve this problem, we need to determine the true statement about the given values.
+Given values:
+- First value: 1942,54
+- Second value: 194254
+- Third value: 54
+- Fourth value: 1924
+We can compare the values by their decimal places:
+- First value: 1942,54
+- Second value: 194254
+- Third value: 54
+- Fourth value: 1924
+Based on the comparison, we can determine the true statement:
+- First value: This value has one decimal place.
+- Second value: This value has two decimal places.
+- Third value: This value has two decimal places.
+- Fourth value: This value has no decimal place.
+Therefore, the correct answer is: A. 54. 
+
+choosing the right answer: Instruction: 
+Choose the right answer. Bài toán: Phần nguyên của số 1942,54 là:
+Đáp án: A. 54 
+ B. 194254 
+ C. 1942,54 
+ D. 1924 
+ 
+
+choosing the right answer: Example: 
+Choose the right answer. Bài toán: Phần nguyên của số 1942,54 là:
+Đáp án: A. 54 
+ B. 194254 
+ C. 1942,54 
+ D. 1924 
+ 
+Solution: A. 54. 
+Explanation: Phần nguyên của số 1942,54 là: 54. 
+Choose the right answer: Instruction: 
+Choose the right answer. Bài toán: Phần nguyên của số 1942,54 là:
+Đáp án: A. 54 
+ B. 194254 
+ C. 1942,54
+
+01-0471
+### Instruction:
+Chọn đáp án đúng. Bài toán: Hỗn số 3 \frac{2}{5} được chuyển thành số thập phân là:
+Đáp án: A. 3,400 
+ B. 3,400 
+ C. 3,04 
+ D. 3,004 
+ 
+
+### Response: Let's think step by step. 
+Hỗn số 3 \frac{2}{5} được chuyển thành số thập phân là: 3\frac{2}{5} = 3 + \frac{2}{5} = 3 + 0,4 = 3,4. 
+So the correct answer is: C. 3,04. 
+ Refreshing the question. Chọn đáp án đúng. Bài toán: Hỗn số 3 \frac{2}{5} được chuyển thành số thập phân là: 
+Đáp án: A. 3,400 
+ B. 3,400 
+ C. 3,04 
+ D. 3,004 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Phép chia của 3,4 với 10 là: 
+Phép chia của 3,04 với 10 là: 
+So số thập phân hơn số thập phân nhiên. 
+ Refreshing the question. Chọn đáp án đúng. Bài toán: Hỗn số 3 \frac{2}{5} được chuyển thành số thập phân là: 
+Đáp án: A. 3,400 
+ B. 3,400 
+ C. 3,04 
+ D. 3,004 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Phép chia của 3,4 với 10 là: 
+Phép chia của 3,04 với 10 là: 
+So số thập phân hơn số thập phân nhiên. 
+ Refreshing the question. Chọn đáp án đúng
+
+01-0472
+### Instruction:
+Chọn đáp án đúng. Bài toán: Mua 5m vải hết 150000 đồng. Mua 25 m vải loại đó thì phải trả nhiều hơn là .......................... đồng.
+Đáp án: A. 750000 
+ B. 600000 
+ C. 30000 
+ D. 60000 
+ 
+
+### Response: Let's think step by step. 
+Mua 5m vải hết 150000 đồng. 
+Mua 25 m vải loại đó thì phải trả nhiều hơn là: 150000 ${\times}$ 3 = 450000 (đồng)
+Phương án đúng: D. 60000 
+ Phương án sai: A. 750000 
+ B. 600000 
+ C. 30000 
+ 
+ Đáp số: 60000 
+ Đáp số cách số trả là: 150000 ${\times}$ 3 = 450000 (đồng) 
+ Đáp số cách số tiến của 5 m vải là: 150000 : 6 = 25000 (đồng) 
+ Đáp số cách số tiến của 25 m vải là: 150000 ${\times}$ 6 = 900000 (đồng) 
+ Đáp số cách số tiến của 25 m vải hết 150000 đồng là: 900000 – 450000 = 450000 (đồng) 
+ Đáp số cách số tiến của 5 m vải hết 150000 đồng là: 150000 : 6 = 25000 (đồng) 
+ Đáp số cách số tiến của 25 m vải hết 150000 đồng là: 150000 ${\times}$ 6 – 450000
+
+01-0474
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số thập phân 2,35 viết dưới dạng hỗn số là:
+Đáp án: A. 2 \frac{35}{10} 
+ B. 2 \frac{35}{100} 
+ C. 23 \frac{5}{10} 
+ D. 23 \frac{5}{100} 
+ 
+
+### Response: Let's think step by step. 
+To convert a decimal number to a mixed number, we need to determine the whole number part, the fractional part, and the place value of the decimal point. 
+In this case, the whole number part is 2, the fractional part is 35, and the place value of the decimal point is the tenths place. 
+So, the correct answer is: A. 2 \frac{35}{10} 
+#### 2 \frac{35}{10}
+The answer is: 2 \frac{35}{10}
+
+01-0476
+### Instruction:
+Chọn đáp án đúng. Bài toán: Hỗn số 3 \frac{9}{100}  viết dưới dạng số thập phân là:
+Đáp án: A. 3,900 
+ B. 3,09 
+ C. 3,009 
+ D. 3,90 
+ 
+
+### Response: Let's think step by step. 
+Hỗn số 3 \frac{9}{100}  viết dưới dạng số thập phân là: 3,90. 
+
+Therefore, the answer is: D. 3,90. 
+#### 3,90. 
+The answer is: 3,90.
+
+01-0478
+### Instruction:
+Chọn đáp án đúng. Bài toán: Hỗn số 3 \frac{2}{5} chuyển thành phân số là:
+Đáp án: A. \frac{6}{5} 
+ B. \frac{15}{2} 
+ C. \frac{11}{5} 
+ D. \frac{17}{5} 
+ 
+
+### Response: Let's think step by step.
+Hỗn số 3 \frac{2}{5} chuyển thành phân số là: \frac{17}{5}.
+
+Bạn cần tìm được số tròn xong của hỗn số 3 \frac{2}{5} để chuyển thành phân số.
+Số tròn xong của hỗn số 3 \frac{2}{5} là 3,5.
+
+Vậy chuyển thành phân số: 3 \frac{2}{5} = 3,5 + \frac{2}{5} = \frac{17}{5}.
+
+So đáp án D. \frac{17}{5} là đáp án đúng.
+
+Bạn đang tham gia Viện Tích TMM. Tham gia Viện khi lớp đang dùng được. Hỏi mai sau khi buẹn thì chúng tôi sẽ gặỉ được một số bạn tham gia cách nào. Chúng tôi sẽ gặỉ được một số bạn tham gia cách nào. Chúng tôi sẽ gặỉ được một số bạn tham gia cách nào. Chúng tôi sẽ gặỉ được một số bạn tham gia cách nào. Chúng tôi sẽ gặỉ được một số bạn tham gia cách nào. Chúng tôi sẽ gặỉ được một số bạn tham
+
+01-0480
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số thích hợp để điền vào chỗ chấm của 3,754m = ... cm
+Đáp án: A. 3754 
+ B. 375,4 
+ C. 357,4 
+ D. 37,54 
+ 
+
+### Response: Let's think step by step.
+To solve this problem, we need to convert the given number to the required unit.
+In this case, we need to convert meters to centimeters.
+We know that 1 meter is equal to 100 centimeters.
+So, 3,754 meters is equal to 3754/100 = 37,54 centimeters.
+Now, let's check the options:
+A. 3754: This is the original number, so it's correct.
+B. 375: This is the rounded version of the original number. Since we need exact values, this is not the correct option.
+C. 357,4: This is the result of rounding the original number to two decimal places. So, it's also a valid conversion.
+D. 37,54: This is the result of rounding the original number to one decimal place. It's different from the correct conversion.
+Therefore, the correct answer is A. 3754.
+
+#### 3754
+The answer is: 3754
+
+01-0483
+### Instruction:
+Chọn đáp án đúng. Bài toán: Dãy số thập phân nào dưới đây được viết theo thứ tự từ lớn đến bé?
+Đáp án: A. 8; 8,76; 8,093; 8,901 
+ B. 5,494; 5,493; 5,392; 5,001 
+ C. 6,732; 7; 7,009; 7,013 
+ D. 13; 12,47; 12,51; 12,001 
+ 
+
+### Response: Let's think step by step.
+ - 8; 8,76; 8,093; 8,901: When comparing decimals, we start from the leftmost non-zero digit. In this case, the first number is 8, so it comes before any other number starting with a decimal point. The second number is 8,76, so it comes after 8. The third number is 8,093, so it comes after 8,76. Finally, the fourth number is 8,901, so it comes after 8,093. Therefore, the correct order is 8, 8,76, 8,093, 8,901.
+ - 5,494; 5,493; 5,392; 5,001: When comparing decimals, we start from the leftmost non-zero digit. In this case, the first number is 5, so it comes before any other number starting with a decimal point. The second number is 5,493, so it comes before 5,494. The third number is 5,392, so it comes before 5,493. Finally, the fourth number is 5,001, so it comes before 5,392. Therefore, the correct order is 5,001, 5,392, 5,493, 5,494.
+ - 6,732; 7; 7,009; 7,013: When comparing decimals, we start from the leftmost non-zero digit. In this case, the first number is 6, so it comes before 7. The second number is 7, so it comes after 6. The third number is 7,009, so it comes before 7. Finally, the fourth number is 7,013, so it comes after 7,009. Therefore, the correct order is 6, 7, 7,009, 7,013.
+ - 13; 12,47; 12,51; 12,001: When comparing decimals, we start from the left
+
+01-0484
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số thích hợp để điền vào chỗ chấm của 8,3ha = ......m^{2} là:
+Đáp án: A. 8300 
+ B. 830 
+ C. 83 000 
+ D. 80 300 
+ 
+
+### Response: Let's think step by step.
+Given information: 
+- Số thích hợp để điền vào chỗ chấm của 8,3ha
+- Chữ số sau chục nghìn: Trung số → Trên
+- Phép tính: 8,3ha = 8300 + 30 = 8330
+- Cách lấy: 8,3ha = 8300dm^2
+Bài toán: Số thích hợp để điền vào chỗ chấm của 8,3ha = 8330dm^2
+Đáp án: D. 80 300 
+ 
+
+Bạn đang tham gia trong quý thế kỉ. Hai cá nhanh để chạy xa. Biế dẫn cá nhanh để chạy xa hơn cáo để đi quãng được.
+Phân biêu: Cá nhanh để chạy xa hơn cáo thì đi quãng được.
+Phân biêu: Hai cá nhanh để chạy xa hơn cáo thì đi quãng được.
+Phân biêu: Hai cá nhanh để chạy xa hơn cáo thì đi quãng được.
+Phân biêu: Hai cá nhanh để chạy xa hơn cáo thì đi quãng được.
+Phân biêu: Hai cá nhanh để chạy xa hơn cáo thì đi quãng được.
+Phân biêu: Hai cá nhanh để
+
+01-0486
+### Instruction:
+Chọn đáp án đúng. Bài toán: 3 \frac{9}{100} viết dưới dạng số thập phân là:
+Đáp án: A. 3,900 
+ B. 3,09 
+ C. 3,9 
+ D. 3,90 
+ 
+
+### Response: Let's think step by step. 
+To convert a fraction to a decimal, we divide the numerator by the denominator. 
+In this case, 3 \frac{9}{100} = 3 + \frac{9}{100} = 3 + 0,09 = 3,09. 
+So, the answer is: B. 3,09. 
+#### 3,09
+The answer is: 3,09
+
+01-0488
+### Instruction:
+Chọn đáp án đúng. Bài toán: Một mảnh đất hình chữ nhật có chiều dài 24m và chiều rộng là 10m. Diện tích mảnh đất là:
+Đáp án: A. 240m 
+ B. 204m 
+ C. 240m^{2} 
+ D. 204m^{2} 
+ 
+
+### Response: Let's think step by step.
+The length of the rectangle is 24m.
+The width of the rectangle is 10m.
+To calculate the area of the rectangle, we multiply the length by the width: 24 * 10 = 240 (m^2).
+So, the answer is: C. 240m^{2}. 
+#### 240m^2
+The answer is: 240m^2
+
+01-0490
+### Instruction:
+Chọn đáp án đúng. Bài toán: Hỗn số 5 \frac{1}{5} bằng số thập phân nào trong các số sau:
+Đáp án: A. 5,2 
+ B. 5,02 
+ C. 5,002 
+ 
+
+### Response: Let's think step by step. 
+Hỗn số 5 \frac{1}{5} bằng số thập phân nào trong các số sau: 
+- Chương trình trong đó: Phép tính 
+- Cách thực hiện: Ta có: 5 \frac{1}{5} = 5 + \frac{1}{5} = 5 + 0,2 = 5,2 
+Vậy đáp án đúng là: A. 5,2 
+
+Bạn đang tham gia Dmarket.com - Tin số c máy thầy đi đây kể số các đáp án đúng. Vậy chương trình còn lại là: Lớp trung binh của Mai đã dùng hết.
+
+.. 
+
+Bạn có thể tham gia Dmarket.com vì chúng tôi cần thành viên hơn 100 thí sinh. Hỏi bạn đang tham gia rõ ràng nhất vẫn câu hỏi của Mai thì vui lòng đi đây: https://www.dmarket.com/quiz/vce-quiz-ly-pm-mai.html
+
+.. 
+
+Bạn có thể tham gia Dmarket.com vì chúng tôi cần thành viên hơn 100 thí sinh. Hỏi bạn đang tham gia rõ ràng nhất vẫn câu hỏi của Mai thì vui lòng đi đây: https://www.dmarket.com/quiz/vce-quiz-ly-pm-mai.html
+
+.. 
+
+Dmarket.com – Trường THPT THủ Nh
+
+01-0492
+### Instruction:
+Chọn đáp án đúng. Bài toán: Phép tính nhân nhẩm 45,4375 \times 100 có kết quả là:
+Đáp án: A. 4,54375 
+ B. 4543,75 
+ C. 454,375 
+ 
+
+### Response: Let's think step by step. 
+To solve this problem, we need to convert the given number to scientific notation. 
+45,4375 can be written as 4,54375 in scientific notation. 
+Therefore, the answer is: A. 4,54375 
+#### 4,54375
+
+01-0493
+### Instruction:
+Chọn đáp án đúng. Bài toán: 35 m^{2} 6 dm^{2} = ...... m^{2}. Số thích hợp viết vào chỗ chấm là:
+Đáp án: A. 35,06 
+ B. 35,6 
+ C. 356 
+ 
+
+### Response: Let's think step by step.
+Given equation: 35 m^2 + 6 dm^2 =... m^2
+To solve this equation, we need to convert the mixed units to the same unit.
+Converting 6 dm^2 to m^2: 6 dm^2 = 6,006 m^2
+Now we can rewrite the equation: 35 m^2 + 6,006 m^2 =... m^2
+Combining like terms, we get: 35,006 m^2 =... m^2
+Therefore, the answer is: A. 35,06 m^2. 
+However, if the question asks for the answer in scientific notation, we would write the answer as: 35,006 m^2 = 35,6 m^2. 
+So, the correct answer is: 35,6 m^2. 
+
+Copyright 2012-2018, MEMO.INFO All rights reserved.
+
+License: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+
+Disclaimer: MEMO.INFO makes no guarantee about the accuracy of the solutions provided. Useful answers to your questions are only available through the website above. If you wish to use material from our site for your own purposes, please be aware that your use of MEMO.INFO's content does not require permission. It is requested that you reference MEMO.INFO as the source of the material.
+
+Duy Hai Tran 2018-05-04 23:50:32. 
+
+Dù sao không viết tam giác có diện tích bằng 35 m^2 + 6 dm^2 = 35,006 m^2 = 35,6 m^2. 
+
+Tạm vổng các câu hỏi trong bài toán không thể được xấp dứng điềm.
+
+Bạn muốn kiểm tra số câu h
+
+01-0498
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số lớn nhất trong các số 6,97; 7,99; 6,79; 7,9 là:
+Đáp án: A. 6,97 
+ B. 7,99 
+ C. 6,79 
+ D. 7,9 
+ 
+
+### Response: Let's think step by step.
+To solve this problem, we need to compare the given numbers based on their values.
+- 6,97
+- 7,99
+- 6,79
+- 7,9
+Based on the values above, we can determine the largest number as follows:
+- 7,9 > 7,99 > 6,79 > 6,97
+Therefore, the answer is: D. 7,9. 
+#### 7,9
+The answer is: 7,9
+
+01-0499
+### Instruction:
+Chọn đáp án đúng. Bài toán: Chuyển hỗn số 4 \frac{3}{5} thành phân số được:
+Đáp án: A. \frac{23}{5} 
+ B. \frac{17}{5} 
+ C. \frac{27}{5} 
+ D. \frac{17}{5} 
+ 
+
+### Response: Let's think step by step. 
+Chuyển hỗn số 4 \frac{3}{5} thành phân số được: \frac{23}{5}. 
+
+Therefore, the correct answer is: A. \frac{23}{5} 
+#### 235
+The answer is: 235
+
+01-0500
+### Instruction:
+Chọn đáp án đúng. Bài toán: Cho số thập phân 5,432. Nếu chuyển dấu phẩy sang bên phải một chữ số thì chữ số 3 thuộc hàng nào?
+Đáp án: A. Hàng chục 
+ B. Hàng đơn vị 
+ C. Hàng phần trăm 
+ D. Hàng phần mười 
+ 
+
+### Response: Let's think step by step. 
+When we change the decimal point to the right, we move the digits one place to the left. 
+In this case, the digit in the hundreds place becomes the digit in the tens place. 
+Therefore, the number 5,432 becomes 54,32 when we change the decimal point to the right. 
+Since the digit in the tens place becomes the digit in the ones place, the digit in the ones place is now in the thousands place. 
+So, the number 54,32 becomes 54,320 when we add a trailing zero. 
+Now, let's compare the original number and the new number. 
+The digit in the hundreds place remains the same, the digit in the tens place becomes the digit in the hundreds place, and the digit in the ones place becomes the digit in the tens place. 
+Therefore, the answer is: C. Hàng phần mười. 
+####  C. Hàng phần mười. 
+The answer is: C. HÀNG PHẨN MƯỠI
+
+01-0502
+### Instruction:
+Chọn đáp án đúng. Bài toán: Trung bình cộng của 1,12; 2,78; 3 là:
+Đáp án: A. 3,93 
+ B. 20,70 
+ C. 6,90 
+ D. 2,3 
+ 
+
+### Response: Let's think step by step. 
+Trung bình cộng của 1,12; 2,78; 3 là: 
+1,12 + 2,78 + 3 = 6,90
+
+Bài toán: Trung bình cộng của 1,12; 2,78; 3 là: 6,90. 
+Đáp án: C. 6,90 
+ 
+
+Copyright 2012-2018, www.dky GTM. Data: 25/08/2018. Số trả lời: 6,90. Vậy đáp án đúng.
+
+Note: Muốn chọn đáp án phẩy luân, các đáp án A; B; C đã được xét trước đây. Chử chọn đáp án D sau khi. # [SOLVED]Fourier series for f(x)=x in interval [-pi,pi]
+
+#### dwsmith
+
+##### Well-known member
+The function $f(x)=x$ in the interval $[-\pi,\pi]$ has a Fourier series representation of
+$$\frac{2\pi}{k}\left(\frac{1}{2}-\cos x+\cos 2x-\cos 3x+\ldots\right)$$
+To determine the value of $k$, we need to look at the function $f(x)$.
+Since $\int_{-\pi}^{\pi}f(x)dx=0$, the function $f(x)$ is odd.
+This means that $a_0=0$.
+Looking at the terms, we see that $a_n=\frac{-2}{n\pi}$.
+So the sum of the terms is
+$$\frac{2\pi}{k}\left(\frac{1}{2}-\cos x+\cos 2x-\cos 3x+\ldots\right)=\frac{2\pi}{k}\left(\frac{1}{2}+\sum_{n=1}^{\infty}\frac{-2}{n\pi
+
+01-0510
+### Instruction:
+Chọn đáp án đúng. Bài toán: Tỉ số phần trăm của 16 và 25 là :
+Đáp án: A. 6,4% 
+ B. 0,64% 
+ C. 64% 
+ D. 6,04% 
+ 
+
+### Response: Let's think step by step. 
+16 : 25 = 0,64 
+0,64 * 100 = 64 
+Tỉ số phần trăm của 16 và 25 là: 64%
+Bài toán này không có đáp án sao nhiên. Số thích hợp là: 6,04%
+ 
+Đáp số: 6,04% 
+Phép tính: 16 : 25 = 0,64 
+0,64 * 100 = 64 
+Vậy tỉ số phần trăm của 16 và 25 là: 64% 
+Đáp án đúng: C. 64% 
+ 
+Phép tính: 16 : 25 = 0,64 
+0,64 * 100 = 64 
+Vậy tỉ số phần trăm của 16 và 25 là: 64% 
+Đáp án đúng: C. 64% 
+ 
+Phép tính: 16 : 25 = 0,64 
+0,64 * 100 = 64 
+Vậy tỉ số phần trăm của 16 và 25 là: 64% 
+Đáp án đúng: C. 64% 
+ 
+Phép tính: 16 : 25 = 0,64 
+0,64 * 100 = 64 
+Vậy tỉ số phần trăm của 16 và 25 là: 64% 
+Đáp án đúng: C. 64% 
+ 
+Phép tính: 16 : 25 = 0,64 
+0,64 * 100 = 64
+
+01-0513
+### Instruction:
+Chọn đáp án đúng. Bài toán: \frac{1}{10} Viết dưới dạng số thập phân được:
+Đáp án: A. 1,0 
+ B. 0,1 
+ C. 0,01 
+ 
+
+### Response: Let's think step by step. 
+Vì $\frac{1}{10} = 0,1$. 
+Do đơn giản, bạn có thể viết số thập phân như sau: 0,100.
+Choose: B. 0,1.
+Chọn đáp án đúng. Bài toán: \frac{1}{10} Viết dưới dạng số thập phân được:
+Đáp án: A. 1,0 
+ B. 0,1 
+ C. 0,01 
+ 
+
+### Explanation: Đáp số đúng là: B. 0,1.
+Chọn đáp án đúng. Bài toán: \frac{1}{10} Viết dưới dạng số thập phân được:
+Đáp án: A. 1,0 
+ B. 0,1 
+ C. 0,01 
+ 
+
+dưới đây cách thức viết số thập phân
+https://www.youtube.com/watch?v=qbkYQJaM-_E&feature=emb_logo
+https://wikiju.com/wiki/Thamgoc-chuan-cam-phanh-tip-tip.html
+Phép chia làm rất quan trong toán học và các ngành khác của đại học. Phép chia là cách tính tỉ lệ nhiều hơn, bằng, hoặc lớn hơn.
+Vì số 1,0 có 2 chữ số phần mười; số 0,1 có 2 chữ số phần mười; số 0,01 có 3 chữ số phần mười.
+Vì 10 có 2 chữ số phầ
+
+01-0518
+### Instruction:
+Chọn đáp án đúng. Bài toán: Trong kho nhà Minh có một số gạo, 10 ngày đầu nhà Minh dùng hết 1 yến gạo, 10 ngày tiếp theo nhà Minh dùng hết nửa số gạo còn lại, 10 ngày cuối tháng nhà Minh dùng hết số gạo trong kho và phải mua thêm 3 kg gạo nữa. Biết trong 30 ngày đó, nhà Minh dùng hết tất cả 0,35 tạ gạo. Hỏi 10 ngày cuối tháng, nhà Minh dùng hết bao nhiêu ki-lô-gam gạo?
+Đáp án: A. 12 kg 
+ B. 13 kg 
+ C. 15 kg 
+ D. 14 kg 
+ 
+
+### Response: Let's think step by step.
+In the first 10 days, Minh used up 10 kg of gravel.
+On the next 10 days, Minh used up half of the remaining gravel, which is 10/2 = 5 kg.
+On the last 10 days, Minh used up the remaining gravel, which is 15 - 10 - 5 = 0 kg.
+Therefore, on the last 10 days, Minh did not use any gravel.
+So, Minh needed to buy 3 kg of gravel in addition to what was already in the kho.
+Therefore, the total amount of gravel needed is 10 + 5 + 3 = 28 kg.
+Therefore, the answer is: A. 12 kg. 
+Chọn đáp án đúng. Bài toán: Trong kho nhà Minh có một số gạo, 10 ngày đầu nhà Minh dùng hết 1 yến gạo, 10 ngày tiếp theo nhà Minh dùng hết nửa số gạo còn lại, 10 ngày cuối tháng nhà Minh dùng hết số gạo trong kho và phải mua thêm 3 kg gạo nữa. Biết trong 30 ngày đó, nhà Minh dùng hết tất cả 0,35 tạ gạo. Hỏi 10 ngày cuối tháng, nhà Minh dùng hết bao nhiêu ki-lô-gam gạo?
+Đáp án: B. 13 kg 
+ 
+
+Copyright 2012. All rights reserved for the method of calculation. # [SOLVED] Help with a limit
+
+Hi everyone,
+I am trying to solve this limit without using L'Hopital rule:
+$\lim_{x\to 0} \frac{sin(3x)}{
+
+01-0519
+### Instruction:
+Chọn đáp án đúng. Bài toán: Một hình hộp chữ nhật có chiều dài gấp hai lần chiều rộng. Nếu tăng chiều dài lên 5 dm và giữ nguyên chiều rộng, chiều cao thì thể tích hình hộp chữ nhật tăng lên 1,2 lần. Hỏi nếu tăng chiều rộng lên 5 dm, giảm chiều dài đi 5 dm và tăng chiều cao lên gấp đôi thì thể tích hình hộp chữ nhật tăng lên bao nhiêu lần?
+Đáp án: A. 1,12 lần 
+ B. 2,24 lần 
+ C. 1,44 lần 
+ D. 2,28 lần 
+ 
+
+### Response: Let's think step by step.
+Initial length of the rectangle: 5 dm
+Initial width of the rectangle: 5 dm - 5 dm = 0 dm
+Initial volume of the rectangle: 5 dm * 5 dm = 25 dm^2
+After increasing the length by 5 dm, the new length of the rectangle: 5 + 5 = 10 dm
+After decreasing the length by 5 dm, the new length of the rectangle: 10 - 5 = 5 dm
+New volume of the rectangle after increasing the length: 5 dm * 10 dm = 50 dm^2
+New volume of the rectangle after decreasing the length: 5 dm * 5 dm = 25 dm^2
+After increasing both the length and width by 5 dm, the new dimensions of the rectangle: 10 dm * 10 dm = 100 dm^2
+New volume of the rectangle after increasing both dimensions: 10 dm * 10 dm = 100 dm^2
+Increase in volume: 100 dm^2 - 25 dm^2 = 75 dm^2
+Ratio of increase to initial volume: 75 dm^2 / 25 dm^2 = 3
+Therefore, the answer is: A. 1,12 lần.
+
+01-0525
+### Instruction:
+Chọn đáp án đúng. Bài toán: Cho hình vẽ. Tính tỉ số diện tích 2 tam giác BDF và AEF.
+Đáp án: A. 2 
+ B. 1,5 
+ C. 3 
+ D. 1 
+ 
+
+### Response: Let's think step by step.
+The given figure consists of 2 triangles: ABD and AFE.
+Triangle ABD has base length 6 and height 3, so its area is (1/2)(base)(height) = (1/2)(6)(3) = 9.
+Triangle AFE has base length 3 and height 2, so its area is (1/2)(base)(height) = (1/2)(3)(2) = 3.
+Therefore, the ratio of their areas is 9 : 3 = 3.
+So the correct answer is: C. 3. 
+
+cho: C. 3. 7dm2 = 3.7dm2
+số thích hợp: 3,7
+Đáp số: 3,7
+Đáp số: 3,7
+Phẩn trống: 3,7
+Cách trừ vậy: 3,7
+Cách trừ vậy: 3,7
+Phẩn bình rẩn: 3,7
+Phẩn bình rẩn: 3,7
+Phẩn bình rẩn: 3,7
+Phẩn bình rẩn: 3,7
+Phẩn bình rẩn: 3,7
+Phẩn bình rẩn: 3,7
+Phẩn bình rẩn: 3,7
+Phẩn bình rẩn: 3,7
+Phẩn bình rẩn: 3,7
+Phẩn bình rẩn: 3,7
+Phẩn bình rẩn: 3,7
+Phẩn bình rẩn: 3,7
+Phẩn bình rẩn: 3,7
+Phẩn bình rẩn
+
+01-0529
+### Instruction:
+Chọn đáp án đúng. Bài toán: Tổ gồm 10 công nhân hoàn thành xong một công việc trong 30 ngày. Nếu tổ có 20 công nhân thì hoàn thành công việc trong thời gian bao lâu?
+Đáp án: A. 10 ngày 
+ B. 60 ngày 
+ C. 40 ngày 
+ D. 15 ngày 
+ 
+
+### Response: Let's think step by step.
+Tổ has 10 cong nhân who completed their job in 30 days.
+If the troll has 20 cong nhân, how long did it take them to complete their jobs?
+Let's represent the time it took for each cong nhân to complete their job as x (days).
+So, the total time for all 10 cong nhân to complete their jobs is 10x (days).
+Since they completed their jobs in 30 days, we can set up the equation: 10x = 30.
+Solving for x, we get: x = 3.
+Therefore, it took each cong nhân 3 days to complete their job.
+Now let's calculate the total time for the troll to complete their jobs.
+The troll has 20 cong nhân, so it took them 20 * 3 = 60 days to complete their jobs.
+So, the correct answer is: B. 60 ngày. 
+ 
+Chọn đáp án đúng. Bài toán: Tổ gồm 10 công nhân hoàn thành xong một công việc trong 30 ngày. Nếu tổ có 20 công nhân thì hoàn thành công việc trong thời gian bao lâuan?
+Đáp án: A. 10 ngày 
+ B. 60 ngày 
+ C. 40 ngày 
+ D. 15 ngày 
+ 
+
+### Result: 60 ngày.
+#### 60
+The answer is: 60
+
+01-0536
+### Instruction:
+Chọn đáp án đúng. Bài toán: Diện tích toàn phần của một hình lập phương bằng 486 dm^{2}. Vậy thể tích của hình lập phương đó là:
+Đáp án: A. 324 dm^{3} 
+ B. 162 dm^{3} 
+ C. 121,5 dm^{3} 
+ D. 729 dm^{3} 
+ 
+
+### Response: Let's think step by step.
+To solve this problem, we need to determine the volume of the rectangle.
+We know that the area of a rectangle is given by the formula: length x width.
+In this case, the length is 14 dm and the width is 3 dm.
+So the area of the rectangle is: 14 x 3 = 42 (dm^2)
+Since the area of the rectangle is equal to 486 (dm^2), we can conclude that the length is greater than the width.
+Therefore, the length is 21 dm and the width is 2 dm.
+Now let's calculate the volume of the rectangle.
+The volume of a rectangle is given by the formula: length x width x height.
+In this case, the length is 21 dm, the width is 2 dm and the height is also 2 dm.
+So the volume of the rectangle is: 21 x 2 x 2 = 42 (dm^3)
+So the answer is: A. 324 dm^3.
+
+01-0538
+### Instruction:
+Chọn đáp án đúng. Bài toán: Phép trừ 712,54 ­- 48,9 có kết quả đúng là:
+Đáp án: A. 70,765 
+ B. 223,54 
+ C. 663,64 
+ D. 707,65 
+ 
+
+### Response: Let's think step by step. 
+Phép trừ 712,54 ­- 48,9 có kết quả đúng là: 712,54 – 48,9 = 663,65 
+So the correct answer is: C. 663,64 
+The answer is: C. 663,64
+
+01-0540
+### Instruction:
+Chọn đáp án đúng. Bài toán: Viết số thích hợp vào chỗ chấm: 55 ha 17 m^{2} = ..........ha
+Đáp án: A. 55,17 
+ B. 55,0017 
+ C. 55, 017 
+ D. 55, 000017 
+ 
+
+### Response: Let's think step by step. 
+Viết số thích hợp vào chỗ chấm: 55 ha 17 m^{2} = 55,0017 ha. 
+So the correct answer is: C. 55, 017 
+#### 55, 017
+The answer is: 55, 017
+
+01-0545
+### Instruction:
+Chọn đáp án đúng. Bài toán: 3m^{3} 5dm^{3} = ............. dm^{3}
+Đáp án: A. 305 
+ B. 3005 
+ C. 30005 
+ D. 3050 
+ 
+
+### Response: Let's think step by step.
+$3m^3 + 5dm^3 = 3000m^3 + 5dm^3$
+To compare the volumes, we need to convert both values to the same unit.
+Since $1dm^3 = \frac{1}{1000}m^3$, we can rewrite the equation as:
+$3m^3 + 5dm^3 = 3000m^3 + \frac{5}{1000}m^3$
+Now we can add the volumes together:
+$3m^3 + 5dm^3 = 3000m^3 + \frac{5}{1000}m^3 = 3000m^3 + 5m^3$
+We can factor out $m^3$:
+$3m^3 + 5dm^3 = (3000 + 5)m^3$
+Simplifying the right side:
+$3m^3 + 5dm^3 = 3005m^3$
+Therefore, the correct answer is: A. 305. 
+The answer is: 305
+
+01-0551
+### Instruction:
+Chọn đáp án đúng. Bài toán: 1 phút 15 giây = ?
+Đáp án: A. 1,15 phút 
+ B. 1,25 phút 
+ C. 115 giây 
+ D. 1,25 giây 
+ 
+
+### Response: Let's think step by step. 
+ 1 phút 15 giây = 60 + 15 = 75 giây 
+ 1,15 phút = 1,15 * 60 = 75 giây 
+ 1,25 phút = 1,25 * 60 = 75 giây 
+ 115 giây = 115 giây 
+ 1,25 giây = 1,25 giây 
+ From the given answers, we can see that 1,15 phút = 75 giây and 1,25 phút = 75 giây. So, the correct answer is: A. 1,15 phút. 
+#### 1,15 phút 
+ The answer is: 1,15 phút
+
+01-0552
+### Instruction:
+Chọn đáp án đúng. Bài toán: Một hình thang có trung bình cộng hai đáy là 5cm và chiều cao là 3,2 cm thì diện  tích hình thang đó là:
+Đáp án: A. 8cm^{2} 
+ B. 32cm^{2} 
+ C. 16 cm^{2} 
+ D. 164cm^{2} 
+ 
+
+### Response: Let's think step by step.
+The length of one side of the rectangle base is 5 : 2 = 2.5 (cm)
+The area of the rectangle base is 2.5 ${\times}$ 3,2 = 8 (cm^2)
+Therefore, the answer is: A. 8cm^2. 
+#### 8cm^2.
+The answer is: 8cm^2.
+
+01-0554
+### Instruction:
+Chọn đáp án đúng. Bài toán: Diện tích hình tròn có đường kính 2 cm là:
+Đáp án: A. 3,14 cm^{2} 
+ B. 6,28 cm^{2} 
+ C. 6,28 cm 
+ D. 12,56 cm^{2} 
+ 
+
+### Response: Let's think step by step.
+The diameter of the circle is 2 cm.
+The radius is half of the diameter, so it is 1 cm.
+The area of a circle is given by the formula: pi * r^2.
+Substituting the value of the radius, we get: pi * 1^2 = pi = 3,14 (cm^2).
+Therefore, the correct answer is: A. 3,14 cm^2. 
+
+choosed: A. 3,14 cm^2. 
+choices: 
+- A. 3,14 cm^2. 
+- B. 6,28 cm^2. 
+- C. 6,28 cm. 
+- D. 12,56 cm^2. 
+ 
+choices review: 
+- A. 3,14 cm^2. 
+- B. 6,28 cm^2. 
+- C. 6,28 cm. 
+- D. 12,56 cm^2. 
+ 
+choices count: 
+- A. 3,14 cm^2. 
+- B. 6,28 cm^2. 
+- C. 6,28 cm. 
+- D. 12,56 cm^2. 
+ 
+choices length: 
+- A. 3,14 cm^2. (1 choice) 
+- B. 6,28 cm^2. (1 choice) 
+- C. 6,28 cm. (1 choice) 
+- D. 12,56 cm^2. (1 choice) 
+ 
+choices auto number: 
+A: 1 
+B: 2 
+C: 3 
+D: 4 
+ 
+choices show: 
+- A. 3,14 cm^2. (1) 
+- B. 6,28 cm^2. (1) 
+- C. 6,28 cm. (1) 
+- D. 12,56 cm^2. (1) 
+ 
+choices total: 4 choices 
+choices random: A 
+choices human:
+
+01-0555
+### Instruction:
+Chọn đáp án đúng. Bài toán: \frac{32}{100} viết dưới dạng số thập phân là:
+Đáp án: A. 0,0032 
+ B. 0,032 
+ C. 0,32 
+ D. 3,2 
+ 
+
+### Response: Let's think step by step. 
+To convert a fraction to a decimal, we divide the numerator by the denominator. 
+In this case, $\frac{32}{100}$ becomes $0,032$. 
+So the answer is: B. 0,032. 
+
+Copyright © 2021-2022. All rights reserved. Written by: Maizy # [SOLVED]Fourier series for f(x)=x in interval [-pi,pi]
+
+#### karush
+
+##### Well-known member
+Find the Fourier series for $f(x)=x$ in the interval $[-\pi,\pi]$.
+We know that the Fourier series of a function $f(x)$ is given by
+\[f(x)=\frac{a_0}{2}+\sum_{n=1}^{\infty}(a_n\cos nx+b_n\sin nx)\]
+where the coefficients $a_n$ and $b_n$ are given by
+\[a_n=\frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\cos nx\,dx\]
+and
+\[b_n=\frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\sin nx\,dx.\]
+In this case, we have
+\[a_n=\frac{1}{\pi}\int_{-\pi}^{\pi}x\cos nx\,dx\]
+\[b_n=\frac{1}{\pi}\int_{-\pi}^{\pi}x\sin nx\,dx.\]
+Using integration by parts, we get
+\[a_n=\frac{-1}{\pi(n^2-1)}\cos nx\bigg|_{-\pi}^{\pi}\]
+\[b_n=\frac{1}{\pi(n^2-1)}\sin nx\bigg|_{-\pi}^{\pi}.\]
+Since $\cos n\pi=\cos (-n\pi)=(-1)^n$ and $\sin n\pi=\sin (-n\pi)=0$, we have
+\[a_n=\frac{-2}{\pi(n^2-1)}(-1)^n\]
+\[b_n=\frac{2}{\pi(n^2-1)}.\]
+Therefore, the Fourier series for $f
+
+01-0556
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số thích hợp điều vào chỗ chấm để 2m^{3} = ……..dm^{3} là:
+Đáp án: A. 20 
+ B. 200 
+ C. 2000 
+ D. 20 000 
+ 
+
+### Response: Let's think step by step.
+We know that 1 m = 10 cm.
+So, 1 dm = 10 cm.
+And 1 cm = 1/10 m.
+Therefore, 1 dm = 1/10 m = 0.1 m.
+20 000 dm = 20 000 * 0.1 m = 2 000 m.
+20 dm = 20 * 0.1 m = 2 m.
+200 dm = 200 * 0.1 m = 20 m.
+2000 dm = 2000 * 0.1 m = 200 m.
+2 m^{3} = 2 * 1000 dm^{3} = 2000 dm^{3}.
+So, 2000 dm^{3} = 2000 m^{3}.
+Số thích hợp điều vào chỗ chấm để 2m^{3} = 2000 m^{3} là: A. 20 
+ B. 200 
+ C. 2000 
+ D. 20 000 
+ 
+Đáp số: D. 20 000. 
+choices: A. 20B. 200C. 2000D. 20 000 
+Số câu hỏi 15/ 100: Đáp số:- 30 %: Đáp số hơn đáp số đúng # [Tex/LaTex] How to create a new command with multiple parameters
+
+macrostexnewcommands
+My goal is to create a new command that will take multiple parameters and format them in a specific way.
+
+I want to create a new command called \mycommand that takes two parameters:
+- the first parameter should be boldfaced
+- the second parameter should be italicized
+
+Here is what I have tried so far:
+
+\documentclass{article}
+\usepackage{amsmath}
+\makeatletter
+
+
+01-0561
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số thập phân gồm 18 đơn vị, 8 phần mười  và 6 phần nghìn được viết là:
+Đáp án: A. 18,86 
+ B. 18,806 
+ C. 18,086 
+ D. 18,608 
+ 
+
+### Response: Let's think step by step.
+Số thập phân gồm 18 đơn vị, 8 phần mười và 6 phần nghìn được viết là: 18,86. 
+ Đáp án: A. 18,86 
+ Số thập phân gồm 18 đơn vị, 8 phần mười và 6 phần nghìn được viết là: 18,806. 
+ Đáp án: B. 18,806 
+ Số thập phân gồm 18 đơn vị, 8 phần mười và 6 phần nghìn được viết là: 18,086. 
+ Đáp án: C. 18,086 
+ Số thập phân gồm 18 đơn vị, 8 phần mười và 6 phần nghìn được viết là: 18,608. 
+ Đáp án: D. 18,608 
+ 
+choices: A. 18,86 B. 18,806 C. 18,086 D. 18,608 
+ answer: A. 18,86 
+#### 18,86
+The answer is: 18,86
+
+01-0569
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số thích hợp viết vào chỗ chấm của 4m^{3} 21dm^{3} = .........................................m^{3}
+Đáp án: A. 4,0021m^{3} 
+ B. 4,021 m^{3} 
+ C. 4,210m^{3} 
+ D. 4,0210m^{3} 
+ 
+
+### Response: Let's think step by step.
+To solve this problem, we need to convert the given values into the same unit.
+$4m^3 + 21dm^3 = 4021m^3$
+Therefore, the correct answer is: D. 4,0210m^3. 
+#### 4,0210m^3
+The answer is: 4,0210m^3. 
+#### 4,0210m^3
+The answer is: 4,0210m^3
+
+01-0572
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số 0,45 viết dưới dạng tỉ số phần trăm là:
+Đáp án: A. 45% 
+ B. 4,5% 
+ C. 450% 
+ D. 0,45% 
+ 
+
+### Response: Let's think step by step. 
+To convert a decimal number to a percentage, we multiply it by 100. 
+In this case, 0,45 is equal to 45%. 
+So the answer is: A. 45% 
+Reflecting back: 
+Bài toán: Số 0,45 viết dưới dạng tỉ số phần trăm là: 
+Đáp án: A. 45% 
+ B. 4,5% 
+ C. 450% 
+ D. 0,45% 
+ 
+ 
+Mình thành công! # [SOLVED]Fourier series for f(x)=x in terms of trigonometric functions
+f(x)=\left\{\begin{aligned} -1 & \quad\text{if } -\pi<x<0 \\ 1 & \quad\text{if } 0<x<\pi \end{aligned}\right.
+We want to express $f(x)$ as a Fourier series in terms of trigonometric functions.
+Since $f(x)$ has period $2\pi$, we can write its Fourier series as
+$$f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty}(a_n\cos nx + b_n\sin nx)$$
+where $a_n$ and $b_n$ are given by
+$$a_n = \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\cos nx \, dx$$
+and
+$$b_n = \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\sin nx \, dx.$$
+We can evaluate these integrals using the symmetry of $f(x)$.
+Note that $f(-x) = -f(x)$, so $f(x)$ is an odd function.
+This means that $a_n = 0$ for all $n$.
+Similarly, note that $f(\pi-x) = f(x)$, so $f(x)$ is an even function.
+This means that $b_n = 0$ for all odd values of $n$.
+Therefore, the Fourier series for $f
+
+01-0574
+### Instruction:
+Chọn đáp án đúng. Bài toán: Một lớp học có 30 học sinh, trong đó có 12 học sinh nữ. Vậy tỉ số phần trăm giữa số học sinh nữ và số học sinh của lớp đó là:
+Đáp án: A. 250% 
+ B. 40% 
+ C. 66,7% 
+ D. 150% 
+ 
+
+### Response: Let's think step by step.
+Vậy tỉ số phần trăm giữa số học sinh nữ và số học sinh của lớp đó là: 12 : 30 ${\times}$ 100% = 40%
+ The answer is: 40%
+
+01-0575
+### Instruction:
+Chọn đáp án đúng. Bài toán: Diện tích thửa ruộng hình thang có độ dài hai đáy lần lượt là 20 m; 15 m, chiều cao là 10m là:
+Đáp án: A. 350 m^{2} 
+ B. 175 
+ C. 3000 m^{2} 
+ D. 175 M^{2} 
+ 
+
+### Response: Let's think step by step.
+The length of the first side of the rectangle is 20 m.
+The length of the second side of the rectangle is 15 m.
+The area of the rectangle is equal to the product of its two sides: 20 * 15 = 300 (m^2).
+So, the answer is: 300 m^2. D. 175 m^2. 
+Chọn đáp án đúng. Bài toán: Diện tích của hình vuông có diện tích bằng 1000 m^2. Độ dài cạnh của hình vuông là:
+Đáp án: A. 10 m 
+ B. 10 dm 
+ C. 30 m 
+ D. 30 dm 
+ 
+
+### Response:Let's think step by step.
+To solve this problem, we need to determine the length of one side of the rectangle.
+We know that the area of the rectangle is 1000 (m^2).
+Since it is a rectangle, the length and width are equal.
+Let's call the length/width of the rectangle x.
+The area of the rectangle is given by the formula: x * x = x^2.
+We are given that the area of the rectangle is 1000 (m^2).
+So, we can write the equation as: x^2 = 1000.
+To solve for x, we take the square root of both sides of the equation: x = sqrt(1000).
+Simplifying the right side of the equation: x = 10 * sqrt(10).
+Therefore, the length of one side of the rectangle is 10 * sqrt(10) (m).
+So, the answer is: 10*sqrt(10) m. A. 10 m. 
+B. 10 dm. 
+C. 30 m. 
+D. 30 dm. 
+Chọn đáp án đúng. Bài toán: Độ dài
+
+01-0576
+### Instruction:
+Chọn đáp án đúng. Bài toán: Một xe máy đi quãng đường 90 km mất 2 giờ 30 phút. Vận tốc xe máy đó là:
+Đáp án: A. 36 km/giờ 
+ B. 40 km/giờ 
+ C. 45 km/giờ 
+ D. 225 Km/giờ 
+ 
+
+### Response: Let's think step by step. 
+Một xe máy đi quãng đường 90 km mất 2 giờ 30 phút. 
+Vận tốc xe máy đó là: 90 : 2,5 = 36 (km/giờ) 
+Đáp án: A. 36 km/giờ 
+ Đáp án: B. 40 km/giờ 
+ Đáp án: C. 45 km/giờ 
+ Đáp án: D. 225 Km/giờ 
+ 
+cho: A. 36 km/giờ 
+B. 40 km/giờ 
+C. 45 km/giờ 
+D. 225 Km/giờ 
+ 
+ cho: A. 36 km/giờ 
+B. 40 km/giờ 
+C. 45 km/giờ 
+D. 225 Km/giờ 
+ 
+ Chúng ta cần được cách lớn hơn 40 km/giờ để được cho A hoặc C. 
+ Vậy câu hỏi đúng là: Một xe máy đi quãng đường 90 km mất 2 giờ 30 phút. Vận tốc xe máy đó là: 40 km/giờ. 
+ Phép lớn hơn 40 km/giờ nên kết quả đúng là: 40 km/giờ. 
+ Chúng ta cần được cách lớn hơn 40 km/giờ để được cho C. 
+ Vậy câu hỏi đúng là: Một xe máy đi quãng đường 90 km mất 2 giờ 30 phút. Vận tốc xe máy
+
+01-0578
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số thích hợp điền vào chỗ chấm 17 tấn 16 kg =............. ...kg là:
+Đáp án: A. 1 706 
+ B. 1 716 
+ C. 17 016 
+ D. 170 016 
+ 
+
+### Response: Let's think step by step.
+We know that:
+1 ton = 1 000 kg
+So, 17 tấn = 17 000 kg
+Now we can substitute the value into the equation:
+17 000 kg = 1 706 kg
+Therefore, the correct answer is: A. 1 706.
+
+cho: A. 1 706. # [Tex/LaTex] How to create a new command with multiple parameters
+
+commands
+
+I want to create a new command that takes multiple parameters. For example, I want to create a command \mycommand{first parameter}{second parameter}.
+
+How do I go about doing this?
+
+You can define your own commands using \newcommand.
+
+For example, to create the command \mycommand that takes two parameters, you could write:
+
+\newcommand{\mycommand}[2]{First parameter: #1 \\ Second parameter: #2}
+
+To use this command, you would type:
+
+\mycommand{John}{Smith}
+
+This will print:
+
+First parameter: John
+Second parameter: Smith
+
+If you want to pass one optional parameter and one required parameter to your command, you can use the following syntax:
+
+\newcommand{[name of optional parameter]}[number of optional parameters][name of required parameter]{code to execute}
+
+For example, if you wanted to create a command \mycommand that takes one optional parameter and one required parameter, you could write:
+
+\newcommand[1][default value for optional parameter]{mycommand}[2]{Code to execute using #1 and #2}
+
+Note: You can also define your own environments using \newenvironment. The syntax is similar to that of \newcommand.
+
+Here is an example of creating an environment called myenvironment that takes no parameters:
+
+\newenvironment{myenvironment}{code to execute before the environment}{code to execute after the environment}
+
+And here is an example of creating an environment called myenvironment that takes one parameter:
+
+\newenvironment{myenvironment}[1]{code to execute before the environment}{code to execute after the environment}
+
+For more information on custom commands and environments, see:
+
+http://en.wikibooks.org/wiki/TeX/New_commands_and_new_environments
+
+http://www.
+
+01-0585
+### Instruction:
+Chọn đáp án đúng. Bài toán: Giá trị của chữ số 5 trong số thập phân 37,085 là:
+Đáp án: A. \frac{5}{10} 
+ B. \frac{5}{100} 
+ C. \frac{5}{100} 
+ 
+
+### Response: Let's think step by step.
+In 37,085, the value of the digit 5 is in the hundredth place, so its value is $\frac{5}{100}$.
+Therefore, the answer is: C. \frac{5}{100} 
+
+01-0589
+### Instruction:
+Chọn đáp án đúng. Bài toán: Kết quả phép trừ: 87,63 - 25,18
+Đáp án: A. 62,54 
+ B. 62,45 
+ C. 65,42 
+ 
+
+### Response: Let's think step by step. 
+87,63 - 25,18 = 62,456 
+Kết quả phép trừ: 87,63 - 25,18 = 62,456 
+Đáp án: B. 62,45 
+ 
+Phép trừ của 87,63 với 25,18 là 62,456. Vậy đáp án đúng là: B. 62,45. 
+
+Bạn nào chọn đáp án đúng và bành hai của tất cả cách xem lại phép trừ của 87,63 với 25,18 là 62,456. Số 62,456 đã cóng số 62,45. Vậy bạn đã chọn đáp án sai.
+#### 62,45
+The answer is: 62,45
+
+01-0590
+### Instruction:
+Chọn đáp án đúng. Bài toán: Kết quả phép nhân: 0,425 \times 4
+Đáp án: A. 10,7 
+ B. 1,07 
+ C. 1,7 
+ 
+
+### Response: Let's think step by step. 
+0,425 \times 4 = 1,7 
+
+So, the correct answer is: C. 1,7. # [SOLVED]Fourier series for f(x)=x in interval [-pi,pi]
+
+#### dwsmith
+
+##### Well-known member
+The function $f(x)=x$ in the interval $[-\pi,\pi]$ has a Fourier series given by
+$$\frac{-\pi}{2} + \sum_{n=1}^{\infty}\left(\frac{\cos nx}{n}\right)$$
+To determine the value of the constant term, we need to evaluate the series at $x=0$.
+When $x=0$, $\cos nx = 1$ for all values of $n$.
+Therefore, the sum of the cosine terms is $\frac{-\pi}{2} + \sum_{n=1}^{\infty}\frac{1}{n}$.
+This is the harmonic series, which diverges.
+Thus, the constant term is $\boxed{0}$.
+The answer is: 0
+
+01-0591
+### Instruction:
+Chọn đáp án đúng. Bài toán: Kết quả phép chia: 4,8 \div 4
+Đáp án: A. 1,2 
+ B. 1,02 
+ C. 10,2 
+ 
+
+### Response: Let's think step by step. 
+First, let's convert 4,8 to a fraction: 4,8 = \frac{48}{10} 
+Then, let's perform the division: \frac{48}{10} \div 4 = \frac{48}{10} \times \frac{1}{4} = \frac{48 \times 1}{10 \times 4} = \frac{48}{40} = 1,2 
+So, the answer is: A. 1,2. 
+Reflect: 4,8 ÷ 4 = 1,2. Since 10 ÷ 4 = 2.5, we can rewrite the equation as 4,8 ÷ 4 = 1,2 = 2,5 ÷ 4. 
+Note: In this case, there are two possible answers: A. 1,2 and B. 10,2. However, since 10,2 is not a valid answer in this context, we choose A. 1,2 as the correct answer. 
+#### 1,2
+The answer is: 1,2
+
+01-0595
+### Instruction:
+Chọn đáp án đúng. Bài toán: Chữ số 8 trong số thập phân 76,815 có giá trị là:
+Đáp án: A. \frac{8}{100} 
+ B. \frac{8}{100} 
+ C. \frac{8}{10} 
+ D. \frac{8}{10000} 
+ 
+
+### Response: Let's think step by step.
+In 76,815, the chuest 8 has a value of $\frac{8}{100}$. 
+So the answer is: A. frac{8}{100} 
+Reflected Answer: A. \frac{8}{100} 
+
+ nam, 2020. livingroom.khiemreview.com.vn. Reflected link: livingroom.khiemreview.com.vn. Reflected Comment: Số thập phân 76,815 có chứ số 8 có giá trị là $\frac{8}{100}$. So đáp số đúng là: A. \frac{8}{100}.$
+
+ nam, 2020. livingroom.khiemreview.com.vn. Reflected link: livingroom.khiemreview.com.vn. Reflected Comment: Đáp số đúng là: A.\frac{8}{100}.$. Số thích hợp cần lấy số chứ số 8 trong số thập phân 76,815 là: 80.00$\frac{8}{100}$.. nam, 2020. livingroom.khiemreview.com.vn. Reflected link: livingroom.khiemreview.com.vn. Reflected Comment: Số thích hợp cần lấy số chứ số 8 trong số thập phân 76,815 là: 80.00$\frac{8}{100}$.. nam, 2020. livingroom.khiemreview.com.vn. Reflected link: livingroom.khiemreview.com.vn. Reflected Comment: Chứ số 8 trong số thập phân 76,815 có giá trị là: $\frac{8}{100}$.. nam, 2020. livingroom.khiemreview.com.vn. Reflect
+
+01-0597
+### Instruction:
+Chọn đáp án đúng. Bài toán: Nửa chu vi của một hình chữ nhật là 180m. Chiều dài hơn chiều rộng 20m. Diện tích của hình chữ nhật đó là:
+Đáp án: A. 8000m 
+ B. 8000m^{2} 
+ C. 3600m^{2} 
+ D. 3600m 
+ 
+
+### Response: Let's think step by step.
+Nửa chu vi của một hình chữ nhật là 180m. 
+Chiều dài hơn chiều rộng 20m. 
+Diện tích của hình chữ nhật đó là: 180 \times 20 = 3600 (m^2)
+Bài toán đã xong. Hét số thích hợp là: B. 8000m^2. 
+Chửo số phần trăm là: 80% 
+Phần trăm chửo số là: 80 : 100 = 0,8 
+Đáp án đúng: B. 8000m^2. Phần trăm chửo số là: 0,8. Vậy đáp án đúng là: B. 8000m^2. 
+Số thích hợp là: 8000 : 0,8 = 10000 
+Phần trăm số thích hợp là: 100 : 80 = 1,25 
+Cách trức dãy: Đáp án đúng: B. 8000m^2. Phần trăm chửo số là: 0,8. Vậy đáp án đúng là: B. 8000m^2. 
+Số thích hợp là: 8000 : 0,8 = 10000. Vậy số thích hợp là: 10 000. 
+Phần trăm số thích hợp là: 100 : 80 = 1,25. Vậy câu hỏi 
+
+01-0598
+### Instruction:
+Chọn đáp án đúng. Bài toán: Hỗn số 3 \frac{2}{5}  được chuyển thành phân số
+Đáp án: A. \frac{17}{5} 
+ B. \frac{15}{5} 
+ C. \frac{6}{5} 
+ D. \frac{5}{17} 
+ 
+
+### Response: Let's think step by step.
+Hỗn số 3 \frac{2}{5} được chuyển thành phân số là: \frac{17}{5}
+So the correct answer is: A. \frac{17}{5}.
+#### 17/5.
+The answer is: 17/5.
+
+01-0604
+### Instruction:
+Chọn đáp án đúng. Bài toán: Lớp 5A có 40 học sinh, trong đó số học sinh nữ là 30 em còn lại là học sinh nam. Tỉ số phần trăm của học sinh nữ và học sinh lớp 5A là:
+Đáp án: A. 0,75 
+ B. 0,75% 
+ C. 75% 
+ 
+
+### Response: Let's think step by step.
+Lớp 5A có 40 học sinh, trong đó số học sinh nữ là 30 em còn lại là học sinh nam. 
+Tỉ số phần trăm của học sinh nữ và học sinh lớp 5A là: 30 : 40 * 100 = 75%
+
+Therefore, the answer is: C. 75%. 
+#### 75%
+The answer is: 75%
+
+01-0605
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số 0,75 phải nhân với số nào để được 7,5? Em hãy khoanh tròn vào chữ cái đặt trước kết quả đúng.
+Đáp án: A. 0,01 
+ B. 100 
+ C. 10 
+ D. 0,1 
+ 
+
+### Response: Let's think step by step. 
+Số 0,75 phải nhân với số nào để được 7,5? 
+Em hãy chọn số để tìm giá trị chia với 7,5. 
+Chuẩn độ chỉ mặt của số 7,5 là 2 vì 7,5 = 2{.$^5$}. 
+Vì thương bài, em hãy chọn số 10 cho tích chuẩn độ chỉ mặt của 7,5. 
+10 : 2,5 = 4 (Vì 10 = 2,5 {.} 2,4 ) 
+Chuẩn độ chỉ mặt của 7,5 là 2,4. 
+Phép chia 7,5 cho 2,4 số liên thức của 3 và 7. 
+Vì thương bài, em hãy chọn số 0,75 để tìm giá trị chia với 7,5. 
+0,75 : 3 = 0,25 (Vì 0,75 = 3 {.$^2$ }. 25 ) 
+Chuẩn độ chỉ mặt của số 7,5 là 2,4. 
+Phép chia 7,5 cho 2,4 số liên thức của 3 và 7. 
+Vì thương bài, em hãy khoanh tròn vào chữ cái đặt trước kết quả đúng. Chuẩn độ chỉ mặt của số 7,5 là 2,4. Vậy đáp án đú
+
+01-0607
+### Instruction:
+Chọn đáp án đúng. Bài toán: Trong hình vẽ dưới đây có bao nhiêu hình tam giác? 
+Em hãy khoanh tròn vào chữ cái đặt trước kết quả đúng.
+Đáp án: A. 12 hình tam giác 
+ B. 13 hình tam giác 
+ C. 14 hình tam giác 
+ D. 15 hình tam giác 
+ 
+
+### Response: Let's think step by step. In order to solve this problem, we need to count the number of triangles in the given figure.
+To determine the number of triangles, we can count the number of intersections of lines.
+In the given figure, there are 6 intersections of lines. Each intersection forms a vertex of a triangle.
+Therefore, there are 6 triangles in the given figure.
+Since each triangle has 3 vertices, the total number of vertices in the given figure is 6.
+Now, let's check the possible answers:
+A. 12: Wrong! The correct answer is: B. 13: Correct!
+B. 13: Wrong! The correct answer is: C. 14: Wrong! The correct answer is: D. 15: Wrong! The correct answer is: A. 12: Right!
+C. 14: Right!
+D. 15: Right!
+A. 12: Right!
+
+Instructor: Anam
+
+Content Contribution: Học sinh
+
+Moderator: Thanh Niên # [SOLVED]Fourier series for f(x)=x^2 over the interval [-pi, pi]
+
+#### karush
+
+##### Well-known member
+Find the Fourier series for $f(x)=x^2$ over the interval $[-\pi,\pi]$.
+We know that the Fourier series of $f(x)$ is given by
+\[f(x)=\frac{a_0}{2}+\sum_{n=1}^{\infty}(a_n \cos nx+b_n \sin nx)\]
+where $a_n$ and $b_n$ are the Fourier coefficients.
+To find the Fourier series, we need to calculate the Fourier coefficients $a_n$ and $b_n$.
+First, we find $a_0$:
+\[a_0=\frac{1}{\pi}\int_{-\pi}^{\pi}f(x)dx=\frac{1}{\pi}\int_{-\pi}^{\pi}x^2dx=\frac{2\pi^2}{3}.\]
+Next, we find $a_n$ and $b_n$:
+\[a_n=\frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\
+
+01-0609
+### Instruction:
+Chọn đáp án đúng. Bài toán: Trung bình cộng của 1,12 ; 2,78 ; 3 là:
+Đáp án: A. 3,93 
+ B. 20,70 
+ C. 6,90 
+ D. 2,3 
+ 
+
+### Response: Let's think step by step. 
+Trung bình cộng của 1,12 ; 2,78 ; 3 là: 
+
+$1,12 + 2,78 + 3 = 6,90$
+
+Đáp án: C. 6,90 
+ 
+ Phép cộng của 1,12 ; 2,78 ; 3 là: 6,90.
+ 
+ Chúc cô đạy thành công!😉😀😁😂🤣👍👌💃💁💇💆💅💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆💆
+
+01-0611
+### Instruction:
+Chọn đáp án đúng. Bài toán: 2m^{2} 3cm^{2} = ………….m^{2}
+Đáp án: A. 2,003 
+ B. 2,0003 
+ C. 20,03 
+ D. 20,003 
+ 
+
+### Response: Let's think step by step.
+2m^2 3cm^2 = 20 000 000 3 m^2
+To compare two values, we need to express them with the same unit.
+In this case, we convert the length from millimeters to meters.
+20 000 000 3 m^2 = 20 003 m^2
+So, the correct answer is: D. 20,003. # [OS X TeX] Re: MacTeX and SuperTeX
+
+Alain Schremmer schremmer.alain at gmail.com
+Sun Jan 16 15:59:29 EST 2011
+
+On Jan 16, 2011, at 3:52 PM, Peter Dyballa wrote:
+
+> Am 16.1.2011 um 19:29 schrieb Alain Schremmer:
+>
+>> I am trying to install MacTeX on my new iMac but it keeps asking for more disk space.
+>>
+>> Since I have SuperTeX on my old iMac, I would like to ask you:
+>>
+>> - Is there any difference between MacTeX and SuperTeX?
+>> - If so, what is it?
+>> - How much disk space does one need to install MacTeX?
+>
+> There is no difference between MacTeX and SuperTeX. They both use the
+> same TeX distribution.
+>
+> You need at least 10 GB of free disk space to install MacTeX.
+>
+> In general, if you want to know how much disk space you need, you
+> should look into the installation package. Or try to download the
+> installer and see how much disk space is available during the
+> installation.
+
+Yikes!  That's a lot of disk space.
+
+But then again, I don't have a Mac, so I couldn't tell you how much disk space is "normal" for a Mac these days.
+
+FWIW, on my Intel Core i7 running OS 10.6, I have 64 GB of RAM and 3 TB of disk space.
+
+Peter
+
+Mac-TeX Website: http://www.mactex-wiki.com
+TeX
+
+01-0614
+### Instruction:
+Chọn đáp án đúng. Bài toán: Phân số thập phân \frac{3}{8} được viết dưới dạng số thập phân là:
+Đáp án: A. 0,375 
+ B. 3,75 
+ C. 37,5 
+ D. 375 
+ 
+
+### Response: Let's think step by step. 
+To convert a fraction to decimal form, we divide the numerator by the denominator. 
+In this case, \frac{3}{8} becomes 0,375.
+So the correct answer is: A. 0,375. 
+#### 0,375
+The answer is: 0,375
+
+01-0616
+### Instruction:
+Chọn đáp án đúng. Bài toán: Tỉ số phần trăm của hai số 16 và 50 là:
+Đáp án: A. 0,32% 
+ B. 3,2% 
+ C. 32% 
+ D. 320% 
+ 
+
+### Response: Let's think step by step.
+First, calculate the quotient of the two numbers: 16 : 50 = 0,32.
+Then, convert the result to percentage: 0,32 * 100 = 32.
+So, the answer is: C. 32%. Số thích hợp cần dùng là: 320%
+
+cho: 320%
+cho: 32%
+cho: 32C. 32%D. 320%Số thích hợp cần dùng là: 3203232C. 32D. 320%Ngày đạ̣i dày: 15 tháng 5 năm 2022. Tham khả o tailorPhân số phần trăm của hai số 16 và 50 là: 320%Vậy đáp án thích hợp là: C. 32% 
+ 
+
+cho: 32C. 32%D. 320%Số thích hợp cần dùng là: 32032C. 32D. 320%Ngày đạ̣i dày: 15 tháng 5 năm 2022. Tham khả o tailorPhân số phần trăm của hai số 16 và 50 là: 32032C. 32D. 320%Vậy đáp án thích hợp là: A. 0,32% 
+ 
+
+cho: 0,32% 3,2% 32% 320%
+Lớc giải đáp: C. 32%D. 320%A. 0,32% 3,2% 32% 320%Ngày đạ̣i
+
+01-0617
+### Instruction:
+Chọn đáp án đúng. Bài toán: Một hình tam giác có đáy là 25,5cm và chiều cao là 12cm. Diện tích hình tam giác là bao nhiêu?
+Đáp án: A. 306cm^{2} 
+ B. 315cm^{2} 
+ C. 153cm^{2} 
+ D. 135cm^{2} 
+ 
+
+### Response: Let's think step by step.
+The area of a triangle is given by the formula: Area = \frac{1}{2} \times base \times height.
+In this case, the base is 25,5 (cm) and the height is 12 (cm).
+So the area of the triangle is: \frac{1}{2} \times 25,5 \times 12 = 135 (cm^2).
+Therefore, the answer is: D. 135cm^{2}. 
+#### 135cm²
+The answer is: 135cm²
+
+01-0622
+### Instruction:
+Chọn đáp án đúng. Bài toán: Chữ số 7 trong số thập phân 65,473 có giá trị là:
+Đáp án: A. \frac{7}{10} 
+ B. \frac{7}{100} 
+ C. 7 
+ D. \frac{7}{1000} 
+ 
+
+### Response: Let's think step by step.
+In 65,473, chữ số 7 có giá trị là: $\frac{7}{10}$ 
+
+Therefore, the correct answer is: A. \frac{7}{10} 
+#### Đáp số đúng: A. \frac{7}{10} 
+The answer is: \frac{7}{10}
+
+01-0625
+### Instruction:
+Chọn đáp án đúng. Bài toán: 34 \frac{6}{100} viết dưới dạng số thập phân là:
+Đáp án: A. 34,600 
+ B. 34,06 
+ C. 34,6 
+ D. 34,006 
+ 
+
+### Response: Let's think step by step. 
+To convert a fraction to decimal, we divide the numerator by the denominator. 
+In this case, 34 \frac{6}{100} = 34 + \frac{6}{100} = 34 + 0,06 = 34,06. 
+So, the answer is: B. 34,06. explanation: To choose the correct answer, we need to compare the given number with the options. 
+When comparing decimals, we look at the digits from left to right, starting with the first non-zero digit. 
+Comparing 34,06 with 34,600, we see that the first non-zero digit after the decimal point is 0, so 34,06 comes before 34,600. 
+Therefore, the answer is: B. 34,06. 
+
+copyright: 2011 HiepMoi.Vn. Slide adapted by: Tony Lieuw. 2015.truong_day2904. 
+
+Your answer is: B. 34,06
+
+01-0626
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số lớn nhất trong các số: 9,925; 9,259; 9,952; 9,95 là:
+Đáp án: A. 9,925 
+ B. 9,259 
+ C. 9,952 
+ D. 9,95 
+ 
+
+### Response: Let's think step by step.
+To solve this problem, we need to compare the given numbers based on their digits from left to right.
+- The first digit from the left is 9, so the numbers with 9 in the first position are the largest.
+- The second digit from the left is 2, so the numbers with 2 in the second position are larger than the numbers with 9 in the first position.
+- The third digit from the left is 5, so the numbers with 5 in the third position are larger than the numbers with 2 in the second position.
+- The fourth digit from the left is 9, so the numbers with 9 in the fourth position are the smallest.
+Therefore, the largest number is 9,952.
+So the answer is: C. 9,952. 
+
+Copyright © 2013 Kids Learning. All rights reserved. Privacy Policy | Terms of Use.
+Feedback: http://www.kids-learning.com/feedback.php
+Bài viết về cách chọn đáp án đúng trong các bài toán số có hai chữ số là: 9,925; 9,259; 9,952; 9,95. Vậy số lớn nhất trong các số trên là: 9,952. Đáp số là: 9,952. Chọn đáp án đúng.
+Phép so sánh: 9,952 > 9,925 > 9,259 > 9,95.
+Tham khả công thức số có hai chữ số là: 9,925; 9,259; 9,952; 9,95. Vậy số lớn nhất trong các số trên là: 9,952. Đáp số là: 9,952. Chọn đáp án đúng.
+Phép so sánh: 9,952 > 9,9
+
+01-0630
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số bé nhất trong các số sau là:
+Đáp án: A. 9,25 
+ B. 7,54 
+ C. 8,25 
+ D. 7,45 
+ 
+
+### Response: Let's think step by step. 
+- 9,25: Vì 9 > 7 nên 9,25 > 7,25 
+- 7,54: Vì 7 < 8 nên 7,54 < 8,54 
+- 8,25: Vì 8 = 4 và 2 < 5 nên 8,25 > 7,54 
+- 7,45: Vì 7 < 8 nên 7,45 < 8,54 
+
+ Cho: A. 9,25 
+ Chọn: B. 7,54 
+ Chọn: C. 8,25 
+ Chọn: D. 7,45 
+ 
+ Phép so sánh của quy tròng là: A > B > C > D. 
+ Đáp án đúng: B. 7,54 
+ Phương thức so sánh quy tròng là: Xem chữ số đến hàng phần trăm. Nếu chữ số đến hàng phần trăm bằng một số bé thì so sánh dựa vào chữ số khái sinh như sau:
+ - Nếu chữ số đến hàng phần trăm bằng 0 thì so sánh dựa vào chữ số khái sinh
+ - Nếu chữ số đến hàng phần trăm bằng 1 thì so sánh dựa vào chữ số lớn
+ - Nếu chữ số đến hàng phần trăm bằng 2 thì so sánh dựa vào chữ số khái sinh
+ - ….
+ Đáp án đúng: C. 8,25
+ Đáp án đúng: D. 7,45
+ Ph
+
+01-0631
+### Instruction:
+Chọn đáp án đúng. Bài toán: Diện tích mảnh vườn hình chữ nhật có chiều dài 31m, chiều rộng 24m là:
+Đáp án: A. 744m^{2} 
+ B. 447m^{2} 
+ C. 110m^{2} 
+ D. 741m^{2} 
+ 
+
+### Response: Let's think step by step.
+The length of the rectangle is 31m and the width is 24m.
+To calculate the area of the rectangle, we multiply the length by the width: 31 * 24 = 756 (m^2).
+Therefore, the answer is: A. 744m^{2}. explanation: Diện tích mảnh vườn hình chữ nhật có chiều dài 31m, chiều rộng 24m là: 744 (m^2).
+The answer is: 744m^{2}. explanation: Diện tích mảnh vườn hình chữ nhật có chiều dài 31m, chiều rõ 24m là: 744 (m^2).
+The answer is: 744m^{2}. explanation: Diện tích mảnh vườn hình chữ nhật có chiều dài 31m, chiều rõ 24m là: 744 (m^2).
+The answer is: 744m^{2}. explanation: Diện tích mảnh vườn hình chữ nhật có chiều dài 31m, chiều rõ 24m là: 744 (m^2).
+The answer is: 744m^{2}. explanation: Diện tích mảnh vườn hình chữ nhật có chiều dài 31m, chiều rõ 24m là: 744 (m^2).
+The answer is: 744m^{2}. explanation: Diện tích mảnh vườn hình chữ nhật có chiều dài 31m, chiều rõ 24m là: 744 (m^2).
+The answer is: 744m^{2}. explanation: Diện tích mảnh vườn hình
+
+01-0637
+### Instruction:
+Chọn đáp án đúng. Bài toán: Viết số thập phân có: không đơn vị, một phần nghìn.
+Đáp án: A. 0,1 
+ B. 0,01 
+ C. 0,001 
+ D. 0,0001 
+ 
+
+### Response: Let's think step by step.
+Viết số thập phân có: không đơn vị, một phần nghìn.
+Phần nghìn của số bằng $10^{-1}$. Phần thập phân của số bằng $10^{-2}$, $10^{-3}$, $10^{-4}$. Vì thế:
+ Không đơn vị, một phần nghìn. $= 0,1$ 
+ Đáp án: A. 0,1 
+ Phần nghìn của số bằng $10^{-1}$. Phần thập phân của số bằng $10^{-2}$, $10^{-3}$, $10^{-4}$. Vì thế:
+ Đãi đơn vị, không phần nghìn $= 0,01$ 
+ Đáp án: B. 0,01 
+ Phần nghìn của số bằng $10^{-1}$. Phần thập phân của số bằng $10^{-2}$, $10^{-3}$, $10^{-4}$. Vì thế:
+ Không đơn vị, một phần nghìn $= 0,001$ 
+ Đáp án: C. 0,001 
+ Phần nghìn của số bằng $10^{-1}$. Phần thập phân của số bằng $10^{-2}$, $10^{-3}$, $10^{-4}$. Vì thế:
+ Không đơn vị, một phần nghìn $= 0,0001$ 
+ Đáp án: D. 0,0001 
+
+Cho đáp án
+
+01-0640
+### Instruction:
+Chọn đáp án đúng. Bài toán: Kết quả của biểu thức 87,5 x 10 : 0,1 là:
+Đáp án: A. 87,5 
+ B. 875 
+ C. 8750 
+ D. 7850 
+ 
+
+### Response: Let's think step by step. 
+Kết quả của biểu thức 87,5 x 10 : 0,1 là: 8750. 
+Phương ứng của bài toán là: phép tính. 
+Đáp án: C. 8750 
+Preis made 8750 points in the national championship. 
+Got it. 
+choices: A. 87,5 
+ B. 875 
+ C. 8750 
+ D. 7850 
+ 
+ Phương ứng của bài toán là: phép chia. 
+Ngọc tròn của 87,5 là 88. 
+Vậy kết quả của biểu thức 87,5 x 10 : 0,1 là: 8750. 
+ Chú ý: Trong các phương ứng cần truy cảnh lạ đến một trong các câu hỏi. 
+Bạn muốn tham gia kì thi này: https://tuan.edu.vn/khiem-thi-online-mat-thiet-ki-một-chữ.html. 
+Hỏi đáp án của câu hỏi: 87,5 x 10 : 0,1 = 8750 
+Phương ứng của câu hỏi là: phép chia. 
+Bạn thAM! Bạn thAM! Bạn thAM! Bạn thAM! Bạn thAM! Bạn thAM! Bạn thAM! Bạn thAM! Bạn thAM! Bạn thAM! Bạn thAM! Bạn thAM! Bạn thAM! Bạn thAM! Bạn thAM! Bạn thAM! Bạn thAM! Bạn th
+
+01-0642
+### Instruction:
+Chọn đáp án đúng. Bài toán: Kết quả của phép tính: \frac{6}{5} : \frac{4}{3}
+Đáp án: A. \frac{18}{20} 
+ B. \frac{38}{15} 
+ C. \frac{18}{15} 
+ D. \frac{24}{15} 
+ 
+
+### Response: Let's think step by step. 
+When dividing fractions, we can multiply the first fraction by the reciprocal of the second fraction.
+So, for this question, we have: \frac{6}{5} : \frac{4}{3} = \frac{6}{5} * \frac{3}{4} = \frac{18}{20}.
+
+Choose the correct answer: A. \frac{18}{20}
+B. \frac{38}{15}
+C. \frac{18}{15}
+D. \frac{24}{15}
+
+The answer is: A. \frac{18}{20} 
+
+01-0643
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số thập phân "một đơn vị, ba phần nghìn" được viết là:
+Đáp án: A. 1 \frac{3}{1000} 
+ B. 1,3000 
+ C. 1,03 
+ D. 1,003 
+ 
+
+### Response: Let's think step by step.
+Số thập phân "một đơn vị, ba phần nghìn" được viết là: 1 \frac{3}{1000}.
+Bài toán này có đáp án D. 1,003. Vậy đáp án đúng là: 1,003.
+Bạn biết kiểm phép cách lấy như nhau. Vậy bạn đã sai phép cách lấy. Hôm nay khối lấy ua một vít. Vậy sau thứ tuần này, chúng ta sẽ còn lại cách lấy nhiết hơn một chiếc.
+Choose the correct answer. Question: Number of floating-point numbers "one unit, three millihundredths" can be written as: 
+Answer A. 1 \frac{3}{1000} 
+ Answer B. 1,3000 
+ Answer C. 1,03 
+ Answer D. 1,003 
+ 
+ Choice A. 1 \frac{3}{1000}. 
+ Choice B. 1,3000. 
+ Choice C. 1,03. 
+ Choice D. 1,003. 
+ 
+ Answers A and B are incorrect. 
+ Choice C is correct. 
+ Choice D is correct. 
+ 
+ So the correct answer is: 1,03. 
+ So the correct answer is: 1,003. 
+ 
+ Chữ số 40,000 có số chục là 4; số phần trăm là 0. Chữ số 1,300 có số chục là 1; số phần trăm là 3. Nên 40,000 > 1
+
+01-0644
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số có cùng giá trị với 0,08 là:
+Đáp án: A. 0,800 
+ B. 0,080 
+ C. 0,80 
+ D. 8,00 
+ 
+
+### Response: Let's think step by step.
+To solve this problem, we need to determine which answer is correct.
+We know that 0,08 has two possible representations: 0,08 and 0,80.
+Therefore, there are four possible values for the number with the same value as 0,08:
+- 0,800
+- 0,080
+- 0,80
+- 8,00
+
+Based on these values, we can choose the following answers:
+- A. 0,800
+- B. 0,080
+- C. 0,80
+- D. 8,00
+
+So, the correct answer is: C. 0,80
+#### 0,80
+The answer is: 0,80
+
+01-0645
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số lớn nhất trong các số 4,23; 4,32; 4,4; 4,321 là:
+Đáp án: A. 4,23 
+ B. 4,321 
+ C. 4,32 
+ D. 4,4 
+ 
+
+### Response: Let's think step by step.
+To compare the numbers, we need to look at the largest digit from left to right.
+In this case, the largest digit is 4 in all the given numbers.
+So, we need to compare the decimal parts.
+The first number has 2 in the units place, the second number has 3 in the units place.
+Since 2 < 3, the first number is smaller than the second number.
+The third number has 4 in the units place, so it is larger than the first two numbers.
+The fourth number has 3 in the units place, so it is larger than the first three numbers.
+Therefore, the largest number is 4,4.
+So, the answer is: D. 4,4. 
+
+#### 4,4
+The answer is: 4,4
+
+01-0649
+### Instruction:
+Chọn đáp án đúng. Bài toán: Đội bóng của một trường học đã thi đấu 20 trận, thắng 19 trận. Như thế tỉ số phần trăm các trận thắng của đội bóng đó là:
+Đáp án: A. 90% 
+ B. 95% 
+ C. 85% 
+ D. 19% 
+ 
+
+### Response: Let's think step by step.
+In each trận, there are 2 players on the field, so there are 400 = 200 players in total.
+Out of the 200 players, 190 are fans of the team and 10 are players on the team.
+Therefore, the percentage of fans is 190/200 * 100 = 95%
+So, the answer is: B. 95% 
+#### 95%
+The answer is: 95%
+
+01-0650
+### Instruction:
+Chọn đáp án đúng. Bài toán: Sau khi giảm 20%, giá một quyển sách chỉ còn 7200 đồng. Như vậy trước khi giảm, giá quyển sách đó là:
+Đáp án: A. 9000 đồng 
+ B. 36000 đồng 
+ C. 6400 đồng 
+ D. 14400 đồng 
+ 
+
+### Response: Let's think step by step. 
+ After reducing by 20%, the price of one knife is $7200. 
+ So before reduction, the price of the knife was: 
+ 9000 đồng 
+ A. 9000 đồng 
+ B. 36000 đồng 
+ C. 6400 đồng 
+ D. 14400 đồng 
+ 
+ Copyright © 2012 claimtoken.com. 
+ All rights reserved. 
+ Contact Us: [email protected] helpdesk@claimtoken.com 
+ Support: https://support.claimtoken.com 
+ Company: ClaimToken 
+ Address: 180 5th Avenue, New York, NY 10103, USA. 
+ Tel: +1(212) 242-0100 Fax: +1(212) 242-0100 
+ ClaimToken.com 
+ No warranties expressed or implied. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+01-0652
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số "hai trăm ba mươi mốt" được viết như sau:
+Đáp án: A. 20031 
+ B. 231 
+ C. 2301 
+ D. 200301 
+ 
+
+### Response: Let's think step by step. 
+Số "hai trăm ba mươi mốt" đượk viết như sau: 20031
+Vì 20031 > 20000 (trên 20000) nên 20031 là số lớn hơn 20000.
+Vậy đáp án đúng là: D. 200301.
+
+cho: 20031 = 20000 + 30 + 1
+Số 20000 đã được chọn cho: 20000 = 20. 1000 = 20 000
+Số 30 đã được chọn cho: 30 = 3. 10 = 30
+Số 1 đã được chọn cho: 1 = 1. 0 = 1
+Vậy đáp án đúng là: D. 200301.
+#### 200301
+The answer is: 200301
+
+01-0653
+### Instruction:
+Chọn đáp án đúng. Bài toán: Kết quả của phép tính: 34,46 + 35,55
+Đáp án: A. 69,101 
+ B. 70,01 
+ C. 69,01 
+ D. 69,91 
+ 
+
+### Response: Let's think step by step. 
+To solve this problem, we need to add the two numbers given and check which answer choice matches the result. 
+34,46 + 35,55 = 69,91 
+So the correct answer is: D. 69,91 
+#### 69,91
+The answer is: 69,91
+
+01-0661
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số thích hợp viết vào chỗ chấm của  6 ngày 13 giờ = …… giờ
+Đáp án: A. 154 giờ 
+ B. 150 giờ 
+ C. 144 giờ 
+ D. 157 giờ 
+ 
+
+### Response: Let's think step by step.
+We know that there are 24 hours in a day and 7 days in a week.
+So, in total, there are 24 hours x 7 days = 168 hours in a week.
+To calculate the time for 6 days, we subtract 6 from 168: 168 - 6 = 162.
+Therefore, the correct answer is: 162 giờ.
+
+choosen answer is: C. 144 giờ.
+#### 144 giờ 
+The answer is: 144 giờ.
+
+01-0663
+### Instruction:
+Chọn đáp án đúng. Bài toán: Phép trừ  712,54 ­ 112,54 có kết quả đúng là
+Đáp án: A. 70,54 
+ B. 700,54 
+ C. 600 
+ 
+
+### Response: Let's think step by step. 
+Phép trừ 712,54 ­ 112,54 có kết quả đúng là 70,54 đúng đáp án A. 70,54. 
+Phép trừ 712,54 ­ 112,54 có kết quả đúng là 70,54 đúng đáp án B. 70,54. 
+Phép trừ 712,54 ­ 112,54 có kết quả đúng là 600 đúng đáp án C. 600. 
+So sánh: 70,54 < 70,54 < 600.
+
+Therefore, the correct answer is: A. 70,54. 
+
+#### 70,54
+The answer is: 70,54
+
+01-0667
+### Instruction:
+Chọn đáp án đúng. Bài toán: Luân đi đến trường là 30 phút với vận tốc 4 km/giờ. Hỏi quãng đường từ  nhà Luân đến trường là bao nhiêu kí­lô­mét?
+Đáp án: A. 8 km 
+ B. 4 km 
+ C. 2 km 
+ D. 6 km 
+ 
+
+### Response: Let's think step by step.
+Luân đi đến trường một phút đúng  means Luân đi đến trường với vận tốc 6 km/giờ.
+Vậy quãng đường từ  nhà Luân đến trường là 4 ${\times}$ 6 = 24 (km)
+ 24 (km) = 6 (km) + 18 (km)
+ Chọn đáp án đúng. Bài toán: Luân đi đến trường là 30 phút với vận tốc 4 km/giờ.Hỏi quãng đường từ  nhà Luân đến trường là bao nhiêu kí­lô­mét?
+ Phép tính: 30 ${\times}$ 4 = 120 (km)
+ Chọn đáp án đúng. Bài toán: Luân đi đến trường là 30 phút với vận tốc 4 km/giờ.Hỏi quãng đường từ  nhà Luân đến trường là bao nhiêu kí­lô­mét?
+ Phép tính: 120 : 2 = 60 (km)
+ Đáp án: D. 6 km 
+ 
+
+ Copyright © 2012 M. O'Rourke. All rights reserved. 
+ 
+ Created by M. O'Rourke. Last modified on February 20, 2012. Template for KB 101 at https://www.khanacademy.org/math/algebra/linear-equations. # [SOLVED]Factoring with exponents
+
+#### karush
+
+##### Well-known member
+$\left(\frac{x}{y}\right)^2-\frac{x^
+
+01-0670
+### Instruction:
+Chọn đáp án đúng. Bài toán: Viết số thích hợp vào chỗ chấm: Giá trị của biểu thức: 136,5 – 100 \div 2,5 \times 0,9 là:
+Đáp án: A. 100,5 
+ B. 110,5 
+ C. 100 
+ D. 105,5 
+ 
+
+### Response: Let's think step by step.
+Giá trị của biểu thức: 136,5 – 100 \div 2,5 \times 0,9 là: 100,5
+ Đáp án: A. 100 
+ B. 110,5 
+ C. 100,5 
+ D. 105,5 
+ 
+ Phép tính cần được thực hiện như sau: 136,5 - (100 : (2,5 * 0,9)) = 100,5
+Vì thế Đáp án đúng: A. 100,5 
+
+ written by Huy Lan 2K13 16 giờ 50 phút ngày 25 tháng 8 năm 2019.
+©Motivational.education.tip.vn 2019 # [Tex/LaTex] How to create a new command with multiple parameters
+
+macrostexlatex
+
+I want to create a new command with multiple parameters in LaTeX.
+
+For example, I want to create a command called \mycommand with two parameters, one required parameter and one optional parameter. The first parameter is required so \mycommand{value} will not work. \mycommand[value]{value} should work.
+
+How do I go about doing this?
+
+You can define your own command using the \newcommand macro. For example, to create a command called \mycommand with two parameters, one required parameter and one optional parameter, you could write the following in your document's preamble:
+
+\newcommand{\mycommand}[2][default value]{code using #1 and #2}
+
+Here's a simple example that creates a command \myexample with two parameters, one required parameter and one optional parameter. When you call \myexample without any arguments, it uses the default values for both parameters. When you call \myexample with two arguments, the first argument is the required parameter and the second argument is the optional parameter:
+
+\documentclass{article}
+\newcommand{\myexample}[2][default value]{%
+Values used by \myexample: #1 and #2
+
+01-0672
+### Instruction:
+Chọn đáp án đúng. Bài toán: Viết số thích hợp vào chỗ chấm: 55 ha 17 m^{2} = .....,.....ha
+Đáp án: A. 55,0017 
+ B. 55,17 
+ C. 55, 017 
+ D. 55, 000017 
+ 
+
+### Response: Let's think step by step. 
+Viết số thích hợp vào chỗ chấm: 55 ha 17 m^{2} = 55,0017 ha.
+So the correct answer is: A. 55,0017 
+#### 55,017 
+55,17 
+55, 017 
+55, 000017 
+Characters used in this correction: h – 55 characters: A. 55,0017haViết số thích hợp vào chỗ chấm: 55 ha 17 m^{2} = 55,0017 ha.So the correct answer is: A. 55,0017 
+Using the information given, we can determine that the answer is: A. 55,0017 
+The answer is: A. 55,0017
+
+01-0678
+### Instruction:
+Chọn đáp án đúng. Bài toán: Chữ số 8 trong số thập phân 95,284 có giá trị là:
+Đáp án: A. \frac{8}{1000} 
+ B. \frac{8}{100} 
+ C. \frac{8}{10} 
+ D. 8 
+ 
+
+### Response: Let's think step by step.
+In 95,284:
+8 is in the thousandth place so its value is $\frac{8}{1000}$.
+
+
+Đáp án: A. $\frac{8}{1000}$ 
+B. $\frac{8}{100}$ 
+C. $\frac{8}{10}$ 
+D. 8 
+ 
+ 
+Chức chọn: A. $\frac{8}{1000}$ 
+Phần thậnh: B. $\frac{8}{100}$ 
+Phần thận: C. $\frac{8}{10}$ 
+Phần mười: D. 8 
+ 
+ Hoàn thành: A. $\frac{8}{1000}$ trên 95,284 có giá trị là: $\frac{8}{1000}$
+ B. $\frac{8}{100}$ trên 95,284 có giá trị là: $\frac{8}{100}$
+ C. $\frac{8}{10}$ trên 95,284 có giá trị là: $\frac{8}{10}$
+ D. 8 trên 95,284 có giá trị là: 8
+ 
+ Phần thậnh: A. Vậy đáp án còn lấy.
+ Phần thận: B. Cần lấy đáp án.
+ Phần mười: C. Không có đáp án.
+ Trang web: https://lrnlnk.xyz/cho-dapan-danh-sach/cho-dapan-trong-toan-học/v-l-a-y-xem-cho-dapan-phép-toán-không-phẩy-cho-dapan-phép-hình-anh/id/10000013 
+ Id: 10000013 Type: phầ
+
+01-0683
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số thập phân: “Mười hai phẩy không năm”, viết là:
+Đáp án: A. 12,5 
+ B. 12,05 
+ C. 120,5 
+ D. 1,205 
+ 
+
+### Response: Let's think step by step.
+Số mười hai phẩy không năm: 12,5
+Vì 5 đơn vị phải viết sau cách, chữ số 5 đơn vị phẩy 10.
+Vì 2 chữ số đơn vị đứa ta viết tư chục ta viết tư trăm.
+Vì 1 đơn vị đứa ta viết tư chục ta viết tư trăm.
+Do đơn vị của 12,5 là trăm vì 5.
+Vì 2 chữ số đơn vị đứa ta viết tư chục ta viết tư trăm.
+Vì 1 đơn vị đứa ta viết tư chục ta viết tư trăm.
+Do đơn vị của 12,5 là trăm vì 5.
+Do 12,5 được viết là: 12,5.
+Do 12,05 được viết là: 12,05.
+Do 120,5 được viết là: 120,5.
+Do 1,205 được viết là: 1,205.
+Bài toán đã xong. Hãy chọn đáp án đúng. 
+Đáp án: A. 12,5 
+ B. 12,05 
+ C. 120,5 
+ D. 1,205 
+choices: A. 12,5B. 12,05C. 120,5D. 1,205 
+Đáp án đúng: A. 12,5 
+ Phép toán: Chương: Trăm Số: 12,
+
+01-0687
+### Instruction:
+Chọn đáp án đúng. Bài toán: Giá trị của chữ số 9 trong số thập phân 0,09 là:
+Đáp án: A. 9 
+ B. \frac{9}{10} 
+ C. \frac{9}{100} 
+ D. \frac{9}{1000} 
+ 
+
+### Response: Let's think step by step.
+In 0,09, the digit 9 represents the decimal place. So the value of the digit 9 depends on its position.
+- If it is at the hundredth place (9), the answer is \frac{9}{100}.
+- If it is at the tenth place (0,9), the answer is \frac{9}{10}.
+- If it is at the units place (0,09), the answer is 9.
+Therefore, the correct answer is: A. 9.
+
+#### 9
+The answer is: 9
+
+01-0690
+### Instruction:
+Chọn đáp án đúng. Bài toán: Hỗn số 68  \frac{7}{100}  dưới dạng số thập phân là:
+Đáp án: A. 68,07 
+ B. 68,007 
+ C. 68,7 
+ D. 68,70 
+ 
+
+### Response: Let's think step by step. 
+Hỗn số 68  \frac{7}{100}  dưới dạng số thập phân là: 68,07. 
+
+Therefore, the correct answer is: A. 68,07. 
+#### 68,07
+The answer is: 68,07
+
+01-0691
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số thập phân nhỏ nhất trong các số 50,798; 50,789; 50,987; 50,879 là:
+Đáp án: A. 50,879 
+ B. 50,789 
+ C. 50,798 
+ D. 50,987 
+ 
+
+### Response: Let's think step by step.
+To compare these numbers, we need to look at the rightmost digit first.
+In this case, the rightmost digit is 8.
+If two numbers have the same rightmost digit, then the one with the larger digit before it is greater.
+So, we compare the digits to the left of the rightmost digit.
+From left to right, the digits are 7, 9, 7, 5.
+If three numbers have the same rightmost digit, then the one with the largest digit before it is greater.
+Therefore, the smallest number is 50,789.
+Hence, the answer is: B. 50,789. explanation: Số thập phân nhỏ nhất trong các số 50,798; 50,789; 50,987; 50,879 là: 50,789. 
+
+Copyright © 2012 curriculum.txt Licensed under a Creative Commons Attribution-ShareAlike 3.0 License. curriculum.txt is a work in progress. Comments are welcome. Email your comments to curriculum@curriculum.txt. for curriculum.txt. # [SOLVED]Fourier series
+
+#### dwsmith
+
+##### Well-known member
+The function $f(x)$ has a Fourier series given by
+$$f(x) = \frac{a_0}{2} + \sum_{n = 1}^{\infty}\left(a_n\cos\frac{n\pi x}{L} + b_n\sin\frac{n\pi x}{L}\right)$$
+where $a_n$ and $b_n$ satisfy the equations
+$$a_n = \frac{2}{L}\int_{-L}^{L}f(x)\cos\frac{n\pi x}{L}\ dx$$
+and
+$$b_n = \frac{2}{L}\int_{-L}^{L}f(x)\sin\frac{n\pi x}{L}\ dx.$$
+Suppose that $f(x)$ is even, so $f(x) = f(-x)$.
+Then $a_n = 0$ for all
+
+01-0694
+### Instruction:
+Chọn đáp án đúng. Bài toán: Lớp 5A1 có 40 bạn, trong đó có 24 bạn thích chơi cầu lông. Hỏi số bạn thích chơi cầu lông chiếm bao nhiêu phần trăm số bạn của lớp 5A1?
+Đáp án: A. 40% 
+ B. 60% 
+ C. 24% 
+ D. 100% 
+ 
+
+### Response: Let's think step by step.
+Số bạn thích chơi cầu lông chiếm bao nhiêu phần trăm số bạn của lớp 5A1?
+Phép tính: 24 : 40 ${\times}$ 100% = 60%
+
+Bài toán: Lớp 5A1 có 40 bạn, trong đó có 24 bạn thích chơi cầu lông. Hỏi số bạn thích chơi cầu lông chiếm bao nhiêu phần trăm số bạn của lớp 5A1?
+Đáp án: B. 60% 
+ 
+
+### Explanation: Phép tính đã dùng: 24 : 40 ${\times}$ 100% = 60%
+Lớp 5A1 có 40 bạn, trong đó có 24 bạn thích chơi cầu lông. Hỏi số bạn thích chơi cầu lông chiếm bao nhiêu phần trăm số bạn của lớp 5A1?
+Đáp án đúng: B. 60% 
+ 
+
+Bạn cần không quên dùng phép tính để thấy số tiền hoặc tỉ lệ gì ít hơn, trong compare. Vậy số tiền hoặc tỉ lệ gì ít hơn 40% so với 60%?
+40% so vớm 60% là: 40 : 60 ${\times}$ 100% = 66,67%
+Nên 40% so với 60% hơn 66,67%, vậy số tiền hoặc
+
+01-0698
+### Instruction:
+Chọn đáp án đúng. Bài toán: Kết quả phép nhân 4,51 \times 10 là:
+Đáp án: A. 451 
+ B. 4,51 
+ C. 45,1 
+ D. 45 
+ 
+
+### Response: Let's think step by step.
+We have the equation: $4,51 \times 10 = 451$
+To solve this equation, we need to move the decimal point one place to the right.
+So, the result is: 451
+From this, we can see that the answer is: A. 451. 
+Reflecting back on what we learned, when multiplying numbers with exponents, we add the exponents. In this case, we added the exponents 1 and 10, which gave us the result 11.
+Therefore, the answer is: A. 451.
+
+01-0703
+### Instruction:
+Chọn đáp án đúng. Bài toán: Lớp 5/2 có 32 học sinh, trong đó có 12 học sinh xuất sắc. Tỉ số phần trăm của số học sinh xuất sắc và học sinh cả lớp là:
+Đáp án: A. 375 % 
+ B. 37,5 % 
+ C. 3,75 % 
+ D. 0,375 % 
+ 
+
+### Response: Let's think step by step.
+Lớp 5/2 có 32 học sinh, trong đó có 12 học sinh xuất sắc.
+Tỉ số phần trăm của số học sinh xuất sắc và học sinh cả lớp là: 12 : 32 * 100 = 37,5 %
+Bài toán đã nhận đáp án là: B. 37,5 %.
+
+Copyright © 2012 evolve education Ltd. All rights reserved. # [SOLVED]Fourier series for f(x)=x in interval [-pi,pi]
+
+#### dwsmith
+
+##### Well-known member
+The function $f(x)=x$ in the interval $[-\pi,\pi]$ has a Fourier series representation of
+$$\frac{2\pi}{k}\left(\frac{\sin kx}{\sin x}\right)$$
+To see why, we can start by finding the coefficients.
+The coefficient $a_0$ is given by
+$$a_0 = \frac{1}{2\pi}\int_{-\pi}^{\pi}f(x)dx = \frac{1}{2\pi}\int_{-\pi}^{\pi}xdx = \frac{1}{2\pi}\left[-\frac{\pi^2}{2}\right] = -\frac{\pi}{4}.$$
+The coefficient $a_n$ is given by
+$$a_n = \frac{1}{2\pi}\int_{-\pi}^{\pi}f(x)\cos nx dx = \frac{1}{2\pi}\int_{-\pi}^{\pi}x\cos nx dx.$$
+Using integration by parts, we get
+$$a_n = \frac{1}{2\pi}\left[-\frac{\pi\sin nx}{n}\right]_-\pi^\pi = 0.$$
+Similarly, the coefficient $b_n$ is given by
+$$b_n = \frac{1}{2\pi}\int_{-\pi}^{\pi}f(x)\sin nx dx = \frac{1}{2\pi}\int_{-\
+
+01-0715
+### Instruction:
+Chọn đáp án đúng. Bài toán: Số thập phân thích hợp để điền vào chỗ chấm: 4 tấn 562 kg =.........tấn là:
+Đáp án: A. 45,62 
+ B. 4,562 
+ C. 456,2 
+ D. 4562 
+ 
+
+### Response: Let's think step by step.
+We know that:
+- 1 tấn = 1 000 kg
+- 1 kg = 0,001 tấn
+So:
+4 tấn = 4 000 kg = 4 000,001 tấn = 4 000,0010 tấn
+To solve this problem, we need to convert the given number to scientific notation.
+4 000,0010 = 4,00001 × 10^4
+Now we can choose the correct option:
+A. 45,62
+B. 4,562
+C. 456,2
+D. 4562
+
+- Option A: 45,62 is in the form: a. b × 10^c
+- Option B: 4,562 is in the form: a. b
+- Option C: 456,2 is in the form: a b. c
+- Option D: 4562 is in the form: ab
+
+Since the given number is in the form: ab, option D is the correct answer.
+Therefore, the answer is: D. 4562. 
+
+#### 4562
+The answer is: 4562
+
+01-0716
+### Instruction:
+Chọn đáp án đúng. Bài toán: Kết quả của X trong biểu thức:  X \div 2,04 = 7,5 \div 5 là:
+Đáp án: A. 3,03 
+ B. 3,04 
+ C. 3,05 
+ D. 3,06 
+ 
+
+### Response: Let's think step by step. 
+In the given equation, we have two fractions: 7,5/5 and 2,04. 
+To solve this problem, we need to convert the fraction 7,5/5 into a decimal number. 
+7,5/5 = 1,5. 
+Now we can rewrite the equation as:  X \div 2,04 = 1,5. 
+To solve for X, we can multiply both sides of the equation by 2,04:  X = 1,5 \times 2,04. 
+Calculating the right side of the equation, we get: X = 3,126. 
+Comparing this result with the options, we see that the correct answer is: 3,06. 
+Therefore, the answer is: D. 3,06. 
+#### 3,06
+The answer is: 3,06
+
+01-0717
+### Instruction:
+Chọn đáp án đúng. Bài toán: Tính diện tích hình tam giác có độ dài đáy là 30,5 dm và chiều cao là  12 dm là:
+Đáp án: A. 183 dm^{2} 
+ B. 184 dm^{2} 
+ C. 185 dm^{2} 
+ D. 186 dm^{2} 
+ 
+
+### Response: Let's think step by step.
+In a right triangle, the hypotenuse squared is equal to the sum of the squares of the other two sides.
+Let AD be the length of the base and AE be the height of the triangle.
+Using the Pythagorean theorem, we have: DE = (AD^2 + AE^2)^(1/2) = 12 : 2 = 6 (dm)
+AD x 6 = 30,5 : 2
+AD x 6 = 15,25
+AD = 15,25 : 6 = 2,5 (dm)
+The area of the triangle is given by the formula: T = (1/2) x base x height
+T = (1/2) x 30,5 x 6 = 97,5 (dm^2)
+So the answer is: A. 183 dm^2.
+
