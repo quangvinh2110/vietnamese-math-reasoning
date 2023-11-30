@@ -3,20 +3,6 @@
 
 # Apache v2 license
 # Copyright (C) 2022 Intel Corporation
-# SPDX-License-Identifier: Apache-2.0
-
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
 import copy
 import logging
 import math
@@ -29,6 +15,7 @@ import datasets
 import evaluate
 import torch
 import transformers
+import bitsandbytes as bnb
 from datasets import load_dataset
 from peft import (
     LoraConfig,
@@ -41,20 +28,25 @@ from transformers import (
     AutoTokenizer,
     DataCollatorForLanguageModeling,
     HfArgumentParser,
+    BitsAndBytesConfig,
+    set_seed
+)
+from transformers import (
+    Trainer, 
+    TrainingArguments
 )
 from transformers.modeling_utils import unwrap_model
 from transformers.trainer_utils import is_main_process
 
-from optimum.habana import GaudiConfig, GaudiTrainer, GaudiTrainingArguments
-from optimum.habana.utils import set_seed
+from transformers.testing_utils import CaptureLogger
+from transformers.trainer_utils import get_last_checkpoint
+from transformers.utils import check_min_version, send_example_telemetry
+from transformers.utils.versions import require_version
 
+# Will error if the minimal version of Transformers is not installed. Remove at your own risks.
+# check_min_version("4.35.0.dev0")
+# require_version("datasets>=1.8.0", "To fix: pip install -r examples/pytorch/language-modeling/requirements.txt")
 
-try:
-    from optimum.habana.utils import check_optimum_habana_min_version
-except ImportError:
-
-    def check_optimum_habana_min_version(*a, **b):
-        return ()
 
 
 IGNORE_INDEX = -100
@@ -64,8 +56,39 @@ os.environ["WANDB_DISABLED"] = "true"
 logger = logging.getLogger(__name__)
 
 # Will error if the minimal version of Optimum Habana is not installed. Remove at your own risks.
-check_optimum_habana_min_version("1.8.1")
+# check_optimum_habana_min_version("1.8.1")
 
+import torch
+import torch.nn as nn
+from transformers import pytorch_utils as pu
+def find_all_linear_names(model):
+    classes = (nn.Linear, pu.Conv1D)
+    lora_module_names = set()
+    for name, module in model.named_modules():
+        if any(isinstance(module, cls) for cls in classes):
+            names = name.split('.')
+            lora_module_names.add(names[0] if len(names) == 1 else names[-1])
+
+    if 'lm_head' in lora_module_names: # needed for 16-bit
+        lora_module_names.remove('lm_head')
+    return list(lora_module_names)
+
+def print_trainable_parameters(model):
+    """
+    Prints the number of trainable parameters in the model.
+    """
+    trainable_params = 0
+    all_param = 0
+    for _, param in model.named_parameters():
+        all_param += param.numel()
+        if param.requires_grad:
+            trainable_params += param.numel()
+    # if args.bits == 4: trainable_params /= 2
+    print(
+        f"trainable params: {trainable_params} || "
+        f"all params: {all_param} || "
+        f"trainable: {100 * trainable_params / all_param}"
+    )
 
 @dataclass
 class ModelArguments:
@@ -93,7 +116,7 @@ class ModelArguments:
         metadata={"help": "Where do you want to store the pretrained models downloaded from huggingface.co"},
     )
     use_fast_tokenizer: bool = field(
-        default=True,
+        default=False,
         metadata={"help": "Whether to use one of the fast tokenizer (backed by the tokenizers library) or not."},
     )
     model_revision: str = field(
@@ -194,7 +217,7 @@ class DataArguments:
         metadata={"help": "Whether to keep in memory the loaded dataset. Defaults to False."},
     )
     dataset_seed: int = field(
-        default=42,
+        default=None,
         metadata={
             "help": "Seed to use in dataset processing, different seeds might yield different datasets. This seed and the seed in training arguments are not related"
         },
@@ -208,6 +231,13 @@ class DataArguments:
     dataset_concatenation: Optional[bool] = field(
         default=False,
         metadata={"help": "Whether to concatenate the sentence for more efficient training."},
+    )
+    mask_prompt: Optional[bool] = field(
+        default=True
+    )
+    preprocessing_num_workers: Optional[int] = field(
+        default=16,
+
     )
 
 
@@ -237,34 +267,101 @@ class FinetuneArguments:
         default=True,
         metadata={"help": "if False, masks out inputs in loss"},
     )
+    full_finetune: bool = field(
+        default=False,
+        metadata={"help": "if True, go full finetune"}
+    )
 
 
-PROMPT_DICT = {
-    "prompt_with_input": (
-        "Below is an instruction that describes a task, paired with an input that provides further context. "
-        "Write a response that appropriately completes the request.\n\n"
-        "### Instruction:\n{instruction}\n\n### Input:\n{input}\n\n### Response:"
-    ),
-    "prompt_without_input": (
-        "Below is an instruction that describes a task. "
-        "Write a response that appropriately completes the request.\n\n"
-        "### Instruction:\n{instruction}\n\n### Response:"
-    ),
-}
+## NOTE: define tokenize funtion
+
+def encode_with_prompt_completion_format(example, tokenizer, max_seq_length, mask_prompt=True):
+    '''
+    Here we assume each example has 'prompt' and 'completion' fields.
+    We concatenate prompt and completion and tokenize them together because otherwise prompt will be padded/trancated 
+    and it doesn't make sense to follow directly with the completion.
+    '''
+    # if prompt doesn't end with space and completion doesn't start with space, add space
+    if not example['prompt'].endswith((' ', '\n', '\t')) and not example['completion'].startswith((' ', '\n', '\t')):
+        example_text = example['prompt'] + ' ' + example['completion']
+    else:
+        example_text = example['prompt'] + example['completion']
+    example_text = example_text + tokenizer.eos_token
+    tokenized_example = tokenizer(example_text, return_tensors='pt', max_length=max_seq_length, truncation=True)
+    input_ids = tokenized_example.input_ids
+    labels = input_ids.clone()
+    tokenized_prompt = tokenizer(example['prompt'], return_tensors='pt', max_length=max_seq_length, truncation=True)
+    # mask the prompt part for avoiding loss
+    if mask_prompt:
+        labels[:, :tokenized_prompt.input_ids.shape[1]] = -100
+    attention_mask = torch.ones_like(input_ids)
+    return {
+        'input_ids': input_ids.flatten(),
+        'labels': labels.flatten(),
+        'attention_mask': attention_mask.flatten(),
+    }
 
 
-def create_prompts(examples):
-    prompts = {}
-    prompts["source"] = []
-    prompts["target"] = []
-    for example in examples:
-        prompt_template = (
-            PROMPT_DICT["prompt_with_input"] if example["input"] != "" else PROMPT_DICT["prompt_without_input"]
-        )
-        source = prompt_template.format_map(example)
-        prompts["source"].append(source)
-        prompts["target"].append(example["output"])
-    return prompts
+def encode_with_messages_format(example, tokenizer, max_seq_length, mask_prompt=True):
+    '''
+    Here we assume each example has a 'messages' field Each message is a dict with 'role' and 'content' fields.
+    We concatenate all messages with the roles as delimiters and tokenize them together.
+    '''
+    messages = example['messages']
+    if len(messages) == 0:
+        raise ValueError('messages field is empty.')
+    
+    def _concat_messages(messages):
+        message_text = ""
+        for message in messages:
+            if message["role"] == "system":
+                message_text += "<|system|>\n" + message["content"].strip() + "\n"
+            elif message["role"] == "user":
+                message_text += "<|user|>\n" + message["content"].strip() + "\n"
+            elif message["role"] == "assistant":
+                message_text += "<|assistant|>\n" + message["content"].strip() + tokenizer.eos_token + "\n"
+            else:
+                raise ValueError("Invalid role: {}".format(message["role"]))
+        return message_text
+        
+    example_text = _concat_messages(messages).strip()
+    tokenized_example = tokenizer(example_text, return_tensors='pt', max_length=max_seq_length, truncation=True)
+    input_ids = tokenized_example.input_ids
+    labels = input_ids.clone()
+
+    # mask the non-assistant part for avoiding loss
+    if mask_prompt:
+        for message_idx, message in enumerate(messages):
+            if message["role"] != "assistant":
+                if message_idx == 0:
+                    message_start_idx = 0
+                else:
+                    message_start_idx = tokenizer(
+                        _concat_messages(messages[:message_idx]), return_tensors='pt', max_length=max_seq_length, truncation=True
+                    ).input_ids.shape[1]
+                if message_idx < len(messages) - 1 and messages[message_idx+1]["role"] == "assistant":
+                    # if not last message and next message is assistant, we also ignore the role of the assistant
+                    messages_so_far = _concat_messages(messages[:message_idx+1]) + "<|assistant|>\n"
+                else:
+                    messages_so_far = _concat_messages(messages[:message_idx+1])
+
+                message_end_idx = tokenizer(
+                    messages_so_far,
+                    return_tensors='pt', 
+                    max_length=max_seq_length, 
+                    truncation=True
+                ).input_ids.shape[1]
+                labels[:, message_start_idx:message_end_idx] = -100
+
+                if message_end_idx >= max_seq_length:
+                    break
+
+    attention_mask = torch.ones_like(input_ids)
+    return {
+        'input_ids': input_ids.flatten(),
+        'labels': labels.flatten(),
+        'attention_mask': attention_mask.flatten(),
+    }
 
 
 def main():
@@ -392,6 +489,10 @@ def main():
             if data_args.train_file is not None
             else data_args.validation_file.split(".")[-1]
         )
+        ### NOTE: 
+        if extension == "jsonl":
+            extension = "json"
+        ### END NOTE
         if extension == "txt":
             extension = "text"
             dataset_args["keep_linebreaks"] = data_args.keep_linebreaks
@@ -402,6 +503,9 @@ def main():
             use_auth_token=True if model_args.use_auth_token else None,
             **dataset_args,
         )
+        if data_args.dataset_seed:
+            logger.info(f"Shuffling data with seed = {data_args.dataset_seed}")
+            raw_datasets = raw_datasets.shuffle(seed=data_args.dataset_seed)
 
         # If no validation data is there, validation_split_percentage will be used to divide the dataset.
         if "validation" not in raw_datasets.keys() and training_args.do_eval:
@@ -421,29 +525,7 @@ def main():
                 use_auth_token=True if model_args.use_auth_token else None,
                 **dataset_args,
             )
-    if data_args.dataset_name == "tatsu-lab/alpaca":
-        # Preprocessing the datasets.
-        for key in raw_datasets:
-            prompts = create_prompts(raw_datasets[key])
-            columns_to_be_removed = list(raw_datasets[key].features.keys())
-            raw_datasets[key] = raw_datasets[key].add_column("prompt_sources", prompts["source"])
-            raw_datasets[key] = raw_datasets[key].add_column("prompt_targets", prompts["target"])
-            raw_datasets[key] = raw_datasets[key].remove_columns(columns_to_be_removed)
-    elif (
-        data_args.dataset_name == "timdettmers/openassistant-guanaco"
-    ):  # from https://github.com/artidoro/qlora/blob/main/qlora.py#L621
-        raw_datasets = raw_datasets.map(
-            lambda x: {
-                "input": "",
-                "output": x["text"],
-            }
-        )
-        # Remove unused columns.
-        raw_datasets = raw_datasets.remove_columns(
-            [col for col in raw_datasets.column_names["train"] if col not in ["input", "output"]]
-        )
-    else:
-        raise ValueError("Unsupported dataset")
+
     # Load model
     if model_args.model_name_or_path:
         model_dtype = torch.bfloat16 if training_args.bf16 else None
@@ -463,7 +545,7 @@ def main():
 
     if model.config.model_type == "llama":
         # unwind broken decapoda-research config
-        model.generation_config.pad_token_id = 0
+        # model.generation_config.pad_token_id = 0
         model.generation_config.bos_token_id = 1
         model.generation_config.eos_token_id = 2
 
@@ -475,55 +557,55 @@ def main():
         tokenizer.bos_token_id = model.generation_config.bos_token_id
 
     if tokenizer.pad_token_id is None:
-        tokenizer.pad_token_id = tokenizer.eos_token_id
-
-    def tokenize(prompt, add_eos_token=True):
-        results = tokenizer(
-            prompt,
-            truncation=True,
-            max_length=data_args.max_seq_length,
-            padding=False,
-            return_tensors=None,
+        # tokenizer.pad_token_id = tokenizer.eos_token_id
+        tokenizer.pad_token = tokenizer.unk_token
+    
+    
+    # Preprocessing the datasets.
+    if "prompt" in raw_datasets["train"].column_names and "completion" in raw_datasets["train"].column_names:
+        encode_function = partial(
+            encode_with_prompt_completion_format,
+            tokenizer=tokenizer,
+            max_seq_length=data_args.max_seq_length,
+            mask_prompt=data_args.mask_prompt,
         )
-        for i in range(len(results["input_ids"])):
-            if (
-                results["input_ids"][i][-1] != tokenizer.eos_token_id
-                and len(results["input_ids"][i]) < data_args.max_seq_length
-                and add_eos_token
-            ):
-                results["input_ids"][i].append(tokenizer.eos_token_id)
-                results["attention_mask"][i].append(1)
-
-        results["labels"] = copy.deepcopy(results["input_ids"])
-        results["input_id_len"] = [len(result) for result in results["input_ids"]]
-        return results
-
-    def preprocess_function(examples):
-        keys = list(examples.data.keys())
-        if len(keys) != 2:
-            raise ValueError("Unsupported dataset format")
-
-        st = [s + t for s, t in zip(examples[keys[0]], examples[keys[1]])]
-
-        examples_tokenized = tokenize(st)
-        input_ids = examples_tokenized["input_ids"]
-        labels = examples_tokenized["labels"]
-        if not finetune_args.train_on_inputs:
-            sources_tokenized = tokenize(examples[keys[0]], add_eos_token=False)
-            for label, source_len in zip(labels, sources_tokenized["input_id_len"]):
-                label[:source_len] = [IGNORE_INDEX] * source_len
-        return {
-            "input_ids": input_ids,
-            "labels": labels,
-            "attention_mask": examples_tokenized["attention_mask"],
-        }
+    elif "messages" in raw_datasets["train"].column_names:
+        encode_function = partial(
+            encode_with_messages_format,
+            tokenizer=tokenizer,
+            max_seq_length=data_args.max_seq_length,
+            mask_prompt=data_args.mask_prompt,
+        )
+    else:
+        raise ValueError("You need to have either 'prompt'&'completion' or 'messages' in your column names.")
+    
 
     with training_args.main_process_first(desc="dataset map pre-processing"):
         tokenized_datasets = raw_datasets.map(
-            preprocess_function,
-            batched=True,
+            encode_function,
+            batched=False,
+            num_proc=data_args.preprocessing_num_workers,
             load_from_cache_file=not data_args.overwrite_cache,
+            remove_columns=[name for name in raw_datasets["train"].column_names if name not in ["input_ids", "labels", "attention_mask"]],
+            desc="Tokenizing and reformatting instruction data",
         )
+        ## NOTE: logging #tokens taking loss
+        train_split = tokenized_datasets["train"]
+        total_tokens = 0
+        train_tokens = 0
+        for label in train_split["labels"]:
+            total_tokens += len(label)
+            train_tokens += len([token for token in label if token != IGNORE_INDEX])
+        logger.info(f">>> Train on inputs: {finetune_args.train_on_inputs}")
+        logger.info(f">>> Total number of tokens: {total_tokens}")
+        logger.info(f">>> Number of tokens taking loss: {train_tokens}")
+        
+        print(tokenized_datasets)
+        print(">>> Full example:")
+        print(tokenizer.decode(tokenized_datasets["train"][0]["input_ids"]))
+        print(">>> Part of the example that takes gradients:")
+        print(tokenizer.decode([i for i in tokenized_datasets["train"][0]["labels"] if i >= 0]))
+        ### END NOTE
 
     if data_args.dataset_concatenation:
 
@@ -549,10 +631,24 @@ def main():
             if training_args.do_eval:
                 tokenized_datasets_eval_ = tokenized_datasets["test"].remove_columns(["input", "output"])
         else:
-            raise ValueError("Unsupported dataset")
+            ## NOTE: read local file
+            try:
+                tokenized_datasets_ = tokenized_datasets["train"].remove_columns(["prompt_sources", "prompt_targets"])
+            except:
+                tokenized_datasets_ = tokenized_datasets["train"]
+            if training_args.do_eval:
+                tokenized_datasets_eval_ = tokenized_datasets["test"].remove_columns(
+                    ["prompt_sources", "prompt_targets"]
+                )
+            # raise ValueError("Unsupported dataset")
+            ## END NOTE
+            
         tokenized_datasets["train"] = concatenate_data(tokenized_datasets_, data_args.max_seq_length)
         if training_args.do_eval:
             tokenized_datasets["validation"] = concatenate_data(tokenized_datasets_eval_, data_args.max_seq_length)
+    
+    
+    
     if training_args.do_train:
         if "train" not in tokenized_datasets:
             raise ValueError("--do_train requires a train dataset")
@@ -591,27 +687,45 @@ def main():
 
     if training_args.do_train or training_args.do_eval:
         # PEFT settings
-        peft_config = LoraConfig(
-            r=finetune_args.lora_rank,
-            lora_alpha=finetune_args.lora_alpha,
-            lora_dropout=finetune_args.lora_dropout,
-            target_modules=finetune_args.lora_target_modules,
-            bias="none",
-            task_type=TaskType.CAUSAL_LM,
-        )
+        ### NOTE: added code
+        from peft.utils import TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING as MAP
+        if finetune_args.lora_target_modules == ["from_mapping"]:
+            if MAP.get(model.config.model_type):
+                finetune_args.lora_target_modules = MAP.get(model.config.model_type)
+            else:
+                logger.info(f"Cannot find predefined target lora modules for model type {model.config.model_type}.")
+                finetune_args.lora_target_modules = find_all_linear_names(model)
+        elif finetune_args.lora_target_modules == "all":
+            finetune_args.lora_target_modules = find_all_linear_names(model)
+        logger.info(f">>> LoRA target modules: {finetune_args.lora_target_modules}")
+        ### END NOTE
+
+        ### NOTE: add full finetune branch
         if training_args.gradient_checkpointing:
             model.enable_input_require_grads()
-        lora_model = get_peft_model(model, peft_config)
+        if not finetune_args.full_finetune:
+            peft_config = LoraConfig(
+                r=finetune_args.lora_rank,
+                lora_alpha=finetune_args.lora_alpha,
+                lora_dropout=finetune_args.lora_dropout,
+                target_modules=finetune_args.lora_target_modules,
+                bias="none",
+                task_type=TaskType.CAUSAL_LM,
+            )
+            model = get_peft_model(model, peft_config)
+            
         if training_args.bf16:
-            lora_model = lora_model.to(torch.bfloat16)
-        lora_model.print_trainable_parameters()
+            model = model.to(torch.bfloat16)
+        print_trainable_parameters(model)
+        
         gaudi_config = GaudiConfig()
         gaudi_config.use_fused_adam = True
         gaudi_config.use_fused_clip_norm = True
 
         # Initialize our Trainer
         trainer = GaudiTrainer(
-            model=lora_model,
+            # model=lora_model, 
+            model=model, ## NOTE: change model=lora_model to model=model ## END NOTE
             gaudi_config=gaudi_config,
             args=training_args,
             train_dataset=train_dataset if training_args.do_train else None,
@@ -627,8 +741,10 @@ def main():
 
         with training_args.main_process_first(desc="save model"):
             if is_main_process(training_args.local_rank):
-                unwrapped_model = unwrap_model(lora_model)
-                unwrapped_model.save_pretrained(training_args.output_dir, state_dict=unwrapped_model.state_dict())
+                # unwrapped_model = unwrap_model(lora_model)
+                # unwrapped_model = unwrap_model(model)  ## NOTE: change model=lora_model to model=model ## END NOTE
+                # unwrapped_model.save_pretrained(training_args.output_dir, state_dict=unwrapped_model.state_dict())
+                trainer.save_model()
 
         metrics = train_result.metrics
         trainer.log_metrics("train", metrics)
