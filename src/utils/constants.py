@@ -20,6 +20,17 @@ definitions = {
     "năm nhuận": "leap year",
 }
 
+unit_list = [
+    'km', 'km^{2}', 'km^{3}', 'km2', 'km3',
+    'hm', 'hm^{2}', 'hm^{3}', 'hm2', 'hm3', 'ha',
+    'dam', 'dam^{2}', 'dam^{3}', 'dam2', 'dam3',
+    'm', 'm^{2}', 'm^{3}', 'm2', 'm3',
+    'dm', 'dm^{2}', 'dm^{3}', 'dm2', 'dm3',
+    'cm', 'cm^{2}', 'cm^{3}', 'cm2', 'cm3',
+    'mm', 'mm^{2}', 'mm^{3}', 'mm2', 'mm3',
+    'tấn', 'tạ', 'yến', 'kg', 'hg', 'dag', 'g'
+ ]
+
 unit_conversion_table = {
     "length": {
           "1 hm": "100 m",

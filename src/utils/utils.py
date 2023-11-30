@@ -2,13 +2,14 @@ import os
 import json
 import random
 import json
-import os
+import re
 import numpy as np
 from pathlib import Path
 from typing import Iterable, Union, Any
 import unicodedata
+import string
 
-from .constants import unit_conversion_table
+from .constants import unit_list
 
 
 def set_seed(seed: int = 42) -> None:
@@ -106,6 +107,19 @@ def add_definitions(question: str):
         original_question += note
 
     return original_question
+
+trans_table = str.maketrans({p: f"\{p}" for p in string.punctuation})
+unit_list = list(map(lambda u: u.translate(trans_table), unit_list))
+UNIT_PATTERN = re.compile(r"\d[\s]*({})".format("|".join(unit_list)))
+
+def add_notes(question: str):
+
+    choices = "\n".join(question.split("\n")[1:])
+    if UNIT_PATTERN.search(choices):
+        question += "NOTE: **You should convert the final result and all the choices to the same unit**"
+
+    question = add_definitions(question)
+    return question
 
 
 
