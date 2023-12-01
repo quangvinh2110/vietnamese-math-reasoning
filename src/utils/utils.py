@@ -9,7 +9,10 @@ from typing import Iterable, Union, Any
 import unicodedata
 import string
 
+from rank_bm25 import BM25Okapi
+
 from .constants import unit_list
+from .preprocess import preprocess
 
 
 def set_seed(seed: int = 42) -> None:
@@ -187,8 +190,80 @@ def load_static_prompt(prompt_type: str):
     return prompt
 
 
+
+WORD_PATTERN = re.compile(r"[\w]+")
+NUMBER_PATTERN = re.compile(r"[\d]+")
+
+def remove_numbers(s: str):
+    return NUMBER_PATTERN.sub("", s)
+
+
+def tokenize_question(question: str):
+    question = preprocess(question, lowercase=True)
+    question = remove_numbers(question)
+    return WORD_PATTERN.findall(question)
+
+
+def load_zalo_question_corpus():
+    zalo_code = []
+    current_path = os.path.realpath(__file__)
+    corpus_path = "/".join(current_path.split("/")[:-3])+"/data/zalo/train/zalo_code_filtered.jsonl"
+    with open(corpus_path, "r") as f:
+        for line in f:
+            zalo_code.append(json.loads(line))
+
+    tokenized_question_corpus = []
+    for s in zalo_code:
+        question = s["question"].split("\n")[0]
+        tokenized_question_corpus.append(
+            tokenize_question(question)
+        )
+
+    return BM25Okapi(tokenized_question_corpus), zalo_code
+
+
+bm25, zalo_code = load_zalo_question_corpus()
+DYNAMIC_PROMPT_FORMAT = """
+I want you to act as a world-class Python programmer that can complete ANY goal by writing Python code.
+First, I will give you a multiple-choices math problem.
+Integrate step-by-step reasoning and Python code to solve that math problems
+NOTE: **Eliminate UNNECESSARY steps before coding.**
+NOTE: **Ignore all simplify ratio or simplify fraction steps.**
+NOTE: **Do NOT calculate anything. If you do any calculation, someone might die.**
+NOTE: **Do NOT make any conclusion. If you do that, someone might die.**
+
+Example 1:
+{example_0}
+
+-------------------------------------------------------------------
+
+Example 2:
+{example_1}
+"""
+
 def load_dynamic_prompt(question: str):
-    pass
+    tokenized_ques = tokenize_question(question)
+    examples = bm25.get_top_n(tokenized_ques, zalo_code, n=2)
+    question_0 = add_notes(preprocess(examples[0]['question']))
+    question_1 = add_notes(preprocess(examples[1]['question']))
+    example_0 = "\n".join([
+        f"Solve the following multiple-choices problem: {question_0}",
+        "Let's break it down step by step first:",
+        f"{examples[0]['instruction']}",
+        "Here's the Python code based on the plan above:",
+        examples[0]['code']
+    ])
+    example_1 = "\n".join([
+        f"Solve the following multiple-choices problem: {question_1}",
+        "Let's break it down step by step first:",
+        f"{examples[1]['instruction']}",
+        "Here's the Python code based on the plan above:",
+        examples[1]['code']
+    ])
+    return DYNAMIC_PROMPT_FORMAT.format(
+        example_0=example_0,
+        example_1=example_1
+    )
 
 
 def is_multiple_choices(question: str):
@@ -238,7 +313,13 @@ def construct_prompt(question: str, prompt_type: str):
     elif prompt_type == "platypus_fs":
         pass
     elif prompt_type == "dynamic":
-        pass
+        demo_prompt = load_dynamic_prompt(question)
+        context = "\n".join([
+            "<|user|>",
+            MULTIPLE_CHOICES_TEMPLATE.format(question=question),
+            "<|assistant|>"
+        ])
+        full_prompt = "<|system|>\n"+demo_prompt+"\n"+ context
     else:
         raise NotImplementedError(args.prompt_type)
     
