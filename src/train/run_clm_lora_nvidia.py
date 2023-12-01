@@ -8,6 +8,7 @@ import logging
 import math
 import os
 import sys
+from functools import partial
 from dataclasses import dataclass, field
 from typing import List, Optional
 
@@ -369,7 +370,7 @@ def main():
     # or by passing the --help flag to this script.
     # We now keep distinct sets of args, for a cleaner separation of concerns.
 
-    parser = HfArgumentParser((ModelArguments, DataArguments, GaudiTrainingArguments, FinetuneArguments))
+    parser = HfArgumentParser((ModelArguments, DataArguments, TrainingArguments, FinetuneArguments))
 
     if len(sys.argv) == 2 and sys.argv[1].endswith(".json"):
         # If we pass only one argument to the script and it's the path to a json file,
@@ -718,15 +719,8 @@ def main():
             model = model.to(torch.bfloat16)
         print_trainable_parameters(model)
         
-        gaudi_config = GaudiConfig()
-        gaudi_config.use_fused_adam = True
-        gaudi_config.use_fused_clip_norm = True
-
-        # Initialize our Trainer
-        trainer = GaudiTrainer(
-            # model=lora_model, 
-            model=model, ## NOTE: change model=lora_model to model=model ## END NOTE
-            gaudi_config=gaudi_config,
+        trainer = Trainer(
+            model=model,
             args=training_args,
             train_dataset=train_dataset if training_args.do_train else None,
             eval_dataset=eval_dataset if training_args.do_eval else None,

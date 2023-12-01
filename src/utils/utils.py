@@ -116,21 +116,68 @@ def add_notes(question: str):
 
     choices = "\n".join(question.split("\n")[1:])
     if UNIT_PATTERN.search(choices):
-        question += "NOTE: **You should convert the final result and all the choices to the same unit**"
+        question += "NOTE: **You should convert the final result and all the choices to the same unit**\n"
 
     question = add_definitions(question)
+    if "hình tròn" in question or "vòng tròn" in question:
+        question += "NOTE: The value of pi is 3.14. You should use this value to compute the result"
     return question
 
 
 
-def load_prompt(data_name, prompt_type):
-    if data_name in ['gsm-hard', 'svamp', 'tabmwp', 'asdiv', 'mawps']:
-        data_name = "gsm8k"
-    if prompt_type in ['platypus_fs', 'wizard_zs']:
-        prompt_type = "cot"
-    prompt_path = "./prompts/{}/{}.md".format(prompt_type, data_name)
-    if not os.path.exists(prompt_path):
-        prompt_path = "./prompts/{}.md".format(prompt_type)
+# def load_prompt(data_name, prompt_type):
+#     if data_name in ['gsm-hard', 'svamp', 'tabmwp', 'asdiv', 'mawps']:
+#         data_name = "gsm8k"
+#     if prompt_type in ['platypus_fs', 'wizard_zs']:
+#         prompt_type = "cot"
+#     prompt_path = "./prompts/{}/{}.md".format(prompt_type, data_name)
+#     if not os.path.exists(prompt_path):
+#         prompt_path = "./prompts/{}.md".format(prompt_type)
+#     if os.path.exists(prompt_path):
+#         with open(prompt_path, 'r', encoding='utf-8') as fp:
+#             prompt = fp.read().strip() + "\n\n"
+#     else:
+#         print(f"Error: prompt file {prompt_path} not found")
+#         prompt = ""
+#     return prompt
+
+# def construct_prompt(args, example):
+#     demo_prompt = load_prompt(args.data_name, args.prompt_type)
+#     if args.use_train_prompt_format:
+#         full_prompt = f"<|user|>\n{example['question']}\n<|assistant|>\n"
+#     elif "tora" in args.prompt_type or "pot" in args.prompt_type:
+#         context = f"Question: {example['question']}\n\nSolution:"
+#         full_prompt = demo_prompt + context
+#     elif args.prompt_type in ["direct", "cot"]:
+#         context = f"Question: {example['question']}\nAnswer:"
+#         full_prompt = demo_prompt + context
+#     elif args.prompt_type == "pal":
+#         context = f"Question: {example['question']}"
+#         full_prompt = demo_prompt + context
+#     elif args.prompt_type == "wizard_zs":
+#         full_prompt = (
+#             "Below is an instruction that describes a task. "
+#             "Write a response that appropriately completes the request.\n\n"
+#             "### Instruction:\n{instruction}\n\n### Response: Let's think step by step."
+#         )
+#         full_prompt = full_prompt.format(instruction=example['question'])
+#     elif args.prompt_type == "platypus_fs":
+#         full_prompt = (
+#             "Below is an instruction that describes a task. "
+#             "Write a response that appropriately completes the request.\n\n"
+#             "### Instruction:\n{instruction}\n\n### Response:\n"
+#         )
+#         full_prompt = full_prompt.format(instruction=demo_prompt + f"Question: {example['question']}\nAnswer:")
+#     else:
+#         raise NotImplementedError(args.prompt_type)
+#     return full_prompt
+
+
+def load_static_prompt(prompt_type: str):
+    if prompt_type=="dynamic" or prompt_type=="zalo":
+        return ""
+    current_path = os.path.realpath(__file__)
+    prompt_path = "/".join(current_path.split("/")[:-2])+f"/prompts/{prompt_type}.md"
     if os.path.exists(prompt_path):
         with open(prompt_path, 'r', encoding='utf-8') as fp:
             prompt = fp.read().strip() + "\n\n"
@@ -139,36 +186,64 @@ def load_prompt(data_name, prompt_type):
         prompt = ""
     return prompt
 
-def construct_prompt(args, example):
-    demo_prompt = load_prompt(args.data_name, args.prompt_type)
-    if args.use_train_prompt_format:
-        full_prompt = f"<|user|>\n{example['question']}\n<|assistant|>\n"
-    elif "tora" in args.prompt_type or "pot" in args.prompt_type:
-        context = f"Question: {example['question']}\n\nSolution:"
+
+def load_dynamic_prompt(question: str):
+    pass
+
+
+def is_multiple_choices(question: str):
+    return len(question.split("\n")) > 1
+
+MULTIPLE_CHOICES_TEMPLATE = "Solve the following multiple-choices problem: {question}\n"
+NORMAL_TEMPLATE = "Solve the following problem: {question}\n"
+DYNAMIC_PROMPT_TEMPLATE = f"""
+
+"""
+
+
+def construct_prompt(question: str, prompt_type: str):
+
+    demo_prompt = load_static_prompt(prompt_type)
+    if prompt_type == "zalo":
+        if is_multiple_choices(question):
+            full_prompt = "".join([
+                "<|user|>\n",
+                MULTIPLE_CHOICES_TEMPLATE.format(question=question),
+                "<|assistant|>\n"
+            ])
+        else:
+            full_prompt = "".join([
+                "<|user|>\n",
+                NORMAL_TEMPLATE.format(question=question),
+                "<|assistant|>\n"
+            ])
+    elif prompt_type == "tora":
+        if is_multiple_choices(question):
+            context = "".join([
+                "<|user|>\n",
+                MULTIPLE_CHOICES_TEMPLATE.format(question=question),
+                "<|assistant|>\n"
+            ])
+        else:
+            context = "".join([
+                "<|user|>\n",
+                NORMAL_TEMPLATE.format(question=question),
+                "<|assistant|>\n"
+            ])
         full_prompt = demo_prompt + context
-    elif args.prompt_type in ["direct", "cot"]:
-        context = f"Question: {example['question']}\nAnswer:"
-        full_prompt = demo_prompt + context
-    elif args.prompt_type == "pal":
-        context = f"Question: {example['question']}"
-        full_prompt = demo_prompt + context
-    elif args.prompt_type == "wizard_zs":
-        full_prompt = (
-            "Below is an instruction that describes a task. "
-            "Write a response that appropriately completes the request.\n\n"
-            "### Instruction:\n{instruction}\n\n### Response: Let's think step by step."
-        )
-        full_prompt = full_prompt.format(instruction=example['question'])
-    elif args.prompt_type == "platypus_fs":
-        full_prompt = (
-            "Below is an instruction that describes a task. "
-            "Write a response that appropriately completes the request.\n\n"
-            "### Instruction:\n{instruction}\n\n### Response:\n"
-        )
-        full_prompt = full_prompt.format(instruction=demo_prompt + f"Question: {example['question']}\nAnswer:")
+    elif prompt_type == "pal":
+        pass
+    elif prompt_type == "wizard_zs":
+        pass
+    elif prompt_type == "platypus_fs":
+        pass
+    elif prompt_type == "dynamic":
+        pass
     else:
         raise NotImplementedError(args.prompt_type)
+    
     return full_prompt
+
 
 def show_sample(sample):
     print("=="*20)
