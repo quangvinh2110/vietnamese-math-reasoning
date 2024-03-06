@@ -39,7 +39,7 @@ def save_jsonl(samples, save_path):
 
     with open(save_path, "w", encoding="utf-8") as f:
         for sample in samples:
-            f.write(json.dumps(sample) + "\n")
+            f.write(json.dumps(sample, ensure_ascii=False) + "\n")
     print("Saved to", save_path)
 
 
@@ -321,7 +321,7 @@ def construct_prompt(question: str, prompt_type: str):
         ])
         full_prompt = "<|system|>\n"+demo_prompt+"\n"+ context
     else:
-        raise NotImplementedError(args.prompt_type)
+        raise NotImplementedError(prompt_type)
     
     return full_prompt
 
