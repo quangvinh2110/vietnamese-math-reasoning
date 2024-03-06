@@ -1,3 +1,5 @@
+import re
+
 definitions = {
     "số tự nhiên": "natural number",
     "số chẵn": "even number",
@@ -96,3 +98,9 @@ TONENORMALIZE_DICT = (
     ("Ụy", "Uỵ"),
     ("ỤY", "UỴ"),
 )
+
+
+close_tag_patterns = ["</span>", "</div>", "</p>", "</h[\d]>"]
+open_tag_patterns = ["<div.*?>", "<span.*?>", "<p.*?>", "<h.*?>"]
+CLOSE_TAG = re.compile("|".join(close_tag_patterns))
+OPEN_TAG = re.compile("|".join(open_tag_patterns))

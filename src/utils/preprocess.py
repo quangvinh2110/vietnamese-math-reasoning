@@ -1,5 +1,4 @@
-from .constants import TONENORMALIZE_DICT
-import re
+from .constants import *
 import unicodedata
 
 
@@ -17,6 +16,12 @@ def normalize_tone(text: str) -> str:
     for tone, tone_replace in TONENORMALIZE_DICT:
         text = text.replace(tone, tone_replace)
     return text
+
+
+def cleanhtml(raw_page):
+    out = CLOSE_TAG.sub("", raw_page)
+    out = OPEN_TAG.sub("", out)
+    return out
 
 
 def preprocess(question: str, lowercase: bool=False):

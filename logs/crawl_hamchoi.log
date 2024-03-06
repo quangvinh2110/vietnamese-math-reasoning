@@ -1,0 +1,6 @@
++ python src/crawl_data/crawl_MathQA.py --links_path /home/vinhnq29/Public/zalo_challenge_2023/data/hamchoi/toan3_links.txt --output_path /home/vinhnq29/Public/zalo_challenge_2023/data/hamchoi/toan3_questions.jsonl
+--- 320.26673340797424 seconds ---
++ python src/crawl_data/crawl_MathQA.py --links_path /home/vinhnq29/Public/zalo_challenge_2023/data/hamchoi/toan4_links.txt --output_path /home/vinhnq29/Public/zalo_challenge_2023/data/hamchoi/toan4_questions.jsonl
+--- 322.4256875514984 seconds ---
++ python src/crawl_data/crawl_MathQA.py --links_path /home/vinhnq29/Public/zalo_challenge_2023/data/hamchoi/toan5_links.txt --output_path /home/vinhnq29/Public/zalo_challenge_2023/data/hamchoi/toan5_questions.jsonl
+--- 325.0904417037964 seconds ---
