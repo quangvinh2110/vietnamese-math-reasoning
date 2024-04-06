@@ -33,11 +33,11 @@ def parse_args():
 def main():
     args = parse_args()
     input_file = open(args.input_path, "r")
-    output_file = open(args.output_path, "a")
+    output_file = open(args.output_path, "w")
     for line in tqdm(input_file):
         sample = json.loads(line)
         soup = BeautifulSoup(sample["content"], "html.parser")
-        choices = soup.find_all("div", {"class": "option-choices js-answer "})
+        choices = soup.find_all("div", {"class": "option-choices js-answer"})
         choices.append(soup.find("div", {"class": "option-choices js-answer answer-correct"}))
         question = soup.find("h1", {"class": "title-question overflow-x-el"})
         answers = [soup.find("div", {"class": "result"}), soup.find("div", {"class": "option-choices js-answer answer-correct"})]
