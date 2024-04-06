@@ -1,17 +1,51 @@
+import argparse
 from huggingface_hub import snapshot_download
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-pretrained_model = ""
-save_dir = ""
-cache_dir = ""
 
-snapshot_download(repo_id=pretrained_model, 
-                  ignore_patterns=[".msgpack", ".h5",".safetensors", ".onnx","*.tflite"], 
-                  local_dir = save_dir,
-                  cache_dir = cache_dir)
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description=""
+    )
+    parser.add_argument(
+        "--repo_id",
+        type=str,
+        default=None,
+        help="repo id on huggingface hub"
+    )
+    parser.add_argument(
+        "--local_dir",
+        type=str,
+        default=None,
+        help="The absolute path to output folder"
+    )
+    parser.add_argument(
+        "--cache_dir",
+        type=str,
+        default=None,
+        help="The absolute path to cache folder"
+    )
+    args = parser.parse_args()
 
-tokenizer = AutoTokenizer.from_pretrained(save_dir)
-model = AutoModelForCausalLM.from_pretrained(save_dir)
+    return args
 
-model.save_pretrained(save_dir, from_pt=True) 
-tokenizer.save_pretrained(save_dir)
+
+def main():
+    args = parse_args()
+    snapshot_download(
+        repo_id=args.repo_id, 
+        ignore_patterns=[".msgpack", ".h5", ".onnx","*.tflite"], 
+        local_dir=args.local_dir,
+        cache_dir=args.cache_dir,
+        token="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"
+    )
+
+    tokenizer = AutoTokenizer.from_pretrained(args.local_dir)
+    model = AutoModelForCausalLM.from_pretrained(args.local_dir)
+
+    model.save_pretrained(args.local_dir) 
+    tokenizer.save_pretrained(args.local_dir)
+    
+    
+if __name__ == "__main__":
+    main()
