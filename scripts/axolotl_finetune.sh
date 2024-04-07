@@ -101,6 +101,6 @@ fsdp_config:
 special_tokens:
 EOF
 
-CUDA_VISIBLE_DEVICES=${DEVICE} accelerate launch -m axolotl.cli.train ${CONFIG_FILE}
-
+mkdir ${OUTPUT_DIR}
 cp ${CONFIG_FILE} ${OUTPUT_DIR}
+CUDA_VISIBLE_DEVICES=${DEVICE} accelerate launch -m axolotl.cli.train ${CONFIG_FILE}
