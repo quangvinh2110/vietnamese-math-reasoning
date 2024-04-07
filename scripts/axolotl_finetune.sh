@@ -4,8 +4,10 @@ set -ex
 DEVICE=4
 CURRENT_TIME=$( date '+%F-%H-%M-%S' )
 MODEL_NAME=zephyr-7b-beta
-MODEL_TYPE=MistralForCausalLM
-TOKENIZER_TYPE=LlamaTokenizer
+MODEL_TYPE=AutoModelForCausalLM
+TOKENIZER_TYPE=AutoTokenizer
+DATASET_PATH=/absolute/path/to/your/data/file
+DATASET_TYPE=input_output
 MAX_SEQ_LEN=4096
 LORA_RANK=256
 LORA_ALPHA=128
@@ -15,11 +17,11 @@ GRADIENT_ACCUMULATION_STEPS=$((${GLOBAL_BATCH_SIZE}/${MICRO_BATCH_SIZE}))
 EPOCHS=2
 LR_SCHEDULER=cosine
 LR=2e-4
-CONFIG_FILE=/workspace/home/vinhnq29/zac2023-main/config/${MODEL_NAME}-qlora-${CURRENT_TIME}.yml
-OUTPUT_DIR=/workspace/home/vinhnq29/zac2023-main/checkpoints/${MODEL_NAME}-qlora-${CURRENT_TIME}
+CONFIG_FILE=/absolute/path/to/your/config/folder/${MODEL_NAME}-qlora-${CURRENT_TIME}.yml
+OUTPUT_DIR=/absolute/path/to/your/checkpoints/folder/${MODEL_NAME}-qlora-${CURRENT_TIME}
 
 cat > ${CONFIG_FILE} << EOF
-base_model: /workspace/home/vinhnq29/zac2023-main/models_hub/${MODEL_NAME}
+base_model: /absolute/path/to/your/pretrained/models/folder/${MODEL_NAME}
 model_type: ${MODEL_TYPE}
 tokenizer_type: ${TOKENIZER_TYPE}
 
@@ -28,8 +30,8 @@ load_in_4bit: true
 strict: false
 
 datasets:
-  - path: /workspace/home/vinhnq29/zac2023-main/data_hub/ViMathQA/train_v1/input_output_zephyr-00000-of-00001.parquet
-    type: input_output
+  - path: ${DATASET_PATH}
+    type: ${DATASET_TYPE}
 dataset_prepared_path:
 val_set_size: 0.05
 eval_sample_packing: false
