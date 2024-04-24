@@ -1,27 +1,31 @@
 #!/bin/bash#
 set -ex
 
-DEVICE=4
+DEVICE=0
 CURRENT_TIME=$( date '+%F-%H-%M-%S' )
-MODEL_NAME=zephyr-7b-beta
+MODEL_NAME=wizardcoder-python-7b-v1-0
 MODEL_TYPE=AutoModelForCausalLM
 TOKENIZER_TYPE=AutoTokenizer
-DATASET_PATH=/absolute/path/to/your/data/file
+FLASH_ATTENTION=true
+DATASET_PATH=/workspace/home/vinhnq29/zac2023-main/data_hub/MathIntructCode/input_output_llamacode.jsonl
 DATASET_TYPE=input_output
 MAX_SEQ_LEN=4096
+ADAPTER=qlora
+PRETRAINED_ADAPTER_DIR=
 LORA_RANK=256
 LORA_ALPHA=128
 GLOBAL_BATCH_SIZE=16
-MICRO_BATCH_SIZE=4
+MICRO_BATCH_SIZE=1
 GRADIENT_ACCUMULATION_STEPS=$((${GLOBAL_BATCH_SIZE}/${MICRO_BATCH_SIZE}))
-EPOCHS=2
+EPOCHS=4
+OPTIMIZER=paged_adamw_32bit
 LR_SCHEDULER=cosine
 LR=2e-4
-CONFIG_FILE=/absolute/path/to/your/config/folder/${MODEL_NAME}-qlora-${CURRENT_TIME}.yml
-OUTPUT_DIR=/absolute/path/to/your/checkpoints/folder/${MODEL_NAME}-qlora-${CURRENT_TIME}
+CONFIG_FILE=/workspace/home/vinhnq29/zac2023-main/config/${MODEL_NAME}-${ADAPTER}-${CURRENT_TIME}.yml
+OUTPUT_DIR=/workspace/home/vinhnq29/zac2023-main/checkpoints/adapters/${MODEL_NAME}-${ADAPTER}-${CURRENT_TIME}
 
 cat > ${CONFIG_FILE} << EOF
-base_model: /absolute/path/to/your/pretrained/models/folder/${MODEL_NAME}
+base_model: /workspace/home/vinhnq29/zac2023-main/models_hub/${MODEL_NAME}
 model_type: ${MODEL_TYPE}
 tokenizer_type: ${TOKENIZER_TYPE}
 
@@ -41,21 +45,13 @@ sequence_len: ${MAX_SEQ_LEN}
 sample_packing: false
 pad_to_sequence_len: false
 
-adapter: lora
-lora_model_dir:
-lora_r: 32
-lora_alpha: 16
+adapter: ${ADAPTER}
+lora_model_dir: ${PRETRAINED_ADAPTER_DIR}
+lora_r: ${LORA_RANK}
+lora_alpha: ${LORA_ALPHA}
 lora_dropout: 0.05
 lora_target_linear: true
 lora_fan_in_fan_out:
-lora_target_modules:
-  - gate_proj
-  - down_proj
-  - up_proj
-  - q_proj
-  - v_proj
-  - k_proj
-  - o_proj
 
 wandb_project:
 wandb_entity:
@@ -66,7 +62,7 @@ wandb_log_model:
 gradient_accumulation_steps: ${GRADIENT_ACCUMULATION_STEPS}
 micro_batch_size: ${MICRO_BATCH_SIZE}
 num_epochs: ${EPOCHS}
-optimizer: adamw_bnb_8bit
+optimizer: ${OPTIMIZER}
 lr_scheduler: ${LR_SCHEDULER}
 learning_rate: ${LR}
 
@@ -82,14 +78,14 @@ resume_from_checkpoint:
 local_rank:
 logging_steps: 1
 xformers_attention: 
-flash_attention: true
+flash_attention: ${FLASH_ATTENTION}
 s2_attention:
 
 loss_watchdog_threshold: 5.0
 loss_watchdog_patience: 3
 
 warmup_steps: 10
-evals_per_epoch: 1
+evals_per_epoch: 4
 eval_table_size:
 eval_max_new_tokens: 128
 saves_per_epoch: 2
@@ -99,8 +95,11 @@ weight_decay: 0.0
 fsdp:
 fsdp_config:
 special_tokens:
+  bos_token: "<s>"
+  eos_token: "</s>"
+  unk_token: "<unk>"
 EOF
 
 mkdir ${OUTPUT_DIR}
 cp ${CONFIG_FILE} ${OUTPUT_DIR}
-CUDA_VISIBLE_DEVICES=${DEVICE} accelerate launch -m axolotl.cli.train ${CONFIG_FILE}
+CUDA_VISIBLE_DEVICES=${DEVICE} accelerate launch -m axolotl.cli.train ${CONFIG_FILE} --debug
