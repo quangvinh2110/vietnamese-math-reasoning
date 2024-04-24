@@ -54,7 +54,7 @@ def parse_args():
         help=""
     )
     parser.add_argument(
-        "--no_adapter",
+        "--use_adapter",
         action="store_true",
         help=""
     )
@@ -92,6 +92,8 @@ if __name__ == "__main__":
     print(f"MODEL PATH: {model_path}")
     print(f"PEFT MODEL PATH: {peft_model_path}")
     print(f"RESULT PATH: {result_filepath}")
+    print(f"DO QUANTIZE: {args.do_quantize}")
+    print(f"USE ADAPTER: {args.use_adapter}")
     print(f"MERGE ADAPTER: {args.merge_adapter}")
     print("="*61)
 
@@ -117,9 +119,9 @@ if __name__ == "__main__":
             trust_remote_code=True, 
             device_map="auto"
         )
-    if not args.no_adapter:
+    if args.use_adapter:
         model = PeftModel.from_pretrained(model, peft_model_path)
-    if not args.no_adapter and args.merge_adapter:
+    if args.use_adapter and args.merge_adapter:
         model = model.merge_and_unload()
     tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
     pipeline = BasePipeline(
