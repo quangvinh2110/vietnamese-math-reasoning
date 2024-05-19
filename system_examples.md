@@ -1,5 +1,5 @@
 # Problems
-Lựa chọn đáp án đúng nhất: Mỗi bao gạo nặng 9,8 kg. Hỏi 3,5 bao gạo như thế nặng bao nhiêu ki-lô-gam?
+Lựa chọn đáp án đúng nhất: Mỗi bao gạo nặng 9,8 kg. Hỏi 3,5 bao gạo như thế nặng bao nhiêu ki-lô-gam? \
 A. 33,2 kg
 B. 33,3 kg
 C. 34,2 kg
