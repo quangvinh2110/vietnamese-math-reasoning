@@ -1,4 +1,4 @@
-from typing import Any, Optional, List
+from typing import Any, Optional, List, Union
 import torch
 from transformers import (
     PreTrainedModel,
@@ -8,6 +8,9 @@ from transformers import (
     AutoTokenizer,
     GenerationConfig,
 )
+from peft import PeftModel
+from vllm import LLM, SamplingParams
+from vllm.lora.request import LoRARequest
 
 from ..utils.constants import USER_PROMPT_TEMPLATE
 
@@ -19,30 +22,87 @@ class BasePipeline:
     def __init__(
         self,
         model_path: Optional[str] = None,
-        model: Optional[PreTrainedModel] = None,
-        tokenizer: Optional[PreTrainedTokenizer] = None,
-        device: int = 0,
-        assistant_prompt: str = None
+        quantize: Optional[str] = None,
+        adapter_path: Optional[str] = None,
+        merge_adapter: bool = False,
+        use_vllm: bool = False,
+        system_prompt: str = "",
+        assistant_prompt: str = ""
     ):
-        if (not tokenizer or not model) and model_path:
-            self.tokenizer = AutoTokenizer.from_pretrained(model_path)
+        self.tokenizer = AutoTokenizer.from_pretrained(
+            model_path, 
+            trust_remote_code=True
+        )
+        self.use_vllm = use_vllm
+        self.adapter_path = adapter_path
+        if use_vllm:
+            self.model = LLM(
+                model=model_path,
+                trust_remote_code=True,
+                max_num_batched_tokens=16384,
+                max_context_len_to_capture=4096,
+                max_model_len=4096,
+                max_num_seqs=32,
+                dtype=torch.bfloat16,
+                enable_lora=True if adapter_path else False,
+                max_lora_rank=256,
+            )
+        else:
+            bnb_config = None
+            if quantize == "4bit":
+                bnb_config = BitsAndBytesConfig(
+                    load_in_4bit=True,
+                    bnb_4bit_compute_dtype=torch.bfloat16,
+                    bnb_4bit_use_double_quant=True,
+                    bnb_4bit_quant_type="nf4",
+                )
             config = AutoConfig.from_pretrained(model_path, trust_remote_code=True)
             self.model = AutoModelForCausalLM.from_pretrained(  
                 model_path, 
                 config=config, 
                 torch_dtype=torch.bfloat16, 
                 trust_remote_code=True, 
-                device_map={"": device}
-                # device_map="auto"
+                quantization_config=bnb_config,
+                device_map="auto"
             )
-        elif tokenizer and model:
-            self.tokenizer = tokenizer
-            self.model = model
+            if adapter_path:
+                self.model = PeftModel.from_pretrained(self.model, adapter_path)
+                if merge_adapter:
+                    self.model = self.model.merge_and_unload()
+            self.model.eval()
+        if use_vllm:
+            self.generation_config = SamplingParams(
+                n=1,
+                best_of=1,
+                use_beam_search=False,
+                max_tokens=1024,
+                repetition_penalty=1.0,
+                temperature=0,
+                top_p=1,
+                top_k=-1,
+                stop=[self.tokenizer.eos_token]
+            )
         else:
-            raise ValueError()
-        self.model.eval()
+            self.generation_config = GenerationConfig(
+                max_new_tokens=1024,
+                repetition_penalty=1.0,
+                # temperature=0.7,
+                # top_p=0.95,
+                # top_k=20,
+                bos_token_id=self.tokenizer.bos_token_id,
+                eos_token_id=self.tokenizer.eos_token_id,
+                # eos_token_id=0, # for open-end generation.
+                pad_token_id=self.tokenizer.pad_token_id,
+                do_sample=False,
+                use_cache=True,
+                return_dict_in_generate=True,
+                output_attentions=False,
+                output_hidden_states=False,
+                output_scores=False,
+            )
         self.tokenizer.add_eos_token = False
         self.tokenizer.padding_side = "left"
+        self.system_prompt = system_prompt
         self.assistant_prompt = assistant_prompt
 
     
@@ -61,17 +121,11 @@ class BasePipeline:
                 choices=choices
             )
             user_prompt = preprocess(user_prompt)
-            if self.assistant_prompt:
-                prompt = self.tokenizer.apply_chat_template([
-                    {"role": "system", "content": ""},
-                    {"role": "user", "content": user_prompt},
-                    {"role": "assistant", "content": self.assistant_prompt}
-                ], tokenize=False).strip().removesuffix(self.tokenizer.eos_token)
-            else:
-                prompt = self.tokenizer.apply_chat_template([
-                    {"role": "system", "content": ""},
-                    {"role": "user", "content": user_prompt},
-                ], tokenize=False, add_generation_prompt=True)
+            prompt = self.tokenizer.apply_chat_template([
+                {"role": "system", "content": self.system_prompt},
+                {"role": "user", "content": user_prompt},
+                {"role": "assistant", "content": self.assistant_prompt}
+            ], tokenize=False).strip().removesuffix(self.tokenizer.eos_token)
             prompts.append(prompt)
         return prompts
 
@@ -81,44 +135,35 @@ class BasePipeline:
         instruction_list: List[str],
         question_list: List[str], 
         choices_list: List[list],
-        max_new_tokens: int = 1024
     ):
         prompts = self.prepare_prompts(
             instruction_list=instruction_list,
             question_list=question_list, 
             choices_list=choices_list,
         )
-        _inputs = self.tokenizer(prompts, return_tensors="pt", padding=True)
-        input_ids = _inputs["input_ids"].to(self.model.device)
-        attention_mask = _inputs["attention_mask"].to(self.model.device)
-        with torch.no_grad():
-            generation_config = GenerationConfig(
-                max_new_tokens=max_new_tokens,
-                repetition_penalty=1.0,
-                # temperature=0.7,
-                # top_p=0.95,
-                # top_k=20,
-                bos_token_id=self.tokenizer.bos_token_id,
-                eos_token_id=self.tokenizer.eos_token_id,
-                # eos_token_id=0, # for open-end generation.
-                pad_token_id=self.tokenizer.pad_token_id,
-                do_sample=False,
-                use_cache=True,
-                return_dict_in_generate=True,
-                output_attentions=False,
-                output_hidden_states=False,
-                output_scores=False,
+        if self.use_vllm:
+            outputs = self.model.generate(
+                prompts, 
+                self.generation_config,
+                lora_request=LoRARequest("math_adapter", 1, self.adapter_path) \
+                                 if self.adapter_path else None
             )
-            # streamer = TextStreamer(self.tokenizer, skip_prompt=True)
-            generated = self.model.generate(
-                inputs=input_ids,
-                attention_mask=attention_mask,
-                generation_config=generation_config,
-                # streamer=streamer,
-            )
-        gen_tokens = generated["sequences"].cpu()
-        outputs = self.tokenizer.batch_decode(gen_tokens)
-        outputs = [output.replace(self.tokenizer.pad_token, "") for output in outputs]
+            outputs = [output.prompt + output.outputs[0].text for output in outputs]
+        else:
+            _inputs = self.tokenizer(prompts, return_tensors="pt", padding=True)
+            input_ids = _inputs["input_ids"].to(self.model.device)
+            attention_mask = _inputs["attention_mask"].to(self.model.device)
+            with torch.no_grad():
+                # streamer = TextStreamer(self.tokenizer, skip_prompt=True)
+                generated = self.model.generate(
+                    inputs=input_ids,
+                    attention_mask=attention_mask,
+                    generation_config=self.generation_config,
+                    # streamer=streamer,
+                )
+            gen_tokens = generated["sequences"].cpu()
+            outputs = self.tokenizer.batch_decode(gen_tokens)
+            outputs = [output.replace(self.tokenizer.pad_token, "") for output in outputs]
         return outputs 
 
 
@@ -134,9 +179,9 @@ class BasePipeline:
         self,
         generated_answer: str, 
         choices: list,
-        get_prediction_prefix: str="Kết luận: đáp án đúng là ",
+        prediction_prefix: str="Kết luận: đáp án đúng là ",
     ):
-        prompt = generated_answer.removesuffix(self.tokenizer.eos_token) + "\n\n" + get_prediction_prefix
+        prompt = generated_answer.removesuffix(self.tokenizer.eos_token) + "\n\n" + prediction_prefix
         logits = self.compute_logit_for_choices(
             prompt=prompt, 
             choices=choices
@@ -144,4 +189,4 @@ class BasePipeline:
         max_logit = max(logits)
         max_logit_id = logits.index(max_logit)
         # print("Logits: " + str(logits))
-        return prompt, chr(max_logit_id+65)
+        return f"Predict prompt: {prompt}", chr(max_logit_id+65)
