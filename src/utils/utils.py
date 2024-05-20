@@ -52,301 +52,62 @@ def add_unit_conversion(question: str):
 
 
 def add_definitions(question: str):
-    original_question = question+''
-    question = question.lower()
-    if original_question[-1] != "\n":
-        original_question += "\n"
+    definitions =[]
     # minus
     if ("số bị trừ" in question) or ("số trừ" in question):
-        note = (
-            "NOTE: "
-            "the term `số bị trừ` refers to the minuend; "
-            "the term `số trừ` refers to the subtrahend; "
-            "the term `hiệu` refers to the difference\n"
-        )
-        original_question += note
+        definitions.append("".join([
+            "the term `số bị trừ` refers to the minuend; ",
+            "the term `số trừ` refers to the subtrahend; ",
+            "the term `hiệu` refers to the difference."
+        ]))
     # add
     if "số hạng" in question:
-        note = (
-            "Note: "
-            "the term `số hạng` refers to the addend; "
-            "the term `tổng` refers to the sum\n"
-        )
-        original_question += note
+        definitions.append("".join([
+            "the term `số hạng` refers to the addend; ",
+            "the term `tổng` refers to the sum."
+        ]))
     # multiply
     if "thừa số" in question: 
-        note = (
-            "NOTE: "
+        definitions.append("".join([
             "the term `thừa số` refers to the factor; "
-            "the term `tích` refers to the product\n"
-        )
-        original_question += note
+            "the term `tích` refers to the product."
+        ]))
     # divide
     if ("số bị chia" in question) or ("số chia" in question) or ("số dư" in question):
-        note = (
-            "NOTE: "
-            "the term `số bị chia` refers to the dividend; "
-            "the term `số chia` refers to the divisor; "
-            "the term `thương` refers to the quotient; "
-            "the term `số dư` refers to the remainder\n"
-        )
-        original_question += note
+        definitions.append("".join([
+            "the term `số bị chia` refers to the dividend; ",
+            "the term `số chia` refers to the divisor; ",
+            "the term `thương` refers to the quotient; ",
+            "the term `số dư` refers to the remainder."
+        ]))
     # property
     if ("tính chất giao hoán" in question) or ("giao hoán" in question) or ("tính giao hoán" in question):
-        note = "NOTE: the term `tính chất giao hoán` refers to the commutative property\n"
-        original_question += note
+        definitions.append("the term `tính chất giao hoán` refers to the commutative property.")
     if ("tính chất kết hợp" in question) or ("tính kết hợp" in question):
-        note = "NOTE: the term `tính chất kết hợp` refers to the associative property\n"
-        original_question += note
+        definitions.append("the term `tính chất kết hợp` refers to the associative property.")
     # numbers
     if "số tròn chục" in question:
-        note = "NOTE: The term `số tròn chục` refers to numbers that are greater than or equal to 10 and divisible by 10\n"
-        original_question += note
+        definitions.append("the term `số tròn chục` refers to numbers that are greater than or equal to 10 and divisible by 10.")
     if "số tròn trăm" in question:
-        note = "NOTE: The term `số tròn trăm` refers to numbers that are greater than or equal to 100 and divisible by 100\n"
-        original_question += note
+        definitions.append("the term `số tròn trăm` refers to numbers that are greater than or equal to 100 and divisible by 100.")
     if "số tròn nghìn" in question:
-        note = "NOTE: The term `số tròn nghìn` refers to numbers that are greater than or equal to 1000 and divisible by 1000\n"
-        original_question += note
+        definitions.append("the term `số tròn nghìn` refers to numbers that are greater than or equal to 1000 and divisible by 1000.")
 
-    return original_question
+    return definitions
 
 trans_table = str.maketrans({p: f"\{p}" for p in string.punctuation})
 unit_list = list(map(lambda u: u.translate(trans_table), unit_list))
 UNIT_PATTERN = re.compile(r"\d[\s]*({})".format("|".join(unit_list)))
 
-def add_notes(question: str):
 
-    choices = "\n".join(question.split("\n")[1:])
-    if UNIT_PATTERN.search(choices):
-        question += "NOTE: **You should convert the final result and all the choices to the same unit**\n"
-
-    question = add_definitions(question)
-    if "hình tròn" in question or "vòng tròn" in question:
-        question += "NOTE: The value of pi is 3.14. You should use this value to compute the result"
-    return question
-
-
-
-# def load_prompt(data_name, prompt_type):
-#     if data_name in ['gsm-hard', 'svamp', 'tabmwp', 'asdiv', 'mawps']:
-#         data_name = "gsm8k"
-#     if prompt_type in ['platypus_fs', 'wizard_zs']:
-#         prompt_type = "cot"
-#     prompt_path = "./prompts/{}/{}.md".format(prompt_type, data_name)
-#     if not os.path.exists(prompt_path):
-#         prompt_path = "./prompts/{}.md".format(prompt_type)
-#     if os.path.exists(prompt_path):
-#         with open(prompt_path, 'r', encoding='utf-8') as fp:
-#             prompt = fp.read().strip() + "\n\n"
-#     else:
-#         print(f"Error: prompt file {prompt_path} not found")
-#         prompt = ""
-#     return prompt
-
-# def construct_prompt(args, example):
-#     demo_prompt = load_prompt(args.data_name, args.prompt_type)
-#     if args.use_train_prompt_format:
-#         full_prompt = f"<|user|>\n{example['question']}\n<|assistant|>\n"
-#     elif "tora" in args.prompt_type or "pot" in args.prompt_type:
-#         context = f"Question: {example['question']}\n\nSolution:"
-#         full_prompt = demo_prompt + context
-#     elif args.prompt_type in ["direct", "cot"]:
-#         context = f"Question: {example['question']}\nAnswer:"
-#         full_prompt = demo_prompt + context
-#     elif args.prompt_type == "pal":
-#         context = f"Question: {example['question']}"
-#         full_prompt = demo_prompt + context
-#     elif args.prompt_type == "wizard_zs":
-#         full_prompt = (
-#             "Below is an instruction that describes a task. "
-#             "Write a response that appropriately completes the request.\n\n"
-#             "### Instruction:\n{instruction}\n\n### Response: Let's think step by step."
-#         )
-#         full_prompt = full_prompt.format(instruction=example['question'])
-#     elif args.prompt_type == "platypus_fs":
-#         full_prompt = (
-#             "Below is an instruction that describes a task. "
-#             "Write a response that appropriately completes the request.\n\n"
-#             "### Instruction:\n{instruction}\n\n### Response:\n"
-#         )
-#         full_prompt = full_prompt.format(instruction=demo_prompt + f"Question: {example['question']}\nAnswer:")
-#     else:
-#         raise NotImplementedError(args.prompt_type)
-#     return full_prompt
-
-
-def load_static_prompt(prompt_type: str):
-    if prompt_type=="dynamic" or prompt_type=="zalo":
-        return ""
-    current_path = os.path.realpath(__file__)
-    prompt_path = "/".join(current_path.split("/")[:-2])+f"/prompts/{prompt_type}.md"
-    if os.path.exists(prompt_path):
-        with open(prompt_path, 'r', encoding='utf-8') as fp:
-            prompt = fp.read().strip() + "\n\n"
-    else:
-        print(f"Error: prompt file {prompt_path} not found")
-        prompt = ""
-    return prompt
-
-
-
-WORD_PATTERN = re.compile(r"[\w]+")
-NUMBER_PATTERN = re.compile(r"[\d]+")
-
-def remove_numbers(s: str):
-    return NUMBER_PATTERN.sub("", s)
-
-
-def tokenize_question(question: str):
-    question = preprocess(question, lowercase=True)
-    question = remove_numbers(question)
-    return WORD_PATTERN.findall(question)
-
-
-def load_zalo_question_corpus():
-    zalo_code = []
-    current_path = os.path.realpath(__file__)
-    corpus_path = "/".join(current_path.split("/")[:-3])+"/data/zalo/train/zalo_code_filtered.jsonl"
-    with open(corpus_path, "r") as f:
-        for line in f:
-            zalo_code.append(json.loads(line))
-
-    tokenized_question_corpus = []
-    for s in zalo_code:
-        question = s["question"].split("\n")[0]
-        tokenized_question_corpus.append(
-            tokenize_question(question)
+def add_notes(question: str, choices: str) -> list:
+    notes = []
+    if UNIT_PATTERN.search("\n".join(choices)):
+        notes.append(
+            "**you should convert the final result and all the choices to the same unit**"
         )
 
-    return BM25Okapi(tokenized_question_corpus), zalo_code
-
-
-bm25, zalo_code = load_zalo_question_corpus()
-DYNAMIC_PROMPT_FORMAT = """
-I want you to act as a world-class Python programmer that can complete ANY goal by writing Python code.
-First, I will give you a multiple-choices math problem.
-Integrate step-by-step reasoning and Python code to solve that math problems
-NOTE: **Eliminate UNNECESSARY steps before coding.**
-NOTE: **Ignore all simplify ratio or simplify fraction steps.**
-NOTE: **Do NOT calculate anything. If you do any calculation, someone might die.**
-NOTE: **Do NOT make any conclusion. If you do that, someone might die.**
-
-Example 1:
-{example_0}
-
--------------------------------------------------------------------
-
-Example 2:
-{example_1}
-"""
-
-def load_dynamic_prompt(question: str):
-    tokenized_ques = tokenize_question(question)
-    examples = bm25.get_top_n(tokenized_ques, zalo_code, n=2)
-    question_0 = add_notes(preprocess(examples[0]['question']))
-    question_1 = add_notes(preprocess(examples[1]['question']))
-    example_0 = "\n".join([
-        f"Solve the following multiple-choices problem: {question_0}",
-        "Let's break it down step by step first:",
-        f"{examples[0]['instruction']}",
-        "Here's the Python code based on the plan above:",
-        examples[0]['code']
-    ])
-    example_1 = "\n".join([
-        f"Solve the following multiple-choices problem: {question_1}",
-        "Let's break it down step by step first:",
-        f"{examples[1]['instruction']}",
-        "Here's the Python code based on the plan above:",
-        examples[1]['code']
-    ])
-    return DYNAMIC_PROMPT_FORMAT.format(
-        example_0=example_0,
-        example_1=example_1
-    )
-
-
-def is_multiple_choices(question: str):
-    return len(question.split("\n")) > 1
-
-MULTIPLE_CHOICES_TEMPLATE = "Solve the following multiple-choices problem: {question}\n"
-NORMAL_TEMPLATE = "Solve the following problem: {question}\n"
-DYNAMIC_PROMPT_TEMPLATE = f"""
-
-"""
-
-
-def construct_prompt(question: str, prompt_type: str):
-
-    demo_prompt = load_static_prompt(prompt_type)
-    if prompt_type == "zalo":
-        if is_multiple_choices(question):
-            full_prompt = "".join([
-                "<|user|>\n",
-                MULTIPLE_CHOICES_TEMPLATE.format(question=question),
-                "<|assistant|>\n"
-            ])
-        else:
-            full_prompt = "".join([
-                "<|user|>\n",
-                NORMAL_TEMPLATE.format(question=question),
-                "<|assistant|>\n"
-            ])
-    elif prompt_type == "tora":
-        if is_multiple_choices(question):
-            context = "".join([
-                "<|user|>\n",
-                MULTIPLE_CHOICES_TEMPLATE.format(question=question),
-                "<|assistant|>\n"
-            ])
-        else:
-            context = "".join([
-                "<|user|>\n",
-                NORMAL_TEMPLATE.format(question=question),
-                "<|assistant|>\n"
-            ])
-        full_prompt = demo_prompt + context
-    elif prompt_type == "pal":
-        pass
-    elif prompt_type == "wizard_zs":
-        pass
-    elif prompt_type == "platypus_fs":
-        pass
-    elif prompt_type == "dynamic":
-        demo_prompt = load_dynamic_prompt(question)
-        context = "\n".join([
-            "<|user|>",
-            MULTIPLE_CHOICES_TEMPLATE.format(question=question),
-            "<|assistant|>"
-        ])
-        full_prompt = "<|system|>\n"+demo_prompt+"\n"+ context
-    else:
-        raise NotImplementedError(prompt_type)
-    
-    return full_prompt
-
-
-def show_sample(sample):
-    print("=="*20)
-    print("idx:", sample['idx'])
-    for key in ["type", "level"]:
-        if key in sample:
-            print("{}: {}".format(key, sample[key]))
-    print("question:", sample['question'])
-    if 'code' in sample:
-        for code in sample['code']:
-            print('-'*20)
-            print("code:", code)
-        print("execution", sample['report'])
-    for key in ["pred", "gt", "score", "unit", "gt_cot"]:
-        if key in sample:
-            print("{}: {}".format(key, sample[key]))
-    print()
-
-
-# testing
-if __name__ == "__main__":
-
-    question = "Số bị trừ là số liền sau của số tròn chục lớn nhất có hai chữ số, số trừ là tổng của 37 và 25. Vậy hiệu là:\nA. 29\nB. 7\nC. 9\nD. 6"
-    question = unicodedata.normalize("NFC", question)
-    print(add_definitions(question))
+    notes += add_definitions(question)
+    if "hình tròn" in question or "vòng tròn" in question:
+        notes.append("the value of pi is 3.14. You should use this value to compute the result")
+    return notes
