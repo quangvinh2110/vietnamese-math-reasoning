@@ -1,19 +1,24 @@
 import re
-from typing import Any
+import traceback
+from typing import Any, Optional, List, Union
 import torch
 from transformers import (
     PreTrainedModel,
     PreTrainedTokenizer,
+    AutoConfig,
+    AutoModelForCausalLM,
+    AutoTokenizer,
     GenerationConfig,
-    TextStreamer
 )
+from peft import PeftModel
+from vllm import LLM, SamplingParams
+from vllm.lora.request import LoRARequest
 
 from .base_pipeline import BasePipeline
 
-from .constants import USER_PROMPT_TEMPLATE
-
+from ..utils.constants import USER_PROMPT_TEMPLATE
 from ..utils.preprocess import preprocess
-from ..utils.utils import add_notes, construct_prompt
+from ..utils.utils import add_notes
 from ..utils.python_executor import PythonExecutor
 
 
@@ -29,25 +34,31 @@ def is_float(string: str):
         return False
 
 
-class CodeLlamaPipeline(BasePipeline):
+class CodePipeline(BasePipeline):
 
     def __init__(
         self,
         model_path: Optional[str] = None,
-        model: Optional[PreTrainedModel] = None,
-        tokenizer: Optional[PreTrainedTokenizer] = None,
-        device: int = 0
+        quantize: Optional[str] = None,
+        adapter_path: Optional[str] = None,
+        merge_adapter: bool = False,
+        use_vllm: bool = False,
+        system_prompt: str = "",
+        assistant_prompt: str = ""
     ):
         super().__init__(
             model_path=model_path,
-            model=model,
-            tokenizer=tokenizer,
-            device=device
+            quantize=quantize,
+            adapter_path=adapter_path,
+            merge_adapter=merge_adapter,
+            use_vllm=use_vllm,
+            system_prompt=system_prompt,
+            assistant_prompt=assistant_prompt
         )
         self.executor = PythonExecutor(get_answer_from_stdout=True)
 
 
-    def _extract_code(s: str):
+    def _extract_code(self, s: str):
         return CODE_PATTERN.findall(s)[0]
 
     
@@ -95,11 +106,40 @@ class CodeLlamaPipeline(BasePipeline):
                 user_prompt+=("\nNotes:\n"+"\n".join(notes))
             user_prompt = preprocess(user_prompt)
             prompt = self.tokenizer.apply_chat_template([
-                {"role": "system", "content": ""},
-                {"role": "user", "content": user_prompt}
-            ], tokenize=False, add_generation_prompt=True)
+                {"role": "system", "content": self.system_prompt},
+                {"role": "user", "content": user_prompt},
+                {"role": "assistant", "content": self.assistant_prompt}
+            ], tokenize=False).strip().removesuffix(self.tokenizer.eos_token)
             prompts.append(prompt)
         return prompts
+
+
+    def select_answer_for_multiple_choices(
+        self,
+        generated_answer: str, 
+        choices: list,
+        prediction_prefix: str="Conclusion: The right choice is ",
+    ):
+        try:
+            code = self._extract_code(generated_answer)
+            python_interperter_output = self._execute_python_code(code) if code else ""
+        except:
+            code = ""
+            python_interperter_output = ""
+            # print(str(traceback.format_exc()))
+
+        if code:
+            prompt = generated_answer.removesuffix(self.tokenizer.eos_token) + f"\n\n```output\n{python_interperter_output}\n```\n\n" + prediction_prefix
+        else:
+            prompt = generated_answer.removesuffix(self.tokenizer.eos_token) + "\n\n" + prediction_prefix
+        logits = self.compute_logit_for_choices(
+            prompt=prompt, 
+            choices=choices
+        )
+        max_logit = max(logits)
+        max_logit_id = logits.index(max_logit)
+        # print("Logits: " + str(logits))
+        return f"Predict prompt: {prompt}\n\nCode: {code}", chr(max_logit_id+65)
 
 
 # if __name__ == "__main__":
