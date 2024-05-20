@@ -2,15 +2,9 @@ import os
 import re
 import json
 import argparse
-import torch
-from transformers import (
-    AutoModelForCausalLM, 
-    AutoTokenizer, 
-    BitsAndBytesConfig
-)
-from peft import PeftModel
 from datasets import load_from_disk
 from src.infer.base_pipeline import BasePipeline
+from src.infer.code_pipeline import CodePipeline
 from tqdm import tqdm
 
 MODEL_LIST = [
@@ -30,15 +24,27 @@ def normalize_name(name: str) -> str:
 def parse_args():
     parser = argparse.ArgumentParser(description="")
     parser.add_argument(
-        "--peft_model_name",
+        "--pipeline",
         type=str,
-        default=None,
+        default="base",
+        help=""
+    )
+    parser.add_argument(
+        "--model_name",
+        type=str,
+        default="",
+        help=""
+    )
+    parser.add_argument(
+        "--adapter_name",
+        type=str,
+        default="",
         help=""
     )
     parser.add_argument(
         "--dataset_name",
         type=str,
-        default=None,
+        default="",
         help=""
     )
     parser.add_argument(
@@ -47,11 +53,13 @@ def parse_args():
         default=8,
         help=""
     )
+    # for qlora checkpoint
     parser.add_argument(
         "--do_quantize",
         action="store_true",
         help=""
     )
+    # for lora/qlora checkpoint
     parser.add_argument(
         "--use_adapter",
         action="store_true",
@@ -67,80 +75,103 @@ def parse_args():
         action="store_true",
         help=""
     )
+    parser.add_argument(
+        "--use_vllm",
+        action="store_true",
+        help=""
+    )
     args = parser.parse_args()
 
     # Sanity checks
-    if not (args.peft_model_name and args.dataset_name):
+    if not (args.adapter_name or args.model_name) or not args.dataset_name:
+        raise ValueError("")
+    if args.use_adapter and not args.adapter_name:
         raise ValueError("")
     
     return args
 
+
+def prepare_pipeline(args):
+    Pipeline = BasePipeline if args.pipeline=="base" else CodePipeline
+    if args.use_vllm:
+        pipeline = Pipeline(
+            model_path=args.model_path,
+            use_vllm=True,
+            adapter_path=args.adapter_path if args.use_adapter else None,
+        )
+    else:        
+        pipeline = Pipeline(
+            model_path=args.model_path,
+            quantize="4bit" if args.do_quantize else None,
+            adapter_path=args.adapter_path if args.use_adapter else None,
+            merge_adapter=args.merge_adapter,
+        )
+
+    if args.use_cot_prompt:
+        # pipeline.assistant_prompt = "Phân tích và suy luận: "
+        # pipeline.assistant_prompt = "STEP"
+        pipeline.assistant_prompt = "```python"
+
+    # pipeline.system_prompt = """Bạn là một trợ lí Tiếng Việt nhiệt tình và trung thực. Hãy luôn trả lời một cách hữu ích nhất có thể, đồng thời giữ an toàn.
+# Câu trả lời của bạn không nên chứa bất kỳ nội dung gây hại, phân biệt chủng tộc, phân biệt giới tính, độc hại, nguy hiểm hoặc bất hợp pháp nào. Hãy đảm bảo rằng các câu trả lời của bạn không có thiên kiến xã hội và mang tính tích cực.Nếu một câu hỏi không có ý nghĩa hoặc không hợp lý về mặt thông tin, hãy giải thích tại sao thay vì trả lời một điều gì đó không chính xác. Nếu bạn không biết câu trả lời cho một câu hỏi, hãy trẳ lời là bạn không biết và vui lòng không chia sẻ thông tin sai lệch."""
+    # pipeline.system_prompt = "Bạn là một trợ lí AI hữu ích. Hãy trả lời người dùng một cách chính xác."
+    
+    return pipeline
+
+
 if __name__ == "__main__":
 
-    print("="*56)
-    print("="*20+" VIMATHQA INFER "+"="*20)
-    print("="*56)
+    print("="*61)
+    print("="*20+" VIMATHQA GET ANSWER "+"="*20)
+    print("="*61)
     args = parse_args()
-    models_hub = "/workspace/home/vinhnq29/zac2023-main/models_hub/"
-    model_path = ""
-    peft_models_hub = "/workspace/home/vinhnq29/zac2023-main/checkpoints/adapters/"
-    peft_model_name = args.peft_model_name
-    peft_model_path = peft_models_hub + peft_model_name
-    for model_name in MODEL_LIST:
-        if model_name in peft_model_name:
-            model_path = models_hub + model_name
+    base_models_hub = "/workspace/home/vinhnq29/zac2023-main/models_hub/"
+    merged_models_hub = "/workspace/home/vinhnq29/zac2023-main/checkpoints/full_models/"
+    adapters_hub = "/workspace/home/vinhnq29/zac2023-main/checkpoints/adapters/"
+    # args.adapter_path = adapters_hub + args.adapter_name
+    if "lora" in args.model_name or "qlora" in args.model_name:
+        args.model_path = merged_models_hub + args.model_name
+        args.adapter_name = ""
+        args.adapter_path = ""
+        args.use_adapter = False
+        args.merge_adapter = False
+    elif args.use_adapter and args.adapter_name:
+        for model_name in MODEL_LIST:
+            if model_name in args.adapter_name:
+                args.model_name = model_name
+                args.model_path = base_models_hub + model_name
+                break
+        args.adapter_path = adapters_hub + args.adapter_name
+    else:
+        args.model_path = base_models_hub + args.model_name
+        args.adapter_name = ""
+        args.adapter_path = ""
+        args.use_adapter = False
+        args.merge_adapter = False
     test_datasets_hub = "/workspace/home/vinhnq29/zac2023-main/data_hub/ViMathQA/"
     dataset_name = args.dataset_name
     dataset_path = test_datasets_hub + dataset_name
     batch_size = args.batch_size
-    print(f"MODEL PATH: {model_path}")
-    print(f"PEFT MODEL PATH: {peft_model_path}")
+    print(f"MODEL PATH: {args.model_path}")
+    print(f"ADAPTER PATH: {args.adapter_path}")
     print(f"DATASET PATH: {dataset_path}")
-    print(f"BATCH SIZE: {batch_size}")
+    print(f"BATCH SIZE: {args.batch_size}")
     print(f"DO QUANTIZE: {args.do_quantize}")
     print(f"USE ADAPTER: {args.use_adapter}")
     print(f"MERGE ADAPTER: {args.merge_adapter}")
     print(f"USE COT PROMPT: {args.use_cot_prompt}")
-    print("="*56)
+    print(f"USE VLLM: {args.use_vllm}")
+    print("="*61)
 
-    if args.do_quantize:
-        bnb_config=BitsAndBytesConfig(
-            load_in_4bit=True,
-            bnb_4bit_compute_dtype=torch.bfloat16,
-            bnb_4bit_use_double_quant=True,
-            bnb_4bit_quant_type="nf4",
-        )
-        model = AutoModelForCausalLM.from_pretrained(  
-            model_path, 
-            torch_dtype=torch.bfloat16,
-            quantization_config=bnb_config, 
-            # load_in_4bit=True,
-            trust_remote_code=True, 
-            device_map="auto"
-        )
-    else:
-        model = AutoModelForCausalLM.from_pretrained(  
-            model_path, 
-            torch_dtype=torch.bfloat16,
-            trust_remote_code=True, 
-            device_map="auto"
-        )
-    if args.use_adapter:
-        model = PeftModel.from_pretrained(model, peft_model_path)
-    if args.use_adapter and args.merge_adapter:
-        model = model.merge_and_unload()
-    tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
-    pipeline = BasePipeline(
-        model=model,
-        tokenizer=tokenizer
-    )
-    if args.use_cot_prompt:
-        pipeline.assistant_prompt = "Trước hết hãy phân tích câu hỏi một cách cẩn thận và suy luận từng bước một."
+    pipeline = prepare_pipeline(args)
     
     test_dataset = load_from_disk(dataset_path)
 
     result_folder_hub = "/workspace/home/vinhnq29/zac2023-main/results/"
-    result_folder_path = result_folder_hub+normalize_name(peft_model_name)
+    if args.adapter_name:
+        result_folder_path = result_folder_hub+normalize_name(args.adapter_name)
+    else:
+        result_folder_path = result_folder_hub+normalize_name(args.model_name)
     if not os.path.exists(result_folder_path):
         os.makedirs(result_folder_path)
     result_filepath = result_folder_path+"/"+normalize_name(dataset_name)+".jsonl"
