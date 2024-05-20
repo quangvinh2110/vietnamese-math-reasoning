@@ -104,3 +104,10 @@ close_tag_patterns = ["</span>", "</div>", "</p>", "</h[\d]>"]
 open_tag_patterns = ["<div.*?>", "<span.*?>", "<p.*?>", "<h.*?>"]
 CLOSE_TAG = re.compile("|".join(close_tag_patterns))
 OPEN_TAG = re.compile("|".join(open_tag_patterns))
+
+
+USER_PROMPT_TEMPLATE = """
+{instruction}
+{question}
+{choices}
+""".strip()
