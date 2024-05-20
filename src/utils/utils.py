@@ -111,3 +111,12 @@ def add_notes(question: str, choices: str) -> list:
     if "hình tròn" in question or "vòng tròn" in question:
         notes.append("the value of pi is 3.14. You should use this value to compute the result")
     return notes
+
+
+
+# testing
+if __name__ == "__main__":
+
+    question = "Số bị trừ là số liền sau của số tròn chục lớn nhất có hai chữ số, số trừ là tổng của 37 và 25. Vậy hiệu là:\nA. 29\nB. 7\nC. 9\nD. 6"
+    question = unicodedata.normalize("NFC", question)
+    print(add_definitions(question))
