@@ -1,14 +1,15 @@
 #!/bin/bash#
 set -ex
 
-DEVICE=2
+DEVICE=0
 CURRENT_TIME=$( date '+%F-%H-%M-%S' )
-MODEL_NAME=wizardcoder-python-7b-v1-0
+MODEL_NAME=deepseek-coder-6.7b-instruct
 MODEL_TYPE=AutoModelForCausalLM
 TOKENIZER_TYPE=AutoTokenizer
 FLASH_ATTENTION=true
-DATASET_PATH=/workspace/home/vinhnq29/zac2023-main/data_hub/ViMathQA/train_v1/input_output_vistral-00000-of-00001.parquet
+declare -a DATASETS_PATH=("/workspace/home/vinhnq29/zac2023-main/data_hub/MathIntructCode/input_output_llamacode.jsonl" "/workspace/home/vinhnq29/zac2023-main/data_hub/ViMathQA/train_v1/input_output_vistral-00000-of-00001.parquet")
 DATASET_TYPE=input_output
+DATASETS=$(printf $"  - path: %s\n    type: ${DATASET_TYPE}\n" "${DATASETS_PATH[@]}")
 MAX_SEQ_LEN=4096
 ADAPTER=lora
 PRETRAINED_ADAPTER_DIR=
@@ -34,8 +35,7 @@ load_in_4bit: false
 strict: false
  
 datasets:
-  - path: ${DATASET_PATH}
-    type: ${DATASET_TYPE}
+${DATASETS}
 dataset_prepared_path:
 val_set_size: 0.05
 eval_sample_packing: false
@@ -97,8 +97,7 @@ fsdp_config:
 special_tokens:
   bos_token: "<s>"
   eos_token: "</s>"
-  unk_token: "<unk>"
-    
+  unk_token: "<unk>"    
 EOF
 
 mkdir ${OUTPUT_DIR}
