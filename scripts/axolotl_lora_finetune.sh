@@ -2,31 +2,32 @@
 set -ex
 
 DEVICE=0
+NUM_GPUS=1
 CURRENT_TIME=$( date '+%F-%H-%M-%S' )
-MODEL_NAME=deepseek-coder-6.7b-instruct
+MODEL_NAME=path/to/your/pretrained/model
 MODEL_TYPE=AutoModelForCausalLM
 TOKENIZER_TYPE=AutoTokenizer
 FLASH_ATTENTION=true
-declare -a DATASETS_PATH=("/workspace/home/vinhnq29/zac2023-main/data_hub/MathIntructCode/input_output_llamacode.jsonl" "/workspace/home/vinhnq29/zac2023-main/data_hub/ViMathQA/train_v1/input_output_vistral-00000-of-00001.parquet")
+declare -a DATASETS_PATH=("path/to/your/first/dataset" "path/to/your/second/dataset")
 DATASET_TYPE=input_output
 DATASETS=$(printf $"  - path: %s\n    type: ${DATASET_TYPE}\n" "${DATASETS_PATH[@]}")
 MAX_SEQ_LEN=4096
 ADAPTER=lora
 PRETRAINED_ADAPTER_DIR=
-LORA_RANK=256
-LORA_ALPHA=128
-GLOBAL_BATCH_SIZE=16
+LORA_RANK=64
+LORA_ALPHA=32
+GLOBAL_BATCH_SIZE=128
 MICRO_BATCH_SIZE=1
-GRADIENT_ACCUMULATION_STEPS=$((${GLOBAL_BATCH_SIZE}/${MICRO_BATCH_SIZE}))
-EPOCHS=4
-OPTIMIZER=adamw_torch
+GRADIENT_ACCUMULATION_STEPS=$((${GLOBAL_BATCH_SIZE}/${MICRO_BATCH_SIZE}/${NUM_GPUS}))
+EPOCHS=1
+OPTIMIZER=paged_adamw_32bit
 LR_SCHEDULER=cosine
 LR=2e-4
-CONFIG_FILE=/workspace/home/vinhnq29/zac2023-main/config/${MODEL_NAME}-${ADAPTER}-${CURRENT_TIME}.yml
-OUTPUT_DIR=/workspace/home/vinhnq29/zac2023-main/checkpoints/adapters/${MODEL_NAME}-${ADAPTER}-${CURRENT_TIME}
+CONFIG_FILE=/path/to/your/config/folder/${MODEL_NAME}-${ADAPTER}-${CURRENT_TIME}.yml
+OUTPUT_DIR=/path/to/your/checkpoints/folder/${MODEL_NAME}-${ADAPTER}-${CURRENT_TIME}
 
 cat > ${CONFIG_FILE} << EOF
-base_model: /workspace/home/vinhnq29/zac2023-main/models_hub/${MODEL_NAME}
+base_model: ${MODEL_NAME}
 model_type: ${MODEL_TYPE}
 tokenizer_type: ${TOKENIZER_TYPE}
 
@@ -85,19 +86,17 @@ loss_watchdog_threshold: 5.0
 loss_watchdog_patience: 3
 
 warmup_steps: 10
-evals_per_epoch: 5
+evals_per_epoch: 10
 eval_table_size:
-eval_max_new_tokens: 128
+eval_max_new_tokens: 512
 saves_per_epoch: 2
+save_total_limit: 20
 debug:
 deepspeed:
 weight_decay: 0.0
 fsdp:
 fsdp_config:
-special_tokens:
-  bos_token: "<s>"
-  eos_token: "</s>"
-  unk_token: "<unk>"    
+special_tokens:   
 EOF
 
 mkdir ${OUTPUT_DIR}
