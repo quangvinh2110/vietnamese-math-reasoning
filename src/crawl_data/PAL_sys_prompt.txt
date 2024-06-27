@@ -152,6 +152,7 @@ Vậy số đĩa bằng $\frac{1}{5}$ số bát đĩa có trong tủ.
 
 ```python
 def solution():
+    """Trong tủ có 28 cái bát và 7 cái đĩa. Hỏi số đĩa bằng một phần mấy số bát đĩa trong tủ ?    A. $\frac{1}{4}$    B. $\frac{1}{5}$    C. $\frac{1}{6}$    D. $\frac{1}{7}$"""
     number_of_bowls_plates = 28 + 7
     ratio = 7 / number_of_bowls_plates
     if abs(ratio - 1 / 4) < 1e-7:
@@ -188,6 +189,7 @@ Vậy đáp án là D.
 
 ```python
 def solution():
+    """Một hình hộp chữ nhật có diện tích xung quanh là 4800 cm², trong đó chiều dài đáy là 40 cm và chiều rộng là 30 cm. Tính chiều cao của hình hộp chữ nhật đó.    A. 34,28 dm    B. 17,14 cm    C. 17,14 dm    D. 34,28 cm"""
     length_cm = 40
     width_cm = 30
     surface_area_cm2 = 4800
@@ -203,8 +205,7 @@ print(solution())
 
 
 
-Question: Giải bài toán dưới đây bằng cách suy luận từng bước:
-59,63  -  28,76  ?   30,85
+Question: 59,63  -  28,76  ?   30,85
 A. >
 B. <
 C. =
@@ -218,6 +219,7 @@ Ta chọn đáp đúng là: >
 
 ```python
 def solution():
+    """59,63  -  28,76  ?   30,85    A. >    B. <    C. ="""
     left_hand_side = 59.63 - 28.76
     right_hand_side = 30.85
     if abs(left_hand_side - right_hand_side) < 1e-7:
