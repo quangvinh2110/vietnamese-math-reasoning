@@ -1,5 +1,8 @@
-You will write python program to solve math problems. You will only write code blocks.
-Q: Olivia has $23. She bought five bagels for $3 each. How much money does she have left?
+You will write python program to solve math problems based on provided gold answer. You will only write code blocks.
+
+Question: Olivia has $23. She bought five bagels for $3 each. How much money does she have left?
+
+Gold answer: To find out how much money Olivia has left after buying 5 bagels for $3 each, we need to calculate the total amount she spent first. 5 bagels at $3 each equals 5 x 3 = $15. Then, we subtract this amount from Olivia's initial money. $23 - $15 = $8. Therefore, Olivia has $8 left.
 
 # solution in Python:
 
@@ -20,7 +23,9 @@ print(solution())
 
 
 
-Q: Michael had 58 golf balls. On tuesday, he lost 23 golf balls. On wednesday, he lost 2 more. How many golf balls did he have at the end of wednesday?
+Question: Michael had 58 golf balls. On tuesday, he lost 23 golf balls. On wednesday, he lost 2 more. How many golf balls did he have at the end of wednesday?
+
+Gold answer: Michael initially had 58 balls. He lost 23 on Tuesday, so after that he has 58 - 23 = 35 balls. On Wednesday he lost 2 more so now he has 35 - 2 = 33 balls. The answer is 33.
 
 # solution in Python:
 
@@ -40,7 +45,9 @@ print(solution())
 
 
 
-Q: There were nine computers in the server room. Five more computers were installed each day, from monday to thursday. How many computers are now in the server room?
+Question: There were nine computers in the server room. Five more computers were installed each day, from monday to thursday. How many computers are now in the server room?
+
+Gold answer: There are 4 days from monday to thursday. 5 computers were added each day. That means in total 4 * 5 = 20 computers were added. There were 9 computers in the beginning, so now there are 9 + 20 = 29 computers.
 
 # solution in Python:
 
@@ -61,7 +68,9 @@ print(solution())
 
 
 
-Q: Shawn has five toys. For Christmas, he got two toys each from his mom and dad. How many toys does he have now?
+Question: Shawn has five toys. For Christmas, he got two toys each from his mom and dad. How many toys does he have now?
+
+Gold answer: He has 5 toys. He got 2 from mom, so after that he has 5 + 2 = 7 toys. Then he got 2 more from dad, so in total he has 7 + 2 = 9 toys. The answer is 9.
 
 # solution in Python:
 
@@ -82,7 +91,9 @@ print(solution())
 
 
 
-Q: Jason had 20 lollipops. He gave Denny some lollipops. Now Jason has 12 lollipops. How many lollipops did Jason give to Denny?
+Question: Jason had 20 lollipops. He gave Denny some lollipops. Now Jason has 12 lollipops. How many lollipops did Jason give to Denny?
+
+Gold answer: Jason had 20 lollipops. Since he only has 12 now, he must have given the rest to Denny. The number of lollipops he has given to Denny must have been 20 - 12 = 8 lollipops. The answer is 8.
 
 # solution in Python:
 
@@ -101,7 +112,9 @@ print(solution())
 
 
 
-Q: Leah had 32 chocolates and her sister had 42. If they ate 35, how many pieces do they have left in total?
+Question: Leah had 32 chocolates and her sister had 42. If they ate 35, how many pieces do they have left in total?
+
+Gold Answer: First Leah had 32 chocolates and her sister had 42 chocolates. So in total they had 32 + 42 = 74 chocolates. Then they ate 35 chocolates. So there must be 74 - 35 = 39 chocolates. 
 
 # solution in Python:
 
@@ -122,17 +135,35 @@ print(solution())
 
 
 
-Q: If there are 3 cars in the parking lot and 2 more cars arrive, how many cars are in the parking lot?
+Question: Trong tủ có 28 cái bát và 7 cái đĩa. Hỏi số đĩa bằng một phần mấy số bát đĩa trong tủ ?
+A. $\frac{1}{4}$
+B. $\frac{1}{5}$
+C. $\frac{1}{6}$
+D. $\frac{1}{7}$
+
+Gold Answer: Đáp án B
+Trong tủ có số bát đĩa là:
+28 + 7 = 35 (cái)
+Số tỉ lệ số đĩa và số bát đĩa là:
+7 : 35 = $\frac{1}{5}$ (lần)
+Vậy số đĩa bằng $\frac{1}{5}$ số bát đĩa có trong tủ.
 
 # solution in Python:
 
 ```python
 def solution():
-    """If there are 3 cars in the parking lot and 2 more cars arrive, how many cars are in the parking lot?"""
-    cars_initial = 3
-    cars_arrived = 2
-    total_cars = cars_initial + cars_arrived
-    result = total_cars
+    number_of_bowls_plates = 28 + 7
+    ratio = 7 / number_of_bowls_plates
+    if abs(ratio - 1 / 4) < 1e-7:
+        result = "A"
+    elif abs(ratio - 1 / 5) < 1e-7:
+        result = "B"
+    elif abs(ratio - 1 / 6) < 1e-7:
+        result = "C"
+    elif abs(ratio - 1 / 7) < 1e-7:
+        result = "D"
+    else:
+        result = "No answer"
     return result
 
 print(solution())
@@ -141,17 +172,60 @@ print(solution())
 
 
 
-Q: There are 15 trees in the grove. Grove workers will plant trees in the grove today. After they are done, there will be 21 trees. How many trees did the grove workers plant today?
+Question: Một hình hộp chữ nhật có diện tích xung quanh là 4800 cm², trong đó chiều dài đáy là 40 cm và chiều rộng là 30 cm. Tính chiều cao của hình hộp chữ nhật đó.
+A. 34,28 dm
+B. 17,14 cm
+C. 17,14 dm
+D. 34,28 cm
 
-# solution in Python:
+Gold Answer: chu vi mặt đáy hình hộp chữ nhật là 
+(40 + 30) x 2 = 140 ( cm² )
+chiều cao hình hộp chữ nhật là : 
+4800 : 140 = 34.28 ( cm )
+Vậy đáp án là D.
+
+# solution in Python: 
 
 ```python
 def solution():
-    """There are 15 trees in the grove. Grove workers will plant trees in the grove today. After they are done, there will be 21 trees. How many trees did the grove workers plant today?"""
-    trees_initial = 15
-    trees_after = 21
-    trees_added = trees_after - trees_initial
-    result = trees_added
+    length_cm = 40
+    width_cm = 30
+    surface_area_cm2 = 4800
+    perimeter_of_base = (length_cm + width_cm) * 2
+    height_cm = surface_area_cm2 / perimeter_of_base
+    height_cm = round(height_cm, 2)
+    result = height_cm
+    return result
+
+print(solution())
+```
+
+
+
+
+Question: Giải bài toán dưới đây bằng cách suy luận từng bước:
+59,63  -  28,76  ?   30,85
+A. >
+B. <
+C. =
+
+Gold Answer: Ta có 59,63 - 28,76 = 30,87
+Mà 30,87 > 30,85
+Nên 59,63 - 28,76 > 30,85
+Ta chọn đáp đúng là: >
+
+# solution in Python: 
+
+```python
+def solution():
+    left_hand_side = 59.63 - 28.76
+    right_hand_side = 30.85
+    if abs(left_hand_side - right_hand_side) < 1e-7:
+        result = "="
+    elif left_hand_side < right_hand_side:
+        result = "<"
+    else:
+        result = ">"
     return result
 
 print(solution())
