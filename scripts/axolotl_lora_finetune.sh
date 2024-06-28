@@ -1,33 +1,35 @@
 #!/bin/bash#
 set -ex
 
-DEVICE=0
-NUM_GPUS=1
+DEVICE=2,7
+NUM_GPUS=2
 CURRENT_TIME=$( date '+%F-%H-%M-%S' )
-MODEL_NAME=path/to/your/pretrained/model
+MODEL_NAME=qwen2-7b-instruct
 MODEL_TYPE=AutoModelForCausalLM
 TOKENIZER_TYPE=AutoTokenizer
 FLASH_ATTENTION=true
-declare -a DATASETS_PATH=("path/to/your/first/dataset" "path/to/your/second/dataset")
+DATA_HUB=/workspace/home/vinhnq29/zac2023-main/data_hub/
+declare -a DATASETS_PATH=("${DATA_HUB}/ViMathQA/train_v2/input_output_qwen.json" "${DATA_HUB}/ViMathIntructCode/train-2024-06-27-27-01-15/input_output_qwen.json")
 DATASET_TYPE=input_output
 DATASETS=$(printf $"  - path: %s\n    type: ${DATASET_TYPE}\n" "${DATASETS_PATH[@]}")
-MAX_SEQ_LEN=4096
+MAX_SEQ_LEN=2048
 ADAPTER=lora
 PRETRAINED_ADAPTER_DIR=
 LORA_RANK=64
-LORA_ALPHA=32
+LORA_ALPHA=128
 GLOBAL_BATCH_SIZE=128
 MICRO_BATCH_SIZE=1
 GRADIENT_ACCUMULATION_STEPS=$((${GLOBAL_BATCH_SIZE}/${MICRO_BATCH_SIZE}/${NUM_GPUS}))
-EPOCHS=1
+EPOCHS=3
 OPTIMIZER=paged_adamw_32bit
+# OPTIMIZER=adamw_torch
 LR_SCHEDULER=cosine
 LR=2e-4
-CONFIG_FILE=/path/to/your/config/folder/${MODEL_NAME}-${ADAPTER}-${CURRENT_TIME}.yml
-OUTPUT_DIR=/path/to/your/checkpoints/folder/${MODEL_NAME}-${ADAPTER}-${CURRENT_TIME}
+CONFIG_FILE=/workspace/home/vinhnq29/zac2023-main/config/${MODEL_NAME}-${ADAPTER}-${CURRENT_TIME}.yml
+OUTPUT_DIR=/workspace/home/vinhnq29/zac2023-main/checkpoints/adapters/${MODEL_NAME}-${ADAPTER}-${CURRENT_TIME}
 
 cat > ${CONFIG_FILE} << EOF
-base_model: ${MODEL_NAME}
+base_model: /workspace/home/vinhnq29/zac2023-main/models_hub/${MODEL_NAME}
 model_type: ${MODEL_TYPE}
 tokenizer_type: ${TOKENIZER_TYPE}
 
@@ -96,9 +98,8 @@ deepspeed:
 weight_decay: 0.0
 fsdp:
 fsdp_config:
-special_tokens:   
 EOF
 
 mkdir ${OUTPUT_DIR}
 cp ${CONFIG_FILE} ${OUTPUT_DIR}
-CUDA_VISIBLE_DEVICES=${DEVICE} accelerate launch -m axolotl.cli.train ${CONFIG_FILE} --debug
+CUDA_VISIBLE_DEVICES=${DEVICE} accelerate launch --main_process_port 29502 -m axolotl.cli.train ${CONFIG_FILE} --debug
