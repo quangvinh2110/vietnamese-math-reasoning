@@ -106,8 +106,9 @@ CLOSE_TAG = re.compile("|".join(close_tag_patterns))
 OPEN_TAG = re.compile("|".join(open_tag_patterns))
 
 
-USER_PROMPT_TEMPLATE = """
+USER_PROMPT_TEMPLATE = r"""
 {instruction}
 {question}
 {choices}
 """.strip()
+# Hãy suy luận từng bước và đặt đáp án mà bạn lựa chọn vào \box{{}}
