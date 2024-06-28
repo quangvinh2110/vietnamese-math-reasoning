@@ -4,12 +4,12 @@ set -ex
 DEVICE=2,7
 NUM_GPUS=2
 CURRENT_TIME=$( date '+%F-%H-%M-%S' )
-MODEL_NAME=qwen2-7b-instruct
+MODEL_NAME=Llama-3-8B-Instruct
 MODEL_TYPE=AutoModelForCausalLM
 TOKENIZER_TYPE=AutoTokenizer
 FLASH_ATTENTION=true
 DATA_HUB=/workspace/home/vinhnq29/zac2023-main/data_hub/
-declare -a DATASETS_PATH=("${DATA_HUB}/ViMathQA/train_v2/input_output_qwen.json" "${DATA_HUB}/ViMathIntructCode/train-2024-06-27-27-01-15/input_output_qwen.json")
+declare -a DATASETS_PATH=("${DATA_HUB}/ViMathQA/train_v2/input_output_llama3.json" "${DATA_HUB}/ViMathIntructCode/train-2024-06-27-27-01-15/input_output_llama3.json")
 DATASET_TYPE=input_output
 DATASETS=$(printf $"  - path: %s\n    type: ${DATASET_TYPE}\n" "${DATASETS_PATH[@]}")
 MAX_SEQ_LEN=2048
@@ -98,6 +98,8 @@ deepspeed:
 weight_decay: 0.0
 fsdp:
 fsdp_config:
+special_tokens:
+   pad_token: <|end_of_text|>
 EOF
 
 mkdir ${OUTPUT_DIR}
