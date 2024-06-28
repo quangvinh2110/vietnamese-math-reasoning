@@ -12,8 +12,8 @@ from peft import PeftModel
 from vllm import LLM, SamplingParams
 from vllm.lora.request import LoRARequest
 
+from ..utils.stopping_criteria import StopSequenceCriteria
 from ..utils.constants import USER_PROMPT_TEMPLATE
-
 from ..utils.preprocess import preprocess
 
 
@@ -27,12 +27,17 @@ class BasePipeline:
         merge_adapter: bool = False,
         use_vllm: bool = False,
         system_prompt: str = "",
-        assistant_prompt: str = ""
+        assistant_prompt: str = "",
+        stop: List[str] = [],
     ):
         self.tokenizer = AutoTokenizer.from_pretrained(
             model_path, 
             trust_remote_code=True
         )
+        if stop:
+            self.stop = list(set(stop+[self.tokenizer.eos_token]))
+        else:
+            self.stop = [self.tokenizer.eos_token]
         self.use_vllm = use_vllm
         self.adapter_path = adapter_path
         if use_vllm:
@@ -46,6 +51,17 @@ class BasePipeline:
                 dtype=torch.bfloat16,
                 enable_lora=True if adapter_path else False,
                 max_lora_rank=256,
+            )
+            self.generation_config = SamplingParams(
+                n=1,
+                best_of=1,
+                use_beam_search=False,
+                max_tokens=1024,
+                repetition_penalty=1.0,
+                temperature=0,
+                top_p=1,
+                top_k=-1,
+                stop=self.stop
             )
         else:
             bnb_config = None
@@ -70,29 +86,16 @@ class BasePipeline:
                 if merge_adapter:
                     self.model = self.model.merge_and_unload()
             self.model.eval()
-        if use_vllm:
-            self.generation_config = SamplingParams(
-                n=1,
-                best_of=1,
-                use_beam_search=False,
-                max_tokens=1024,
-                repetition_penalty=1.0,
-                temperature=0,
-                top_p=1,
-                top_k=-1,
-                stop=[self.tokenizer.eos_token]
+
+            self.stopping_criteria = StopSequenceCriteria(
+                self.stop, 
+                self.tokenizer
             )
-        else:
             self.generation_config = GenerationConfig(
                 max_new_tokens=1024,
                 repetition_penalty=1.0,
-                # temperature=0.7,
-                # top_p=0.95,
-                # top_k=20,
-                bos_token_id=self.tokenizer.bos_token_id,
-                eos_token_id=self.tokenizer.eos_token_id,
-                # eos_token_id=0, # for open-end generation.
-                pad_token_id=self.tokenizer.pad_token_id,
+                eos_token_id=[self.tokenizer.eos_token_id],
+                pad_token_id=[self.tokenizer.pad_token_id],
                 do_sample=False,
                 use_cache=True,
                 return_dict_in_generate=True,
@@ -104,6 +107,12 @@ class BasePipeline:
         self.tokenizer.padding_side = "left"
         self.system_prompt = system_prompt
         self.assistant_prompt = assistant_prompt
+
+
+    def remove_stop_sequences(self, text):
+        for stop_sequence in self.stop:
+            text = text.removesuffix(stop_sequence)
+        return text
 
     
     def prepare_prompts(
@@ -125,22 +134,30 @@ class BasePipeline:
                 {"role": "system", "content": self.system_prompt},
                 {"role": "user", "content": user_prompt},
                 {"role": "assistant", "content": self.assistant_prompt}
-            ], tokenize=False).strip().removesuffix(self.tokenizer.eos_token)
+            ], tokenize=False).strip()
+            prompt = self.remove_stop_sequences(prompt)
             prompts.append(prompt)
         return prompts
 
 
-    def generate_batch(
+    def get_answers(
         self, 
         instruction_list: List[str],
         question_list: List[str], 
         choices_list: List[list],
-    ):
+    ) -> List[str]:
         prompts = self.prepare_prompts(
             instruction_list=instruction_list,
             question_list=question_list, 
             choices_list=choices_list,
         )
+        return self.generate_batch(prompts)
+
+
+    def generate_batch(
+        self, 
+        prompts: List[list],
+    ) -> List[str]:
         if self.use_vllm:
             outputs = self.model.generate(
                 prompts, 
@@ -160,6 +177,7 @@ class BasePipeline:
                     attention_mask=attention_mask,
                     generation_config=self.generation_config,
                     # streamer=streamer,
+                    stopping_criteria=self.stopping_criteria
                 )
             gen_tokens = generated["sequences"].cpu()
             outputs = self.tokenizer.batch_decode(gen_tokens)
