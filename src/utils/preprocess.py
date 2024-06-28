@@ -1,7 +1,10 @@
+import string
 from .constants import *
 import unicodedata
 
 
+def remove_punctuation(text: str) -> str:
+    return text.translate(str.maketrans('', '', string.punctuation))
 
 
 def normalize_text_to_nfc_standard(text: str) -> str:
@@ -24,12 +27,18 @@ def cleanhtml(raw_page):
     return out
 
 
-def preprocess(question: str, lowercase: bool=False):
+def preprocess(
+    text: str, 
+    lowercase: bool=False,
+    remove_punct: bool=False
+):
     if lowercase:
-        question = question.lower()
-    question = normalize_text_to_nfc_standard(question)
-    question = normalize_tone(question)
-    return question
+        text = text.lower()
+    text = normalize_text_to_nfc_standard(text)
+    text = normalize_tone(text)
+    if remove_punct:
+        text = remove_punctuation(text)
+    return text
 
 
 if __name__ == '__main__':
