@@ -18,14 +18,19 @@ from .base_pipeline import BasePipeline
 
 from ..utils.constants import USER_PROMPT_TEMPLATE
 from ..utils.preprocess import preprocess
-from ..utils.python_executor import PythonExecutor
+from ..utils.python_executor import execute_python_code
 
 
 CODE_PATTERN = re.compile(r"```python([\s\S]*?)```")
+COMMENT_PATTERN = re.compile(r"#.*")
 
 
-DEFAULT_SYS_PROMPT = """
+DEFAULT_SYS_PROMPT = r"""
 Với vai trò là giáo viên dạy kèm môn toán, nhiệm vụ của bạn là giúp học sinh ở mọi cấp độ nắm bắt và giải quyết các vấn đề toán học. Tuy nhiên, bạn có thể thấy khó khăn với các phép toán số học cơ bản. Để đối phó với vấn đề này, bạn sẽ cung cấp hướng dẫn từng bước và viết mã Python theo hướng dẫn đó để thực hiện tất cả các phép tính cần thiết và cung cấp kết quả cuối cùng mỗi khi một câu hỏi đòi hỏi phép tính toán.
+Lưu ý: 
+- Bạn không cần phải viết mã Python nếu bài toán chỉ hỏi về lý thuyết hoặc không yêu cầu tính toán.
+- Nếu phải sử dụng giá trị pi, hãy gán pi = 3.14
+- Hãy đặt đáp án mà bạn lựa chọn vào \box{}
 Hãy đưa ra câu trả lời theo định dạng: ```guidance
 # your guidance
 ```
@@ -67,7 +72,6 @@ class CodePipeline(BasePipeline):
             assistant_prompt=assistant_prompt,
             stop=stop,
         )
-        self.executor = PythonExecutor(get_answer_from_stdout=True)
 
 
     def _extract_code(self, s: str):
@@ -77,38 +81,62 @@ class CodePipeline(BasePipeline):
         return ""
 
 
-    def _execute_python_code(self, code: str):
-        output = self.executor.apply(code)
-        if output[1] == "Done":
-            return output[0]
-        return "no output"
-
-
-    def select_answer_for_multiple_choices(
+    def get_interpreter_output(
         self,
-        generated_answer: str, 
-        choices: list,
-        prediction_prefix: str="Vậy áp án đúng là ",
-    ):
-        generated_answer = self.remove_stop_sequences(generated_answer)
+        generated_answer: str
+    ) -> str:
         code = self._extract_code(generated_answer)
-        try:
-            python_interperter_output = self._execute_python_code(code) if code else ""
-        except:
-            python_interperter_output = ""
-            # print(str(traceback.format_exc()))
+        if not code:
+            return ""
+        interperter_output, succeed = execute_python_code(code)
+        interperter_output = interperter_output if succeed else ""
+        return f"```output\n{interperter_output}\n```\n"
+        
 
-        prompt = generated_answer
-        if code:
-            prompt += f"\n\n```output\n{python_interperter_output}\n```\n\n" 
-            prompt += prediction_prefix
-        else:
-            prompt += ("\n" + prediction_prefix)
-        logits = self.compute_logit_for_choices(
-            prompt=prompt, 
-            choices=choices
+
+    def get_answers(
+        self, 
+        instruction_list: List[str],
+        question_list: List[str], 
+        choices_list: List[list],
+    ) -> List[str]:
+        generated_answers = super().get_answers(
+            instruction_list=instruction_list,
+            question_list=question_list,
+            choices_list=choices_list
         )
-        max_logit = max(logits)
-        max_logit_id = logits.index(max_logit)
-        # print("Logits: " + str(logits))
-        return f"Predict prompt: {prompt}\n\nCode: {code}", chr(max_logit_id+65)
+        generated_answers = [self.remove_stop_sequences(generated_answer) for generated_answer in generated_answers]
+        generated_answers = [generated_answer+self.get_interpreter_output(generated_answer) for generated_answer in generated_answers]
+        return self.generate_batch(generated_answers) 
+        
+
+    # def select_answer_for_multiple_choices(
+    #     self,
+    #     generated_answer: str, 
+    #     choices: list,
+    #     prediction_prefix: str="Vậy áp án đúng là ",
+    # ):
+    #     generated_answer = self.remove_stop_sequences(generated_answer)
+    #     code = self._extract_code(generated_answer)
+    #     python_interperter_output, succeed = execute_python_code(code)
+    #     python_interperter_output = python_interperter_output if succeed else ""
+    #     try:
+    #         python_interperter_output = float(python_interperter_output)
+    #         python_interperter_output = round(python_interperter_output, 8)
+    #     except:
+    #         pass
+
+    #     prompt = generated_answer
+    #     if code:
+    #         prompt += f"\n\n```output\n{python_interperter_output}\n```\n\n" 
+    #         prompt += prediction_prefix
+    #     else:
+    #         prompt += ("\n" + prediction_prefix)
+    #     logits = self.compute_logit_for_choices(
+    #         prompt=prompt, 
+    #         choices=choices
+    #     )
+    #     max_logit = max(logits)
+    #     max_logit_id = logits.index(max_logit)
+    #     # print("Logits: " + str(logits))
+    #     return f"Predict prompt: {prompt}\n\nCode: {code}", chr(max_logit_id+65)
