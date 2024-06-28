@@ -68,12 +68,12 @@ vi_instruction_multiple_choices_prompts = [
     "Giải bài toán dưới đây bằng cách suy luận từng bước:"
 ]
 
-USER_PROMPT_TEMPLATE = """
+USER_PROMPT_TEMPLATE = r"""
 {instruction}
 {question}
 {choices}
 """
-    
+# Hãy suy luận từng bước và đặt đáp án mà bạn lựa chọn vào \box{{}}
     
     
 
