@@ -5,9 +5,10 @@ import random
 from datasets import load_dataset
 import json
 from string import punctuation
+import re
 
 # random.seed(42)
-
+OUTPUT_PATTERN = re.compile(r"```output([\s\S]*?)```")
 
 def parse_args():
     parser = argparse.ArgumentParser(description="")
@@ -63,7 +64,11 @@ SYS_PREFIX = [
     "Là một giáo viên dạy kèm môn toán, mục tiêu chính của bạn là giúp đỡ học sinh ở các cấp độ kỹ năng khác nhau nắm bắt và giải quyết các vấn đề toán học. Tuy nhiên, bạn có thể gặp khó khăn với việc tính toán cơ bản. Để bù đắp cho điều này, khi một câu hỏi liên quan đến các phép tính toán số học, bạn sẽ cung cấp một giải thích chi tiết, từng bước một và tạo ra một đoạn mã Python phản ánh những bước này, thực hiện các phép tính cần thiết và trả về câu trả lời cuối cùng.",
     "Bạn là một gia sư toán học đẳng cấp thế giới. Bạn rất giỏi trong việc giúp đỡ học sinh ở mọi cấp độ hiểu và giải quyết các vấn đề toán học phức tạp. Tuy nhiên, bạn lại khá yếu trong việc thực hiện các phép toán cơ bản như cộng, trừ, nhân, chia, so sánh, lũy thừa,.v.v. Do đó, khi một câu hỏi yêu cầu bất kỳ hình thức tính toán nào, bạn sẽ cung cấp một hướng dẫn chi tiết, từng bước một và viết một đoạn mã Python theo hướng dẫn này để thực hiện tất cả các phép tính cần thiết và cung cấp câu trả lời cuối cùng."
 ]
-SYS_SUFFIX = """
+SYS_SUFFIX = r"""
+Lưu ý: 
+- Bạn không cần phải viết mã Python nếu bài toán chỉ hỏi về lý thuyết hoặc không yêu cầu tính toán.
+- Nếu phải sử dụng giá trị pi, hãy gán pi = 3.14
+- Hãy đặt đáp án mà bạn lựa chọn vào \box{}
 Hãy đưa ra câu trả lời theo định dạng: ```guidance
 # your guidance
 ```
@@ -117,56 +122,4 @@ if __name__ == "__main__":
             train_data.append(json.loads(line))
         
     input_output_data  = []
-    for sample in train_data:
-        system_prompt = random.choice(SYS_PREFIX)+"\n"+SYS_SUFFIX
-        
-        instruction = random.choice(vi_instruction_multiple_choices_prompts)
-        question = sample["md_question"]
-        choices = sample["md_choices"]
-        choices = [x for x in choices if x]
-        choices.sort(key=lambda choice: choice[0])
-        choices="\n".join(choices)
-        user_prompt = USER_PROMPT_TEMPLATE.format(
-            instruction=instruction,
-            question=question,
-            choices=choices
-        ).strip()
-        
-        answer = sample["instruct_code"].strip()
-        if len(answer) > 4000:
-            continue
-        if not (question and choices and answer):
-            continue
-        
-        input_output_data.append({"segments": [
-            {
-                "label": False,
-                "text": tokenizer.apply_chat_template([
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt},
-                ], tokenize=False, add_generation_prompt=True)
-            },
-            {
-                "label": True,
-                "text": answer + tokenizer.eos_token
-            }
-        ]})
-
-    with open(args.output_file, "w") as f:
-        f.write(json.dumps(
-            input_output_data,
-            indent=4,
-            ensure_ascii=False
-        ))
-
-    # input_output_dataset = load_dataset(
-    #     "json", 
-    #     data_files=args.output_file,
-    #     split="train"
-    # )
-
-    # input_output_dataset.push_to_hub(
-    #     "vinhnq29/ViMathQA",
-    #     "train_v1", split=f"input_output_{normalize_name(args.model_name)}",
-    #     token="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"
-    # )
+    n_drop = 0
